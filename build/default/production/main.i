@@ -9288,6 +9288,14 @@ typedef uint32_t uint_fast32_t;
 
 void MFRC522_Write_Register(uint8_t addr, uint8_t val);
 uint8_t MFRC522_Read_Register(uint8_t addr);
+void MFRC522_Modify_Register_Bit(uint8_t addr, uint8_t bit_pos, uint8_t val);
+void MFRC522_Antenna_On(void);
+void MFRC522_Antenna_Off(void);
+void MFRC522_Reset(void);
+uint8_t MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uint8_t *backData, uint8_t *backLen);
+uint8_t MFRC522_Anticoll(uint8_t *serNum);
+uint8_t MFRC522_Request(uint8_t reqMode, uint8_t *TagType);
+uint8_t MFRC522_Detect_Tag(void);
 void MFRC522_Init(void);
 # 11 "main.c" 2
 
@@ -9298,6 +9306,16 @@ void main(void) {
 
 
     while(1){
+        uint8_t status = MFRC522_Detect_Tag();
+        if(status == 1){
+
+
+
+
+        }else{
+
+        }
+
 
     }
 
