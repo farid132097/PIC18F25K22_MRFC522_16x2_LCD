@@ -1,4 +1,4 @@
-# 1 "mfrc522.c"
+# 1 "lcd.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mfrc522.c" 2
+# 1 "lcd.c" 2
 
 
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
@@ -9112,7 +9112,7 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 3 "mfrc522.c" 2
+# 3 "lcd.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdint.h" 3
@@ -9199,211 +9199,5 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdint.h" 2 3
-# 4 "mfrc522.c" 2
+# 4 "lcd.c" 2
 
-# 1 "./spi.h" 1
-# 11 "./spi.h"
-void SPI_SCK_Output(void);
-void SPI_SCK_Output_Low(void);
-void SPI_SCK_Output_High(void);
-void SPI_MISO_Input(void);
-uint8_t SPI_MISO_State(void);
-void SPI_MOSI_Output(void);
-void SPI_MOSI_Output_Low(void);
-void SPI_MOSI_Output_High(void);
-void SPI_CS_Output(void);
-void SPI_CS_Output_Low(void);
-void SPI_CS_Output_High(void);
-void SPI_GPIO_Init(void);
-void SPI_Timer_Init(void);
-void SPI_Timer_Wait_One_Bit_Time(void);
-void SPI_Timer_Wait_Half_Bit_Time(void);
-uint8_t SPI_Transfer_Byte_MSB_First(uint8_t val);
-uint8_t SPI_Transfer_Byte_LSB_First(uint8_t val);
-void SPI_Transfer(uint8_t *data, uint8_t len);
-void SPI_Init(void);
-# 5 "mfrc522.c" 2
-# 109 "mfrc522.c"
-void MFRC522_Write_Register(uint8_t addr, uint8_t val){
-    uint8_t data[2];
-    data[0]=(addr<<1)&0x7E;
-    data[1]=val;
-    SPI_Transfer(data, 2);
-}
-
-uint8_t MFRC522_Read_Register(uint8_t addr){
-    uint8_t data[2];
-    data[0]=((addr<<1)&0x7E) | 0x80;
-    data[1]=0;
-    SPI_Transfer(data, 2);
-    return data[1];
-}
-
-void MFRC522_Modify_Register_Bit(uint8_t addr, uint8_t bit_pos, uint8_t val){
-    uint8_t data=0;
-    data=MFRC522_Read_Register(addr);
-    if(val == 1){
-        data|=(1<<bit_pos);
-    }else if(val == 0){
-        data&=~(1<<bit_pos);
-    }
-    MFRC522_Write_Register(addr, data);
-}
-
-void MFRC522_Antenna_On(void){
-    uint8_t data=0;
-    data = MFRC522_Read_Register(0x14);
-    if (!(data & 0x03)){
-        MFRC522_Modify_Register_Bit(0x14, 0, 1);
-        MFRC522_Modify_Register_Bit(0x14, 1, 1);
-    }
-}
-
-void MFRC522_Antenna_Off(void){
-    MFRC522_Modify_Register_Bit(0x14, 0, 0);
-    MFRC522_Modify_Register_Bit(0x14, 1, 0);
-}
-
-void MFRC522_Reset(void){
-    MFRC522_Write_Register(0x01, 0x0F);
-}
-
-
-uint8_t MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uint8_t *backData, uint8_t *backLen){
-    uint8_t status = 0x02;
-    uint8_t irqEn = 0x00;
-    uint8_t waitIRq = 0x00;
-    uint8_t lastBits;
-    uint8_t n;
-    uint16_t i;
-
-    switch (command){
-        case 0x0E:
-        {
-            irqEn = 0x12;
-            waitIRq = 0x10;
-            break;
-        }
-        case 0x0C:
-        {
-           irqEn = 0x77;
-           waitIRq = 0x30;
-           break;
-        }
-        default:
-        break;
-  }
-
-    MFRC522_Write_Register(0x02, irqEn|0x80);
-    MFRC522_Modify_Register_Bit(0x04, 7, 0);
-    MFRC522_Modify_Register_Bit(0x0A, 7, 1);
-    MFRC522_Write_Register(0x01, 0x00);
-    for (i=0; i<sendLen; i++){
-        MFRC522_Write_Register(0x09, sendData[i]);
-    }
-
-    MFRC522_Write_Register(0x01, command);
-    if (command == 0x0C){
-        MFRC522_Modify_Register_Bit(0x0D, 7, 1);
-    }
-
-    i = 2000;
-    do{
-        n = MFRC522_Read_Register(0x04);
-        i--;
-    }
-    while ((i!=0) && !(n&0x01) && !(n & waitIRq));
-    MFRC522_Modify_Register_Bit(0x0D, 7, 0);
-    if (i != 0){
-        if(!(MFRC522_Read_Register(0x06) & 0x1B)){
-            status = 0x00;
-            if (n & irqEn & 0x01){
-              status = 0x01;
-            }
-            if (command == 0x0C){
-                n = MFRC522_Read_Register(0x0A);
-                lastBits = MFRC522_Read_Register(0x0C) & 0x07;
-                if (lastBits){
-                    *backLen = (n-1)*8 + lastBits;
-                }
-                else{
-                    *backLen = n*8;
-                }
-                if (n == 0){
-                    n = 1;
-                }
-                if (n > 16){
-                    n = 16;
-                }
-                for (i=0; i<n; i++){
-                    backData[i] = MFRC522_Read_Register(0x09);
-                }
-            }
-       }
-       else{
-           status = 0x02;
-       }
-    }
-    return status;
-}
-
-uint8_t MFRC522_Anticoll(uint8_t *serNum){
-    uint8_t status;
-    uint8_t i;
-    uint8_t serNumCheck=0;
-    uint8_t unLen;
-    MFRC522_Write_Register(0x0D, 0x00);
-    serNum[0] = 0x93;
-    serNum[1] = 0x20;
-    status = MFRC522_ToCard(0x0C, serNum, 2, serNum, &unLen);
-
-    if (status == 0x00){
-        for (i=0; i<4; i++){
-            serNumCheck ^= serNum[i];
-        }
-        if (serNumCheck != serNum[i]){
-            status = 0x02;
-        }
-    }
-    return status;
-}
-
-uint8_t MFRC522_Request(uint8_t reqMode, uint8_t *TagType){
-    uint8_t status;
-    uint8_t backBits;
-
-    MFRC522_Write_Register(0x0D, 0x07);
-
-    TagType[0] = reqMode;
-    status = MFRC522_ToCard(0x0C, TagType, 1, TagType, &backBits);
-
-    if ((status != 0x00) || (backBits != 0x10)){
-        status = 0x02;
-    }
-    return status;
-}
-
-uint8_t MFRC522_Detect_Tag(void){
-    uint8_t info[16];
-    uint8_t status = MFRC522_Request(0x26, info);
-    status = MFRC522_Anticoll(info);
-    if(status == 0x00){
-        return 1;
-    }else{
-        return 0;
-    }
-}
-
-void MFRC522_Init(void){
-
-
-    SPI_Init();
-    MFRC522_Reset();
-    MFRC522_Write_Register(0x2A, 0x8D);
-    MFRC522_Write_Register(0x2B, 0x3E);
-    MFRC522_Write_Register(0x2D, 30);
-    MFRC522_Write_Register(0x2C, 0);
-    MFRC522_Write_Register(0x15, 0x40);
-    MFRC522_Write_Register(0x11, 0x3D);
-    MFRC522_Antenna_On();
-}

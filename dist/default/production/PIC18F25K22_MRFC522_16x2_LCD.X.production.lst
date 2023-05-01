@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.40 build 20220703182018 
-                                                                                               Mon May 01 21:47:21 2023
+                                                                                               Mon May 01 22:21:08 2023
 
 Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1 
      1                           	processor	18F25K22
@@ -394,49 +394,49 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    380   007B46                     _MFRC522_Init:
    381                           	callstack 24
    382   007B46                     
-   383                           ;mfrc522.c: 280:     SPI_Init();
+   383                           ;mfrc522.c: 282:     SPI_Init();
    384   007B46  ECD1  F03C         	call	_SPI_Init	;wreg free
    385   007B4A                     
-   386                           ;mfrc522.c: 281:     MFRC522_Reset();
+   386                           ;mfrc522.c: 283:     MFRC522_Reset();
    387   007B4A  ECDB  F03C         	call	_MFRC522_Reset	;wreg free
    388   007B4E                     
-   389                           ;mfrc522.c: 282:     MFRC522_Write_Register(0x2A, 0x8D);
+   389                           ;mfrc522.c: 284:     MFRC522_Write_Register(0x2A, 0x8D);
    390   007B4E  0E8D               	movlw	141
    391   007B50  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    392   007B52  0E2A               	movlw	42
    393   007B54  EC24  F03D         	call	_MFRC522_Write_Register
    394   007B58                     
-   395                           ;mfrc522.c: 283:     MFRC522_Write_Register(0x2B, 0x3E);
+   395                           ;mfrc522.c: 285:     MFRC522_Write_Register(0x2B, 0x3E);
    396   007B58  0E3E               	movlw	62
    397   007B5A  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    398   007B5C  0E2B               	movlw	43
    399   007B5E  EC24  F03D         	call	_MFRC522_Write_Register
    400   007B62                     
-   401                           ;mfrc522.c: 284:     MFRC522_Write_Register(0x2D, 30);
+   401                           ;mfrc522.c: 286:     MFRC522_Write_Register(0x2D, 30);
    402   007B62  0E1E               	movlw	30
    403   007B64  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    404   007B66  0E2D               	movlw	45
    405   007B68  EC24  F03D         	call	_MFRC522_Write_Register
    406   007B6C                     
-   407                           ;mfrc522.c: 285:     MFRC522_Write_Register(0x2C, 0);
+   407                           ;mfrc522.c: 287:     MFRC522_Write_Register(0x2C, 0);
    408   007B6C  0E00               	movlw	0
    409   007B6E  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    410   007B70  0E2C               	movlw	44
    411   007B72  EC24  F03D         	call	_MFRC522_Write_Register
    412   007B76                     
-   413                           ;mfrc522.c: 286:     MFRC522_Write_Register(0x15, 0x40);
+   413                           ;mfrc522.c: 288:     MFRC522_Write_Register(0x15, 0x40);
    414   007B76  0E40               	movlw	64
    415   007B78  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    416   007B7A  0E15               	movlw	21
    417   007B7C  EC24  F03D         	call	_MFRC522_Write_Register
    418   007B80                     
-   419                           ;mfrc522.c: 287:     MFRC522_Write_Register(0x11, 0x3D);
+   419                           ;mfrc522.c: 289:     MFRC522_Write_Register(0x11, 0x3D);
    420   007B80  0E3D               	movlw	61
    421   007B82  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    422   007B84  0E11               	movlw	17
    423   007B86  EC24  F03D         	call	_MFRC522_Write_Register
    424   007B8A                     
-   425                           ;mfrc522.c: 288:     MFRC522_Antenna_On();
+   425                           ;mfrc522.c: 290:     MFRC522_Antenna_On();
    426   007B8A  EC62  F03D         	call	_MFRC522_Antenna_On	;wreg free
    427   007B8E  0012               	return		;funcret
    428   007B90                     __end_of_MFRC522_Init:
@@ -3067,7 +3067,7 @@ SFR                  0      0       0     200        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.40 build 20220703182018 
-Symbol Table                                                                                   Mon May 01 21:47:21 2023
+Symbol Table                                                                                   Mon May 01 22:21:08 2023
 
                                   l41 7976                                    l35 79A0  
                                   l44 7990                                    l52 7998  

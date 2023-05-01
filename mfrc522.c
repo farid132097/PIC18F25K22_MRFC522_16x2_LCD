@@ -277,6 +277,8 @@ uint8_t MFRC522_Detect_Tag(void){
 }
 
 void MFRC522_Init(void){
+    //Need to add hardware reset method
+    //Need to know the reset pin connection with MCU
     SPI_Init();
     MFRC522_Reset();
     MFRC522_Write_Register(TModeReg, 0x8D);
