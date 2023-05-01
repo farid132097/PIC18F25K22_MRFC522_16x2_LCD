@@ -1,5 +1,5 @@
 
-
+#define  _XTAL_FREQ          8000000UL
 #include <xc.h>
 #include <stdint.h>
 #include "spi.h"
@@ -105,6 +105,13 @@
 #define     Reserved32            0x3D
 #define     Reserved33            0x3E
 #define     Reserved34            0x3F
+
+
+#define     MFRC522_RST_TRIS      TRISB
+#define     MFRC522_RST_LAT       LATB
+#define     MFRC522_RST_ANSEL     ANSELB
+#define     MFRC522_RST_bp        0x01U
+
 
 void MFRC522_Write_Register(uint8_t addr, uint8_t val){
     uint8_t data[2];
@@ -276,10 +283,25 @@ uint8_t MFRC522_Detect_Tag(void){
     }
 }
 
+void MFRC522_Reset_Output(void){
+    MFRC522_RST_TRIS&=~(1<<MFRC522_RST_bp);
+    MFRC522_RST_ANSEL&=~(1<<MFRC522_RST_bp);
+}
+
+void MFRC522_Reset_Output_Low(void){
+    MFRC522_RST_LAT&=~(1<<MFRC522_RST_bp);
+}
+
+void MFRC522_Reset_Output_High(void){
+    MFRC522_RST_LAT|=(1<<MFRC522_RST_bp);
+}
+
 void MFRC522_Init(void){
-    //Need to add hardware reset method
-    //Need to know the reset pin connection with MCU
+    MFRC522_Reset_Output();
     SPI_Init();
+    MFRC522_Reset_Output_Low();
+    __delay_ms(50);
+    MFRC522_Reset_Output_High();
     MFRC522_Reset();
     MFRC522_Write_Register(TModeReg, 0x8D);
     MFRC522_Write_Register(TPrescalerReg, 0x3E);

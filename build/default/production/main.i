@@ -9296,6 +9296,9 @@ uint8_t MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uint
 uint8_t MFRC522_Anticoll(uint8_t *serNum);
 uint8_t MFRC522_Request(uint8_t reqMode, uint8_t *TagType);
 uint8_t MFRC522_Detect_Tag(void);
+void MFRC522_Reset_Output(void);
+void MFRC522_Reset_Output_Low(void);
+void MFRC522_Reset_Output_High(void);
 void MFRC522_Init(void);
 # 11 "main.c" 2
 
@@ -9344,7 +9347,6 @@ void LCD_Init(void);
 void main(void) {
     MFRC522_Init();
     LCD_Init();
-    _delay((unsigned long)((200)*(8000000UL/4000.0)));
     LCD_Write_String("RFID READY");
 
     while(1){

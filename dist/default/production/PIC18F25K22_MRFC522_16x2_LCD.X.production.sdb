@@ -35,6 +35,8 @@
 [v _LCD_RS_Output_High LCD_RS_Output_High `(v  1 e 1 0 ]
 "61
 [v _LCD_RW_Output LCD_RW_Output `(v  1 e 1 0 ]
+"66
+[v _LCD_RW_Output_Low LCD_RW_Output_Low `(v  1 e 1 0 ]
 "74
 [v _LCD_E_Output LCD_E_Output `(v  1 e 1 0 ]
 "79
@@ -77,31 +79,37 @@
 [v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
 "200
 [v _LCD_GPIO_Init LCD_GPIO_Init `(v  1 e 1 0 ]
-"210
+"217
 [v _LCD_Registers_Init LCD_Registers_Init `(v  1 e 1 0 ]
-"226
+"233
 [v _LCD_Init LCD_Init `(v  1 e 1 0 ]
 "15 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"109 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+"116 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 [v _MFRC522_Write_Register MFRC522_Write_Register `(v  1 e 1 0 ]
-"116
+"123
 [v _MFRC522_Read_Register MFRC522_Read_Register `(uc  1 e 1 0 ]
-"124
+"131
 [v _MFRC522_Modify_Register_Bit MFRC522_Modify_Register_Bit `(v  1 e 1 0 ]
-"135
+"142
 [v _MFRC522_Antenna_On MFRC522_Antenna_On `(v  1 e 1 0 ]
-"149
+"156
 [v _MFRC522_Reset MFRC522_Reset `(v  1 e 1 0 ]
-"154
+"161
 [v _MFRC522_ToCard MFRC522_ToCard `(uc  1 e 1 0 ]
-"232
+"239
 [v _MFRC522_Anticoll MFRC522_Anticoll `(uc  1 e 1 0 ]
-"253
+"260
 [v _MFRC522_Request MFRC522_Request `(uc  1 e 1 0 ]
-"268
+"275
 [v _MFRC522_Detect_Tag MFRC522_Detect_Tag `(uc  1 e 1 0 ]
-"279
+"286
+[v _MFRC522_Reset_Output MFRC522_Reset_Output `(v  1 e 1 0 ]
+"291
+[v _MFRC522_Reset_Output_Low MFRC522_Reset_Output_Low `(v  1 e 1 0 ]
+"295
+[v _MFRC522_Reset_Output_High MFRC522_Reset_Output_High `(v  1 e 1 0 ]
+"299
 [v _MFRC522_Init MFRC522_Init `(v  1 e 1 0 ]
 "31 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
 [v _SPI_SCK_Output SPI_SCK_Output `(v  1 e 1 0 ]
@@ -160,14 +168,14 @@
 "15 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"22
+"21
 [v main@status status `uc  1 a 1 63 ]
-"36
+"35
 } 0
-"279 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+"299 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 [v _MFRC522_Init MFRC522_Init `(v  1 e 1 0 ]
 {
-"291
+"313
 } 0
 "164 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
 [v _SPI_Init SPI_Init `(v  1 e 1 0 ]
@@ -204,119 +212,134 @@
 {
 "73
 } 0
-"149 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+"291 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+[v _MFRC522_Reset_Output_Low MFRC522_Reset_Output_Low `(v  1 e 1 0 ]
+{
+"293
+} 0
+"295
+[v _MFRC522_Reset_Output_High MFRC522_Reset_Output_High `(v  1 e 1 0 ]
+{
+"297
+} 0
+"286
+[v _MFRC522_Reset_Output MFRC522_Reset_Output `(v  1 e 1 0 ]
+{
+"289
+} 0
+"156
 [v _MFRC522_Reset MFRC522_Reset `(v  1 e 1 0 ]
 {
-"151
+"158
 } 0
-"135
+"142
 [v _MFRC522_Antenna_On MFRC522_Antenna_On `(v  1 e 1 0 ]
 {
-"136
+"143
 [v MFRC522_Antenna_On@data data `uc  1 a 1 21 ]
-"142
+"149
 } 0
-"268
+"275
 [v _MFRC522_Detect_Tag MFRC522_Detect_Tag `(uc  1 e 1 0 ]
 {
-"269
+"276
 [v MFRC522_Detect_Tag@info info `[16]uc  1 a 16 44 ]
-"270
-[v MFRC522_Detect_Tag@status status `uc  1 a 1 60 ]
 "277
+[v MFRC522_Detect_Tag@status status `uc  1 a 1 60 ]
+"284
 } 0
-"253
+"260
 [v _MFRC522_Request MFRC522_Request `(uc  1 e 1 0 ]
 {
 [v MFRC522_Request@reqMode reqMode `uc  1 a 1 wreg ]
-"255
+"262
 [v MFRC522_Request@backBits backBits `uc  1 a 1 41 ]
-"254
+"261
 [v MFRC522_Request@status status `uc  1 a 1 40 ]
-"253
+"260
 [v MFRC522_Request@reqMode reqMode `uc  1 a 1 wreg ]
 [v MFRC522_Request@TagType TagType `*.39uc  1 p 2 37 ]
-"257
+"264
 [v MFRC522_Request@reqMode reqMode `uc  1 a 1 39 ]
-"266
+"273
 } 0
-"232
+"239
 [v _MFRC522_Anticoll MFRC522_Anticoll `(uc  1 e 1 0 ]
 {
-"234
+"241
 [v MFRC522_Anticoll@i i `uc  1 a 1 43 ]
-"233
+"240
 [v MFRC522_Anticoll@status status `uc  1 a 1 42 ]
-"236
+"243
 [v MFRC522_Anticoll@unLen unLen `uc  1 a 1 41 ]
-"235
+"242
 [v MFRC522_Anticoll@serNumCheck serNumCheck `uc  1 a 1 40 ]
-"232
+"239
 [v MFRC522_Anticoll@serNum serNum `*.39uc  1 p 2 37 ]
-"251
+"258
 } 0
-"154
+"161
 [v _MFRC522_ToCard MFRC522_ToCard `(uc  1 e 1 0 ]
 {
 [v MFRC522_ToCard@command command `uc  1 a 1 wreg ]
-"160
+"167
 [v MFRC522_ToCard@i i `us  1 a 2 34 ]
-"159
+"166
 [v MFRC522_ToCard@n n `uc  1 a 1 36 ]
-"156
+"163
 [v MFRC522_ToCard@irqEn irqEn `uc  1 a 1 32 ]
-"158
+"165
 [v MFRC522_ToCard@lastBits lastBits `uc  1 a 1 31 ]
-"155
+"162
 [v MFRC522_ToCard@status status `uc  1 a 1 30 ]
-"157
+"164
 [v MFRC522_ToCard@waitIRq waitIRq `uc  1 a 1 29 ]
-"154
+"161
 [v MFRC522_ToCard@command command `uc  1 a 1 wreg ]
 [v MFRC522_ToCard@sendData sendData `*.39uc  1 p 2 20 ]
 [v MFRC522_ToCard@sendLen sendLen `uc  1 p 1 22 ]
 [v MFRC522_ToCard@backData backData `*.39uc  1 p 2 23 ]
 [v MFRC522_ToCard@backLen backLen `*.39uc  1 p 2 25 ]
 [v MFRC522_ToCard@command command `uc  1 a 1 33 ]
-"230
+"237
 } 0
-"124
+"131
 [v _MFRC522_Modify_Register_Bit MFRC522_Modify_Register_Bit `(v  1 e 1 0 ]
 {
 [v MFRC522_Modify_Register_Bit@addr addr `uc  1 a 1 wreg ]
-"125
+"132
 [v MFRC522_Modify_Register_Bit@data data `uc  1 a 1 19 ]
-"124
+"131
 [v MFRC522_Modify_Register_Bit@addr addr `uc  1 a 1 wreg ]
 [v MFRC522_Modify_Register_Bit@bit_pos bit_pos `uc  1 p 1 14 ]
 [v MFRC522_Modify_Register_Bit@val val `uc  1 p 1 15 ]
 [v MFRC522_Modify_Register_Bit@addr addr `uc  1 a 1 18 ]
-"133
+"140
 } 0
-"109
+"116
 [v _MFRC522_Write_Register MFRC522_Write_Register `(v  1 e 1 0 ]
 {
 [v MFRC522_Write_Register@addr addr `uc  1 a 1 wreg ]
-"110
+"117
 [v MFRC522_Write_Register@data data `[2]uc  1 a 2 12 ]
-"109
+"116
 [v MFRC522_Write_Register@addr addr `uc  1 a 1 wreg ]
 [v MFRC522_Write_Register@val val `uc  1 p 1 10 ]
-"111
+"118
 [v MFRC522_Write_Register@addr addr `uc  1 a 1 11 ]
-"114
+"121
 } 0
-"116
+"123
 [v _MFRC522_Read_Register MFRC522_Read_Register `(uc  1 e 1 0 ]
 {
 [v MFRC522_Read_Register@addr addr `uc  1 a 1 wreg ]
-"117
+"124
 [v MFRC522_Read_Register@data data `[2]uc  1 a 2 11 ]
-"116
+"123
 [v MFRC522_Read_Register@addr addr `uc  1 a 1 wreg ]
-"118
+"125
 [v MFRC522_Read_Register@addr addr `uc  1 a 1 10 ]
-"122
+"129
 } 0
 "152 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
 [v _SPI_Transfer SPI_Transfer `(v  1 e 1 0 ]
@@ -405,20 +428,25 @@
 {
 "59
 } 0
-"226
+"233
 [v _LCD_Init LCD_Init `(v  1 e 1 0 ]
 {
-"231
+"239
 } 0
-"210
+"217
 [v _LCD_Registers_Init LCD_Registers_Init `(v  1 e 1 0 ]
 {
-"224
+"231
 } 0
 "200
 [v _LCD_GPIO_Init LCD_GPIO_Init `(v  1 e 1 0 ]
 {
-"208
+"215
+} 0
+"66
+[v _LCD_RW_Output_Low LCD_RW_Output_Low `(v  1 e 1 0 ]
+{
+"68
 } 0
 "61
 [v _LCD_RW_Output LCD_RW_Output `(v  1 e 1 0 ]

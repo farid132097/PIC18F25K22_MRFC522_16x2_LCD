@@ -15,7 +15,6 @@
 void main(void) {
     MFRC522_Init();
     LCD_Init();
-    __delay_ms(200);
     LCD_Write_String("RFID READY");
     
     while(1){

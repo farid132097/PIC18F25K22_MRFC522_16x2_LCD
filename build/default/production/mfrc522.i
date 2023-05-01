@@ -9223,7 +9223,7 @@ uint8_t SPI_Transfer_Byte_LSB_First(uint8_t val);
 void SPI_Transfer(uint8_t *data, uint8_t len);
 void SPI_Init(void);
 # 5 "mfrc522.c" 2
-# 109 "mfrc522.c"
+# 116 "mfrc522.c"
 void MFRC522_Write_Register(uint8_t addr, uint8_t val){
     uint8_t data[2];
     data[0]=(addr<<1)&0x7E;
@@ -9394,10 +9394,25 @@ uint8_t MFRC522_Detect_Tag(void){
     }
 }
 
+void MFRC522_Reset_Output(void){
+    TRISB&=~(1<<0x01U);
+    ANSELB&=~(1<<0x01U);
+}
+
+void MFRC522_Reset_Output_Low(void){
+    LATB&=~(1<<0x01U);
+}
+
+void MFRC522_Reset_Output_High(void){
+    LATB|=(1<<0x01U);
+}
+
 void MFRC522_Init(void){
-
-
+    MFRC522_Reset_Output();
     SPI_Init();
+    MFRC522_Reset_Output_Low();
+    _delay((unsigned long)((50)*(8000000UL/4000.0)));
+    MFRC522_Reset_Output_High();
     MFRC522_Reset();
     MFRC522_Write_Register(0x2A, 0x8D);
     MFRC522_Write_Register(0x2B, 0x3E);

@@ -205,6 +205,13 @@ void LCD_GPIO_Init(void){
     LCD_D5_Output();
     LCD_D6_Output();
     LCD_D7_Output();
+    LCD_RS_Output_Low();
+    LCD_RW_Output_Low();
+    LCD_E_Output_Low();
+    LCD_D4_Output_Low();
+    LCD_D5_Output_Low();
+    LCD_D6_Output_Low();
+    LCD_D7_Output_Low();
 }
 
 void LCD_Registers_Init(void){
@@ -228,4 +235,5 @@ void LCD_Init(void){
     LCD_GPIO_Init();
     LCD_Registers_Init();
     LCD_Clear();
+    __delay_ms(200);
 }

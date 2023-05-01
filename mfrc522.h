@@ -18,5 +18,8 @@ uint8_t  MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uin
 uint8_t  MFRC522_Anticoll(uint8_t *serNum);
 uint8_t  MFRC522_Request(uint8_t reqMode, uint8_t *TagType);
 uint8_t  MFRC522_Detect_Tag(void);
+void     MFRC522_Reset_Output(void);
+void     MFRC522_Reset_Output_Low(void);
+void     MFRC522_Reset_Output_High(void);
 void     MFRC522_Init(void);
 
