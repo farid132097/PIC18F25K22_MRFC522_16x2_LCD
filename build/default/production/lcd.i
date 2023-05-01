@@ -9200,4 +9200,188 @@ typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdint.h" 2 3
 # 4 "lcd.c" 2
+# 48 "lcd.c"
+void LCD_RS_Output(void){
+    TRISC&=~(1<<0x02U);
+    ANSELC&=~(1<<0x02U);
+}
 
+void LCD_RS_Output_Low(void){
+    LATC&=~(1<<0x02U);
+}
+
+void LCD_RS_Output_High(void){
+    LATC|=(1<<0x02U);
+}
+
+void LCD_RW_Output(void){
+    TRISC&=~(1<<0x06U);
+    ANSELC&=~(1<<0x06U);
+}
+
+void LCD_RW_Output_Low(void){
+    LATC&=~(1<<0x06U);
+}
+
+void LCD_RW_Output_High(void){
+    LATC|=(1<<0x06U);
+}
+
+void LCD_E_Output(void){
+    TRISC&=~(1<<0x07U);
+    ANSELC&=~(1<<0x07U);
+}
+
+void LCD_E_Output_Low(void){
+    LATC&=~(1<<0x07U);
+}
+
+void LCD_E_Output_High(void){
+    LATC|=(1<<0x07U);
+}
+
+void LCD_D4_Output(void){
+    TRISB&=~(1<<0x04U);
+    ANSELB&=~(1<<0x04U);
+}
+
+void LCD_D4_Output_Low(void){
+    LATB&=~(1<<0x04U);
+}
+
+void LCD_D4_Output_High(void){
+    LATB|=(1<<0x04U);
+}
+
+void LCD_D5_Output(void){
+    TRISB&=~(1<<0x05U);
+    ANSELB&=~(1<<0x05U);
+}
+
+void LCD_D5_Output_Low(void){
+    LATB&=~(1<<0x05U);
+}
+
+void LCD_D5_Output_High(void){
+    LATB|=(1<<0x05U);
+}
+
+void LCD_D6_Output(void){
+    TRISB&=~(1<<0x06U);
+    ANSELB&=~(1<<0x06U);
+}
+
+void LCD_D6_Output_Low(void){
+    LATB&=~(1<<0x06U);
+}
+
+void LCD_D6_Output_High(void){
+    LATB|=(1<<0x06U);
+}
+
+void LCD_D7_Output(void){
+    TRISB&=~(1<<0x07U);
+    ANSELB&=~(1<<0x07U);
+}
+
+void LCD_D7_Output_Low(void){
+    LATB&=~(1<<0x07U);
+}
+
+void LCD_D7_Output_High(void){
+    LATB|=(1<<0x07U);
+}
+
+void LCD_Write_Nibble_To_Data_Pins(uint8_t val){
+    if(val & 0x01){
+        LCD_D4_Output_High();
+    }else{
+        LCD_D4_Output_Low();
+    }
+    if(val & 0x02){
+        LCD_D5_Output_High();
+    }else{
+        LCD_D5_Output_Low();
+    }
+    if(val & 0x04){
+        LCD_D6_Output_High();
+    }else{
+        LCD_D6_Output_Low();
+    }
+    if(val & 0x08){
+        LCD_D7_Output_High();
+    }else{
+        LCD_D7_Output_Low();
+    }
+}
+
+void LCD_Write_Cmd(uint8_t val){
+    LCD_RS_Output_Low();
+    LCD_Write_Nibble_To_Data_Pins(val>>4);
+    LCD_E_Output_High();
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    LCD_E_Output_Low();
+    LCD_Write_Nibble_To_Data_Pins(val & 0x0F);
+    LCD_E_Output_High();
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    LCD_E_Output_Low();
+}
+
+void LCD_Write_Data(uint8_t val){
+    LCD_RS_Output_High();
+    LCD_Write_Nibble_To_Data_Pins(val>>4);
+    LCD_E_Output_High();
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    LCD_E_Output_Low();
+    LCD_Write_Nibble_To_Data_Pins(val & 0x0F);
+    LCD_E_Output_High();
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    LCD_E_Output_Low();
+}
+
+void LCD_Write_String(char* str){
+    while (*str != '\0'){
+        LCD_Write_Data(*str);
+        str++;
+        _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    }
+}
+
+void LCD_Clear(void){
+    LCD_Write_Cmd(0x00);
+    LCD_Write_Cmd(0x01);
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+}
+
+void LCD_GPIO_Init(void){
+    LCD_RS_Output();
+    LCD_RW_Output();
+    LCD_E_Output();
+    LCD_D4_Output();
+    LCD_D5_Output();
+    LCD_D6_Output();
+    LCD_D7_Output();
+}
+
+void LCD_Registers_Init(void){
+    _delay((unsigned long)((200)*(8000000UL/4000.0)));
+    LCD_Write_Cmd(0x03);
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    LCD_Write_Cmd(0x02);
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    LCD_Write_Cmd(0x28);
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    LCD_Write_Cmd(0x01);
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    LCD_Write_Cmd(0x0C);
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+    LCD_Write_Cmd(0x06);
+    _delay((unsigned long)((20)*(8000000UL/4000.0)));
+}
+
+void LCD_Init(void){
+    _delay((unsigned long)((200)*(8000000UL/4000.0)));
+    LCD_GPIO_Init();
+    LCD_Registers_Init();
+    LCD_Clear();
+}

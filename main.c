@@ -5,28 +5,31 @@
  * Created on May 1, 2023, 3:20 PM
  */
 
-
+#define _XTAL_FREQ 8000000UL
 #include <xc.h>
 #include "configbits.h"
 #include "mfrc522.h"
+#include "lcd.h"
 
 
 void main(void) {
     MFRC522_Init();
-    
+    LCD_Init();
+    __delay_ms(200);
+    LCD_Write_String("RFID READY");
     
     while(1){
         uint8_t status = MFRC522_Detect_Tag();
         if(status == 1){
-            //Tag Detected
-            //LCD print "Detected"
-            //Wait 10 Seconds
-            //Clear LCD
+            LCD_Clear();
+            LCD_Write_String("CARD FOUND");
+            __delay_ms(5000);
+            __delay_ms(5000);
         }else{
-            //Do nothing
+            LCD_Clear();
         }
         
-        //Add some delay
+        __delay_ms(50);
     }
     
     return;

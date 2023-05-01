@@ -9299,24 +9299,66 @@ uint8_t MFRC522_Detect_Tag(void);
 void MFRC522_Init(void);
 # 11 "main.c" 2
 
+# 1 "./lcd.h" 1
+
+
+
+
+
+
+
+
+void LCD_RS_Output(void);
+void LCD_RS_Output_Low(void);
+void LCD_RS_Output_High(void);
+void LCD_RW_Output(void);
+void LCD_RW_Output_Low(void);
+void LCD_RW_Output_High(void);
+void LCD_E_Output(void);
+void LCD_E_Output_Low(void);
+void LCD_E_Output_High(void);
+void LCD_D4_Output(void);
+void LCD_D4_Output_Low(void);
+void LCD_D4_Output_High(void);
+void LCD_D5_Output(void);
+void LCD_D5_Output_Low(void);
+void LCD_D5_Output_High(void);
+void LCD_D6_Output(void);
+void LCD_D6_Output_Low(void);
+void LCD_D6_Output_High(void);
+void LCD_D7_Output(void);
+void LCD_D7_Output_Low(void);
+void LCD_D7_Output_High(void);
+void LCD_Write_Nibble_To_Data_Pins(uint8_t val);
+void LCD_Write_Cmd(uint8_t val);
+void LCD_Write_Data(uint8_t val);
+void LCD_Write_String(char* str);
+void LCD_Clear(void);
+void LCD_GPIO_Init(void);
+void LCD_Registers_Init(void);
+void LCD_Init(void);
+# 12 "main.c" 2
+
 
 
 void main(void) {
     MFRC522_Init();
-
+    LCD_Init();
+    _delay((unsigned long)((200)*(8000000UL/4000.0)));
+    LCD_Write_String("RFID READY");
 
     while(1){
         uint8_t status = MFRC522_Detect_Tag();
         if(status == 1){
-
-
-
-
+            LCD_Clear();
+            LCD_Write_String("CARD FOUND");
+            _delay((unsigned long)((5000)*(8000000UL/4000.0)));
+            _delay((unsigned long)((5000)*(8000000UL/4000.0)));
         }else{
-
+            LCD_Clear();
         }
 
-
+        _delay((unsigned long)((50)*(8000000UL/4000.0)));
     }
 
     return;

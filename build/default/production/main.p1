@@ -3,9 +3,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 "21 ./mfrc522.h
 [; ;./mfrc522.h: 21: void MFRC522_Init(void);
 [v _MFRC522_Init `(v ~T0 @X0 0 ef ]
-"20
+"37 ./lcd.h
+[; ;./lcd.h: 37: void LCD_Init(void);
+[v _LCD_Init `(v ~T0 @X0 0 ef ]
+[v F5704 `(v ~T0 @X0 1 tf1`ul ]
+"203 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\pic18.h
+[v __delay `JF5704 ~T0 @X0 0 e ]
+[p i __delay ]
+"33 ./lcd.h
+[; ;./lcd.h: 33: void LCD_Write_String(char* str);
+[v _LCD_Write_String `(v ~T0 @X0 0 ef1`*uc ]
+"20 ./mfrc522.h
 [; ;./mfrc522.h: 20: uint8_t MFRC522_Detect_Tag(void);
 [v _MFRC522_Detect_Tag `(uc ~T0 @X0 0 ef ]
+"34 ./lcd.h
+[; ;./lcd.h: 34: void LCD_Clear(void);
+[v _LCD_Clear `(v ~T0 @X0 0 ef ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f25k22.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f25k22.h: 54: __asm("ANSELA equ 0F38h");
 [; <" ANSELA equ 0F38h ;# ">
@@ -815,47 +828,76 @@ Version 4.0 HI-TECH Software Intermediate Code
 "66
 [p x EBTRB  =  OFF       ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"14 main.c
-[; ;main.c: 14: void main(void) {
+"15 main.c
+[; ;main.c: 15: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"15
-[; ;main.c: 15:     MFRC522_Init();
+"16
+[; ;main.c: 16:     MFRC522_Init();
 [e ( _MFRC522_Init ..  ]
+"17
+[; ;main.c: 17:     LCD_Init();
+[e ( _LCD_Init ..  ]
 "18
-[; ;main.c: 18:     while(1){
+[; ;main.c: 18:     _delay((unsigned long)((200)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"19
+[; ;main.c: 19:     LCD_Write_String("RFID READY");
+[e ( _LCD_Write_String (1 :s 1C ]
+"21
+[; ;main.c: 21:     while(1){
 [e :U 828 ]
 {
-"19
-[; ;main.c: 19:         uint8_t status = MFRC522_Detect_Tag();
+"22
+[; ;main.c: 22:         uint8_t status = MFRC522_Detect_Tag();
 [v _status `uc ~T0 @X0 1 a ]
 [e = _status ( _MFRC522_Detect_Tag ..  ]
-"20
-[; ;main.c: 20:         if(status == 1){
+"23
+[; ;main.c: 23:         if(status == 1){
 [e $ ! == -> _status `i -> 1 `i 830  ]
 {
+"24
+[; ;main.c: 24:             LCD_Clear();
+[e ( _LCD_Clear ..  ]
 "25
-[; ;main.c: 25:         }else{
+[; ;main.c: 25:             LCD_Write_String("CARD FOUND");
+[e ( _LCD_Write_String (1 :s 2C ]
+"26
+[; ;main.c: 26:             _delay((unsigned long)((5000)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 5000 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"27
+[; ;main.c: 27:             _delay((unsigned long)((5000)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 5000 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"28
+[; ;main.c: 28:         }else{
 }
 [e $U 831  ]
 [e :U 830 ]
 {
-"27
-[; ;main.c: 27:         }
+"29
+[; ;main.c: 29:             LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"30
+[; ;main.c: 30:         }
 }
 [e :U 831 ]
-"30
-[; ;main.c: 30:     }
+"32
+[; ;main.c: 32:         _delay((unsigned long)((50)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"33
+[; ;main.c: 33:     }
 }
 [e :U 827 ]
 [e $U 828  ]
 [e :U 829 ]
-"32
-[; ;main.c: 32:     return;
+"35
+[; ;main.c: 35:     return;
 [e $UE 826  ]
-"33
-[; ;main.c: 33: }
+"36
+[; ;main.c: 36: }
 [e :UE 826 ]
 }
+[a 1C 82 70 73 68 32 82 69 65 68 89 0 ]
+[a 2C 67 65 82 68 32 70 79 85 78 68 0 ]
