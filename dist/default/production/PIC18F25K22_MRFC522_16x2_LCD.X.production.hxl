@@ -10,12 +10,12 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 3h		(dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.hex)
-  600h - 101Bh		(dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.hex)
+  600h - 1023h		(dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.hex)
   200000h - 200007h		(dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.hex)
   300000h - 30000Dh		(dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.hex)
  Unused ranges:
   4h - 5FFh
-  101Ch - 1FFFFFh
+  1024h - 1FFFFFh
   200008h - 2FFFFFh
 
 ### Hex Memory Map ###
@@ -188,7 +188,8 @@
 00000FE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000FF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001010 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- --
+00001010 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001020 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- --
 ----------------------------------------------------------

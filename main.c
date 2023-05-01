@@ -24,8 +24,10 @@ void main(void) {
             LCD_Write_String("CARD FOUND");
             __delay_ms(5000);
             __delay_ms(5000);
-        }else{
             LCD_Clear();
+            LCD_Write_String("RFID READY");
+        }else{
+            
         }
         
         __delay_ms(50);

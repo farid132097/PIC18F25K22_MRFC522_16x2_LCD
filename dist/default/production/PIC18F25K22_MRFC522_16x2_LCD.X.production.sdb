@@ -170,7 +170,7 @@
 {
 "21
 [v main@status status `uc  1 a 1 63 ]
-"35
+"37
 } 0
 "299 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 [v _MFRC522_Init MFRC522_Init `(v  1 e 1 0 ]

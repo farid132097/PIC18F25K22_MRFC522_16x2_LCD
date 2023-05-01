@@ -9356,8 +9356,10 @@ void main(void) {
             LCD_Write_String("CARD FOUND");
             _delay((unsigned long)((5000)*(8000000UL/4000.0)));
             _delay((unsigned long)((5000)*(8000000UL/4000.0)));
-        }else{
             LCD_Clear();
+            LCD_Write_String("RFID READY");
+        }else{
+
         }
 
         _delay((unsigned long)((50)*(8000000UL/4000.0)));
