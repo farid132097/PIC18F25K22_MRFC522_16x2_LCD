@@ -1,0 +1,1069 @@
+
+
+Microchip MPLAB XC8 Assembler V2.40 build 20220703182018 
+                                                                                               Mon May 01 16:56:56 2023
+
+Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1 
+     1                           	processor	18F25K22
+     2                           	fnconf	rparam,??,?,0
+     3                           	pagewidth 120
+     4                           	opt	flic
+     5                           	psect	cinit,global,reloc=2,class=CODE,delta=1
+     6                           	psect	cstackCOMRAM,global,class=COMRAM,space=1,delta=1,lowdata,noexec
+     7                           	psect	text0,global,reloc=2,class=CODE,delta=1
+     8                           	psect	text1,global,reloc=2,class=CODE,delta=1
+     9                           	psect	text2,global,reloc=2,class=CODE,delta=1
+    10                           	psect	text3,global,reloc=2,class=CODE,delta=1
+    11                           	psect	text4,global,reloc=2,class=CODE,delta=1
+    12                           	psect	text5,global,reloc=2,class=CODE,delta=1
+    13                           	psect	text6,global,reloc=2,class=CODE,delta=1
+    14                           	psect	text7,global,reloc=2,class=CODE,delta=1
+    15                           	psect	text8,global,reloc=2,class=CODE,delta=1
+    16                           	psect	text9,global,reloc=2,class=CODE,delta=1
+    17                           	psect	text10,global,reloc=2,class=CODE,delta=1
+    18                           	psect	text11,global,reloc=2,class=CODE,delta=1
+    19                           	psect	intsave_regs,global,class=BIGRAM,space=1,delta=1,noexec
+    20                           	psect	rparam,global,class=COMRAM,space=1,delta=1,noexec
+    21                           	psect	idloc,global,abs,ovrld,class=IDLOC,space=5,delta=1,noexec
+    22                           	psect	config,global,abs,ovrld,class=CONFIG,space=4,delta=1,noexec
+    23   000000                     
+    24                           ; Version 2.20
+    25                           ; Generated 05/05/2020 GMT
+    26                           ; 
+    27                           ; Copyright © 2020, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    28                           ; All rights reserved.
+    29                           ; 
+    30                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    31                           ; 
+    32                           ; Redistribution and use in source and binary forms, with or without modification, are
+    33                           ; permitted provided that the following conditions are met:
+    34                           ; 
+    35                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    36                           ;        conditions and the following disclaimer.
+    37                           ; 
+    38                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    39                           ;        of conditions and the following disclaimer in the documentation and/or other
+    40                           ;        materials provided with the distribution.
+    41                           ; 
+    42                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    43                           ;        software without specific prior written permission.
+    44                           ; 
+    45                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    46                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    47                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    48                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    49                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    50                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    51                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    52                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    53                           ; 
+    54                           ; 
+    55                           ; Code-generator required, PIC18F25K22 Definitions
+    56                           ; 
+    57                           ; SFR Addresses
+    58   000000                     _ANSELB	set	3897
+    59   000000                     _ANSELC	set	3898
+    60   000000                     _TRISC	set	3988
+    61   000000                     _T0CON	set	4053
+    62   000000                     _PORTC	set	3970
+    63   000000                     _LATC	set	3979
+    64   000000                     _TRISB	set	3987
+    65   000000                     _LATB	set	3978
+    66   000000                     _TMR0	set	4054
+    67                           
+    68                           ; #config settings
+    69                           
+    70                           	psect	cinit
+    71   007FA6                     __pcinit:
+    72                           	callstack 0
+    73   007FA6                     start_initialization:
+    74                           	callstack 0
+    75   007FA6                     __initialization:
+    76                           	callstack 0
+    77   007FA6                     end_of_initialization:
+    78                           	callstack 0
+    79   007FA6                     __end_of__initialization:
+    80                           	callstack 0
+    81   007FA6  0100               	movlb	0
+    82   007FA8  EFEB  F03F         	goto	_main	;jump to C main() function
+    83                           
+    84                           	psect	cstackCOMRAM
+    85   000000                     __pcstackCOMRAM:
+    86                           	callstack 0
+    87   000000                     
+    88                           ; 1 bytes @ 0x0
+    89 ;;
+    90 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+    91 ;;
+    92 ;; *************** function _main *****************
+    93 ;; Defined at:
+    94 ;;		line 14 in file "main.c"
+    95 ;; Parameters:    Size  Location     Type
+    96 ;;		None
+    97 ;; Auto vars:     Size  Location     Type
+    98 ;;		None
+    99 ;; Return value:  Size  Location     Type
+   100 ;;                  1    wreg      void 
+   101 ;; Registers used:
+   102 ;;		wreg, status,2, status,0, cstack
+   103 ;; Tracked objects:
+   104 ;;		On entry : 0/0
+   105 ;;		On exit  : 0/0
+   106 ;;		Unchanged: 0/0
+   107 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   108 ;;      Params:         0       0       0       0       0       0       0
+   109 ;;      Locals:         0       0       0       0       0       0       0
+   110 ;;      Temps:          0       0       0       0       0       0       0
+   111 ;;      Totals:         0       0       0       0       0       0       0
+   112 ;;Total ram usage:        0 bytes
+   113 ;; Hardware stack levels required when called: 4
+   114 ;; This function calls:
+   115 ;;		_MFRC522_Init
+   116 ;; This function is called by:
+   117 ;;		Startup code after reset
+   118 ;; This function uses a non-reentrant model
+   119 ;;
+   120                           
+   121                           	psect	text0
+   122   007FD6                     __ptext0:
+   123                           	callstack 0
+   124   007FD6                     _main:
+   125                           	callstack 27
+   126   007FD6                     
+   127                           ;main.c: 15:     MFRC522_Init();
+   128   007FD6  ECD0  F03F         	call	_MFRC522_Init	;wreg free
+   129   007FDA                     l7:
+   130   007FDA  EFED  F03F         	goto	l7
+   131   007FDE  EF00  F000         	goto	start
+   132   007FE2                     __end_of_main:
+   133                           	callstack 0
+   134                           
+   135 ;; *************** function _MFRC522_Init *****************
+   136 ;; Defined at:
+   137 ;;		line 125 in file "mfrc522.c"
+   138 ;; Parameters:    Size  Location     Type
+   139 ;;		None
+   140 ;; Auto vars:     Size  Location     Type
+   141 ;;		None
+   142 ;; Return value:  Size  Location     Type
+   143 ;;                  1    wreg      void 
+   144 ;; Registers used:
+   145 ;;		wreg, status,2, status,0, cstack
+   146 ;; Tracked objects:
+   147 ;;		On entry : 0/0
+   148 ;;		On exit  : 0/0
+   149 ;;		Unchanged: 0/0
+   150 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   151 ;;      Params:         0       0       0       0       0       0       0
+   152 ;;      Locals:         0       0       0       0       0       0       0
+   153 ;;      Temps:          0       0       0       0       0       0       0
+   154 ;;      Totals:         0       0       0       0       0       0       0
+   155 ;;Total ram usage:        0 bytes
+   156 ;; Hardware stack levels used: 1
+   157 ;; Hardware stack levels required when called: 3
+   158 ;; This function calls:
+   159 ;;		_SPI_Init
+   160 ;; This function is called by:
+   161 ;;		_main
+   162 ;; This function uses a non-reentrant model
+   163 ;;
+   164                           
+   165                           	psect	text1
+   166   007FA0                     __ptext1:
+   167                           	callstack 0
+   168   007FA0                     _MFRC522_Init:
+   169                           	callstack 27
+   170   007FA0                     
+   171                           ;mfrc522.c: 126:     SPI_Init();
+   172   007FA0  ECE6  F03F         	call	_SPI_Init	;wreg free
+   173   007FA4  0012               	return		;funcret
+   174   007FA6                     __end_of_MFRC522_Init:
+   175                           	callstack 0
+   176                           
+   177 ;; *************** function _SPI_Init *****************
+   178 ;; Defined at:
+   179 ;;		line 164 in file "spi.c"
+   180 ;; Parameters:    Size  Location     Type
+   181 ;;		None
+   182 ;; Auto vars:     Size  Location     Type
+   183 ;;		None
+   184 ;; Return value:  Size  Location     Type
+   185 ;;                  1    wreg      void 
+   186 ;; Registers used:
+   187 ;;		wreg, status,2, status,0, cstack
+   188 ;; Tracked objects:
+   189 ;;		On entry : 0/0
+   190 ;;		On exit  : 0/0
+   191 ;;		Unchanged: 0/0
+   192 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   193 ;;      Params:         0       0       0       0       0       0       0
+   194 ;;      Locals:         0       0       0       0       0       0       0
+   195 ;;      Temps:          0       0       0       0       0       0       0
+   196 ;;      Totals:         0       0       0       0       0       0       0
+   197 ;;Total ram usage:        0 bytes
+   198 ;; Hardware stack levels used: 1
+   199 ;; Hardware stack levels required when called: 2
+   200 ;; This function calls:
+   201 ;;		_SPI_GPIO_Init
+   202 ;;		_SPI_Timer_Init
+   203 ;; This function is called by:
+   204 ;;		_MFRC522_Init
+   205 ;; This function uses a non-reentrant model
+   206 ;;
+   207                           
+   208                           	psect	text2
+   209   007FCC                     __ptext2:
+   210                           	callstack 0
+   211   007FCC                     _SPI_Init:
+   212                           	callstack 27
+   213   007FCC                     
+   214                           ;spi.c: 165:     SPI_GPIO_Init();
+   215   007FCC  ECF1  F03F         	call	_SPI_GPIO_Init	;wreg free
+   216   007FD0                     
+   217                           ;spi.c: 166:     SPI_Timer_Init();
+   218   007FD0  ECCD  F03F         	call	_SPI_Timer_Init	;wreg free
+   219   007FD4  0012               	return		;funcret
+   220   007FD6                     __end_of_SPI_Init:
+   221                           	callstack 0
+   222                           
+   223 ;; *************** function _SPI_Timer_Init *****************
+   224 ;; Defined at:
+   225 ;;		line 93 in file "spi.c"
+   226 ;; Parameters:    Size  Location     Type
+   227 ;;		None
+   228 ;; Auto vars:     Size  Location     Type
+   229 ;;		None
+   230 ;; Return value:  Size  Location     Type
+   231 ;;                  1    wreg      void 
+   232 ;; Registers used:
+   233 ;;		wreg, status,2
+   234 ;; Tracked objects:
+   235 ;;		On entry : 0/0
+   236 ;;		On exit  : 0/0
+   237 ;;		Unchanged: 0/0
+   238 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   239 ;;      Params:         0       0       0       0       0       0       0
+   240 ;;      Locals:         0       0       0       0       0       0       0
+   241 ;;      Temps:          0       0       0       0       0       0       0
+   242 ;;      Totals:         0       0       0       0       0       0       0
+   243 ;;Total ram usage:        0 bytes
+   244 ;; Hardware stack levels used: 1
+   245 ;; This function calls:
+   246 ;;		Nothing
+   247 ;; This function is called by:
+   248 ;;		_SPI_Init
+   249 ;; This function uses a non-reentrant model
+   250 ;;
+   251                           
+   252                           	psect	text3
+   253   007F9A                     __ptext3:
+   254                           	callstack 0
+   255   007F9A                     _SPI_Timer_Init:
+   256                           	callstack 28
+   257   007F9A                     
+   258                           ;spi.c: 94:     T0CON = (1<<7);
+   259   007F9A  0E80               	movlw	128
+   260   007F9C  6ED5               	movwf	213,c	;volatile
+   261   007F9E  0012               	return		;funcret
+   262   007FA0                     __end_of_SPI_Timer_Init:
+   263                           	callstack 0
+   264                           
+   265 ;; *************** function _SPI_GPIO_Init *****************
+   266 ;; Defined at:
+   267 ;;		line 83 in file "spi.c"
+   268 ;; Parameters:    Size  Location     Type
+   269 ;;		None
+   270 ;; Auto vars:     Size  Location     Type
+   271 ;;		None
+   272 ;; Return value:  Size  Location     Type
+   273 ;;                  1    wreg      void 
+   274 ;; Registers used:
+   275 ;;		status,2, status,0, cstack
+   276 ;; Tracked objects:
+   277 ;;		On entry : 0/0
+   278 ;;		On exit  : 0/0
+   279 ;;		Unchanged: 0/0
+   280 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   281 ;;      Params:         0       0       0       0       0       0       0
+   282 ;;      Locals:         0       0       0       0       0       0       0
+   283 ;;      Temps:          0       0       0       0       0       0       0
+   284 ;;      Totals:         0       0       0       0       0       0       0
+   285 ;;Total ram usage:        0 bytes
+   286 ;; Hardware stack levels used: 1
+   287 ;; Hardware stack levels required when called: 1
+   288 ;; This function calls:
+   289 ;;		_SPI_CS_Output
+   290 ;;		_SPI_CS_Output_High
+   291 ;;		_SPI_MISO_Input
+   292 ;;		_SPI_MOSI_Output
+   293 ;;		_SPI_MOSI_Output_Low
+   294 ;;		_SPI_SCK_Output
+   295 ;;		_SPI_SCK_Output_Low
+   296 ;; This function is called by:
+   297 ;;		_SPI_Init
+   298 ;; This function uses a non-reentrant model
+   299 ;;
+   300                           
+   301                           	psect	text4
+   302   007FE2                     __ptext4:
+   303                           	callstack 0
+   304   007FE2                     _SPI_GPIO_Init:
+   305                           	callstack 27
+   306   007FE2                     
+   307                           ;spi.c: 84:     SPI_SCK_Output();
+   308   007FE2  ECE2  F03F         	call	_SPI_SCK_Output	;wreg free
+   309                           
+   310                           ;spi.c: 85:     SPI_SCK_Output_Low();
+   311   007FE6  ECCB  F03F         	call	_SPI_SCK_Output_Low	;wreg free
+   312                           
+   313                           ;spi.c: 86:     SPI_MISO_Input();
+   314   007FEA  ECDA  F03F         	call	_SPI_MISO_Input	;wreg free
+   315                           
+   316                           ;spi.c: 87:     SPI_MOSI_Output();
+   317   007FEE  ECDE  F03F         	call	_SPI_MOSI_Output	;wreg free
+   318                           
+   319                           ;spi.c: 88:     SPI_MOSI_Output_Low();
+   320   007FF2  ECC9  F03F         	call	_SPI_MOSI_Output_Low	;wreg free
+   321                           
+   322                           ;spi.c: 89:     SPI_CS_Output();
+   323   007FF6  ECD6  F03F         	call	_SPI_CS_Output	;wreg free
+   324                           
+   325                           ;spi.c: 90:     SPI_CS_Output_High();
+   326   007FFA  ECC7  F03F         	call	_SPI_CS_Output_High	;wreg free
+   327   007FFE  0012               	return		;funcret
+   328   008000                     __end_of_SPI_GPIO_Init:
+   329                           	callstack 0
+   330                           
+   331 ;; *************** function _SPI_SCK_Output_Low *****************
+   332 ;; Defined at:
+   333 ;;		line 36 in file "spi.c"
+   334 ;; Parameters:    Size  Location     Type
+   335 ;;		None
+   336 ;; Auto vars:     Size  Location     Type
+   337 ;;		None
+   338 ;; Return value:  Size  Location     Type
+   339 ;;                  1    wreg      void 
+   340 ;; Registers used:
+   341 ;;		status,2, status,0
+   342 ;; Tracked objects:
+   343 ;;		On entry : 0/0
+   344 ;;		On exit  : 0/0
+   345 ;;		Unchanged: 0/0
+   346 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   347 ;;      Params:         0       0       0       0       0       0       0
+   348 ;;      Locals:         0       0       0       0       0       0       0
+   349 ;;      Temps:          0       0       0       0       0       0       0
+   350 ;;      Totals:         0       0       0       0       0       0       0
+   351 ;;Total ram usage:        0 bytes
+   352 ;; Hardware stack levels used: 1
+   353 ;; This function calls:
+   354 ;;		Nothing
+   355 ;; This function is called by:
+   356 ;;		_SPI_GPIO_Init
+   357 ;;		_SPI_Transfer_Byte_MSB_First
+   358 ;;		_SPI_Transfer_Byte_LSB_First
+   359 ;; This function uses a non-reentrant model
+   360 ;;
+   361                           
+   362                           	psect	text5
+   363   007F96                     __ptext5:
+   364                           	callstack 0
+   365   007F96                     _SPI_SCK_Output_Low:
+   366                           	callstack 27
+   367   007F96                     
+   368                           ;spi.c: 37:     LATC&=~(1<<0x03U);
+   369   007F96  968B               	bcf	139,3,c	;volatile
+   370   007F98  0012               	return		;funcret
+   371   007F9A                     __end_of_SPI_SCK_Output_Low:
+   372                           	callstack 0
+   373                           
+   374 ;; *************** function _SPI_SCK_Output *****************
+   375 ;; Defined at:
+   376 ;;		line 31 in file "spi.c"
+   377 ;; Parameters:    Size  Location     Type
+   378 ;;		None
+   379 ;; Auto vars:     Size  Location     Type
+   380 ;;		None
+   381 ;; Return value:  Size  Location     Type
+   382 ;;                  1    wreg      void 
+   383 ;; Registers used:
+   384 ;;		status,2, status,0
+   385 ;; Tracked objects:
+   386 ;;		On entry : 0/0
+   387 ;;		On exit  : 0/0
+   388 ;;		Unchanged: 0/0
+   389 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   390 ;;      Params:         0       0       0       0       0       0       0
+   391 ;;      Locals:         0       0       0       0       0       0       0
+   392 ;;      Temps:          0       0       0       0       0       0       0
+   393 ;;      Totals:         0       0       0       0       0       0       0
+   394 ;;Total ram usage:        0 bytes
+   395 ;; Hardware stack levels used: 1
+   396 ;; This function calls:
+   397 ;;		Nothing
+   398 ;; This function is called by:
+   399 ;;		_SPI_GPIO_Init
+   400 ;; This function uses a non-reentrant model
+   401 ;;
+   402                           
+   403                           	psect	text6
+   404   007FC4                     __ptext6:
+   405                           	callstack 0
+   406   007FC4                     _SPI_SCK_Output:
+   407                           	callstack 27
+   408   007FC4                     
+   409                           ;spi.c: 32:     TRISC&=~(1<<0x03U);
+   410   007FC4  9694               	bcf	148,3,c	;volatile
+   411                           
+   412                           ;spi.c: 33:     ANSELC&=~(1<<0x03U);
+   413   007FC6  010F               	movlb	15	; () banked
+   414   007FC8  973A               	bcf	58,3,b	;volatile
+   415   007FCA                     
+   416                           ; BSR set to: 15
+   417   007FCA  0012               	return		;funcret
+   418   007FCC                     __end_of_SPI_SCK_Output:
+   419                           	callstack 0
+   420                           
+   421 ;; *************** function _SPI_MOSI_Output_Low *****************
+   422 ;; Defined at:
+   423 ;;		line 62 in file "spi.c"
+   424 ;; Parameters:    Size  Location     Type
+   425 ;;		None
+   426 ;; Auto vars:     Size  Location     Type
+   427 ;;		None
+   428 ;; Return value:  Size  Location     Type
+   429 ;;                  1    wreg      void 
+   430 ;; Registers used:
+   431 ;;		status,2, status,0
+   432 ;; Tracked objects:
+   433 ;;		On entry : 0/0
+   434 ;;		On exit  : 0/0
+   435 ;;		Unchanged: 0/0
+   436 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   437 ;;      Params:         0       0       0       0       0       0       0
+   438 ;;      Locals:         0       0       0       0       0       0       0
+   439 ;;      Temps:          0       0       0       0       0       0       0
+   440 ;;      Totals:         0       0       0       0       0       0       0
+   441 ;;Total ram usage:        0 bytes
+   442 ;; Hardware stack levels used: 1
+   443 ;; This function calls:
+   444 ;;		Nothing
+   445 ;; This function is called by:
+   446 ;;		_SPI_GPIO_Init
+   447 ;;		_SPI_Transfer_Byte_MSB_First
+   448 ;;		_SPI_Transfer_Byte_LSB_First
+   449 ;; This function uses a non-reentrant model
+   450 ;;
+   451                           
+   452                           	psect	text7
+   453   007F92                     __ptext7:
+   454                           	callstack 0
+   455   007F92                     _SPI_MOSI_Output_Low:
+   456                           	callstack 27
+   457   007F92                     
+   458                           ;spi.c: 63:     LATC&=~(1<<0x05U);
+   459   007F92  9A8B               	bcf	139,5,c	;volatile
+   460   007F94  0012               	return		;funcret
+   461   007F96                     __end_of_SPI_MOSI_Output_Low:
+   462                           	callstack 0
+   463                           
+   464 ;; *************** function _SPI_MOSI_Output *****************
+   465 ;; Defined at:
+   466 ;;		line 57 in file "spi.c"
+   467 ;; Parameters:    Size  Location     Type
+   468 ;;		None
+   469 ;; Auto vars:     Size  Location     Type
+   470 ;;		None
+   471 ;; Return value:  Size  Location     Type
+   472 ;;                  1    wreg      void 
+   473 ;; Registers used:
+   474 ;;		status,2, status,0
+   475 ;; Tracked objects:
+   476 ;;		On entry : 0/0
+   477 ;;		On exit  : 0/0
+   478 ;;		Unchanged: 0/0
+   479 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   480 ;;      Params:         0       0       0       0       0       0       0
+   481 ;;      Locals:         0       0       0       0       0       0       0
+   482 ;;      Temps:          0       0       0       0       0       0       0
+   483 ;;      Totals:         0       0       0       0       0       0       0
+   484 ;;Total ram usage:        0 bytes
+   485 ;; Hardware stack levels used: 1
+   486 ;; This function calls:
+   487 ;;		Nothing
+   488 ;; This function is called by:
+   489 ;;		_SPI_GPIO_Init
+   490 ;; This function uses a non-reentrant model
+   491 ;;
+   492                           
+   493                           	psect	text8
+   494   007FBC                     __ptext8:
+   495                           	callstack 0
+   496   007FBC                     _SPI_MOSI_Output:
+   497                           	callstack 27
+   498   007FBC                     
+   499                           ;spi.c: 58:     TRISC&=~(1<<0x05U);
+   500   007FBC  9A94               	bcf	148,5,c	;volatile
+   501                           
+   502                           ;spi.c: 59:     ANSELC&=~(1<<0x05U);
+   503   007FBE  010F               	movlb	15	; () banked
+   504   007FC0  9B3A               	bcf	58,5,b	;volatile
+   505   007FC2                     
+   506                           ; BSR set to: 15
+   507   007FC2  0012               	return		;funcret
+   508   007FC4                     __end_of_SPI_MOSI_Output:
+   509                           	callstack 0
+   510                           
+   511 ;; *************** function _SPI_MISO_Input *****************
+   512 ;; Defined at:
+   513 ;;		line 44 in file "spi.c"
+   514 ;; Parameters:    Size  Location     Type
+   515 ;;		None
+   516 ;; Auto vars:     Size  Location     Type
+   517 ;;		None
+   518 ;; Return value:  Size  Location     Type
+   519 ;;                  1    wreg      void 
+   520 ;; Registers used:
+   521 ;;		status,2, status,0
+   522 ;; Tracked objects:
+   523 ;;		On entry : 0/0
+   524 ;;		On exit  : 0/0
+   525 ;;		Unchanged: 0/0
+   526 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   527 ;;      Params:         0       0       0       0       0       0       0
+   528 ;;      Locals:         0       0       0       0       0       0       0
+   529 ;;      Temps:          0       0       0       0       0       0       0
+   530 ;;      Totals:         0       0       0       0       0       0       0
+   531 ;;Total ram usage:        0 bytes
+   532 ;; Hardware stack levels used: 1
+   533 ;; This function calls:
+   534 ;;		Nothing
+   535 ;; This function is called by:
+   536 ;;		_SPI_GPIO_Init
+   537 ;; This function uses a non-reentrant model
+   538 ;;
+   539                           
+   540                           	psect	text9
+   541   007FB4                     __ptext9:
+   542                           	callstack 0
+   543   007FB4                     _SPI_MISO_Input:
+   544                           	callstack 27
+   545   007FB4                     
+   546                           ;spi.c: 45:     TRISC|=(1<<0x04U);
+   547   007FB4  8894               	bsf	148,4,c	;volatile
+   548                           
+   549                           ;spi.c: 46:     ANSELC&=~(1<<0x04U);
+   550   007FB6  010F               	movlb	15	; () banked
+   551   007FB8  993A               	bcf	58,4,b	;volatile
+   552   007FBA                     
+   553                           ; BSR set to: 15
+   554   007FBA  0012               	return		;funcret
+   555   007FBC                     __end_of_SPI_MISO_Input:
+   556                           	callstack 0
+   557                           
+   558 ;; *************** function _SPI_CS_Output_High *****************
+   559 ;; Defined at:
+   560 ;;		line 79 in file "spi.c"
+   561 ;; Parameters:    Size  Location     Type
+   562 ;;		None
+   563 ;; Auto vars:     Size  Location     Type
+   564 ;;		None
+   565 ;; Return value:  Size  Location     Type
+   566 ;;                  1    wreg      void 
+   567 ;; Registers used:
+   568 ;;		status,2, status,0
+   569 ;; Tracked objects:
+   570 ;;		On entry : 0/0
+   571 ;;		On exit  : 0/0
+   572 ;;		Unchanged: 0/0
+   573 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   574 ;;      Params:         0       0       0       0       0       0       0
+   575 ;;      Locals:         0       0       0       0       0       0       0
+   576 ;;      Temps:          0       0       0       0       0       0       0
+   577 ;;      Totals:         0       0       0       0       0       0       0
+   578 ;;Total ram usage:        0 bytes
+   579 ;; Hardware stack levels used: 1
+   580 ;; This function calls:
+   581 ;;		Nothing
+   582 ;; This function is called by:
+   583 ;;		_SPI_GPIO_Init
+   584 ;;		_SPI_Transfer
+   585 ;; This function uses a non-reentrant model
+   586 ;;
+   587                           
+   588                           	psect	text10
+   589   007F8E                     __ptext10:
+   590                           	callstack 0
+   591   007F8E                     _SPI_CS_Output_High:
+   592                           	callstack 27
+   593   007F8E                     
+   594                           ;spi.c: 80:     LATB|=(1<<0x02U);
+   595   007F8E  848A               	bsf	138,2,c	;volatile
+   596   007F90  0012               	return		;funcret
+   597   007F92                     __end_of_SPI_CS_Output_High:
+   598                           	callstack 0
+   599                           
+   600 ;; *************** function _SPI_CS_Output *****************
+   601 ;; Defined at:
+   602 ;;		line 70 in file "spi.c"
+   603 ;; Parameters:    Size  Location     Type
+   604 ;;		None
+   605 ;; Auto vars:     Size  Location     Type
+   606 ;;		None
+   607 ;; Return value:  Size  Location     Type
+   608 ;;                  1    wreg      void 
+   609 ;; Registers used:
+   610 ;;		status,2, status,0
+   611 ;; Tracked objects:
+   612 ;;		On entry : 0/0
+   613 ;;		On exit  : 0/0
+   614 ;;		Unchanged: 0/0
+   615 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   616 ;;      Params:         0       0       0       0       0       0       0
+   617 ;;      Locals:         0       0       0       0       0       0       0
+   618 ;;      Temps:          0       0       0       0       0       0       0
+   619 ;;      Totals:         0       0       0       0       0       0       0
+   620 ;;Total ram usage:        0 bytes
+   621 ;; Hardware stack levels used: 1
+   622 ;; This function calls:
+   623 ;;		Nothing
+   624 ;; This function is called by:
+   625 ;;		_SPI_GPIO_Init
+   626 ;; This function uses a non-reentrant model
+   627 ;;
+   628                           
+   629                           	psect	text11
+   630   007FAC                     __ptext11:
+   631                           	callstack 0
+   632   007FAC                     _SPI_CS_Output:
+   633                           	callstack 27
+   634   007FAC                     
+   635                           ;spi.c: 71:     TRISB&=~(1<<0x02U);
+   636   007FAC  9493               	bcf	147,2,c	;volatile
+   637                           
+   638                           ;spi.c: 72:     ANSELB&=~(1<<0x02U);
+   639   007FAE  010F               	movlb	15	; () banked
+   640   007FB0  9539               	bcf	57,2,b	;volatile
+   641   007FB2                     
+   642                           ; BSR set to: 15
+   643   007FB2  0012               	return		;funcret
+   644   007FB4                     __end_of_SPI_CS_Output:
+   645                           	callstack 0
+   646   000000                     
+   647                           	psect	rparam
+   648   000000                     
+   649                           	psect	idloc
+   650                           
+   651                           ;Config register IDLOC0 @ 0x200000
+   652                           ;	unspecified, using default values
+   653   200000                     	org	2097152
+   654   200000  FF                 	db	255
+   655                           
+   656                           ;Config register IDLOC1 @ 0x200001
+   657                           ;	unspecified, using default values
+   658   200001                     	org	2097153
+   659   200001  FF                 	db	255
+   660                           
+   661                           ;Config register IDLOC2 @ 0x200002
+   662                           ;	unspecified, using default values
+   663   200002                     	org	2097154
+   664   200002  FF                 	db	255
+   665                           
+   666                           ;Config register IDLOC3 @ 0x200003
+   667                           ;	unspecified, using default values
+   668   200003                     	org	2097155
+   669   200003  FF                 	db	255
+   670                           
+   671                           ;Config register IDLOC4 @ 0x200004
+   672                           ;	unspecified, using default values
+   673   200004                     	org	2097156
+   674   200004  FF                 	db	255
+   675                           
+   676                           ;Config register IDLOC5 @ 0x200005
+   677                           ;	unspecified, using default values
+   678   200005                     	org	2097157
+   679   200005  FF                 	db	255
+   680                           
+   681                           ;Config register IDLOC6 @ 0x200006
+   682                           ;	unspecified, using default values
+   683   200006                     	org	2097158
+   684   200006  FF                 	db	255
+   685                           
+   686                           ;Config register IDLOC7 @ 0x200007
+   687                           ;	unspecified, using default values
+   688   200007                     	org	2097159
+   689   200007  FF                 	db	255
+   690                           
+   691                           	psect	config
+   692                           
+   693                           ; Padding undefined space
+   694   300000                     	org	3145728
+   695   300000  FF                 	db	255
+   696                           
+   697                           ;Config register CONFIG1H @ 0x300001
+   698                           ;	Oscillator Selection bits
+   699                           ;	FOSC = INTIO67, Internal oscillator block
+   700                           ;	4X PLL Enable
+   701                           ;	PLLCFG = OFF, Oscillator used directly
+   702                           ;	Primary clock enable bit
+   703                           ;	PRICLKEN = ON, Primary clock enabled
+   704                           ;	Fail-Safe Clock Monitor Enable bit
+   705                           ;	FCMEN = OFF, Fail-Safe Clock Monitor disabled
+   706                           ;	Internal/External Oscillator Switchover bit
+   707                           ;	IESO = OFF, Oscillator Switchover mode disabled
+   708   300001                     	org	3145729
+   709   300001  28                 	db	40
+   710                           
+   711                           ;Config register CONFIG2L @ 0x300002
+   712                           ;	Power-up Timer Enable bit
+   713                           ;	PWRTEN = OFF, Power up timer disabled
+   714                           ;	Brown-out Reset Enable bits
+   715                           ;	BOREN = SBORDIS, Brown-out Reset enabled in hardware only (SBOREN is disabled)
+   716                           ;	Brown Out Reset Voltage bits
+   717                           ;	BORV = 190, VBOR set to 1.90 V nominal
+   718   300002                     	org	3145730
+   719   300002  1F                 	db	31
+   720                           
+   721                           ;Config register CONFIG2H @ 0x300003
+   722                           ;	Watchdog Timer Enable bits
+   723                           ;	WDTEN = OFF, Watch dog timer is always disabled. SWDTEN has no effect.
+   724                           ;	Watchdog Timer Postscale Select bits
+   725                           ;	WDTPS = 32768, 1:32768
+   726   300003                     	org	3145731
+   727   300003  3C                 	db	60
+   728                           
+   729                           ; Padding undefined space
+   730   300004                     	org	3145732
+   731   300004  FF                 	db	255
+   732                           
+   733                           ;Config register CONFIG3H @ 0x300005
+   734                           ;	CCP2 MUX bit
+   735                           ;	CCP2MX = PORTC1, CCP2 input/output is multiplexed with RC1
+   736                           ;	PORTB A/D Enable bit
+   737                           ;	PBADEN = ON, PORTB<5:0> pins are configured as analog input channels on Reset
+   738                           ;	P3A/CCP3 Mux bit
+   739                           ;	CCP3MX = PORTB5, P3A/CCP3 input/output is multiplexed with RB5
+   740                           ;	HFINTOSC Fast Start-up
+   741                           ;	HFOFST = ON, HFINTOSC output and ready status are not delayed by the oscillator stable
+      +                           status
+   742                           ;	Timer3 Clock input mux bit
+   743                           ;	T3CMX = PORTC0, T3CKI is on RC0
+   744                           ;	ECCP2 B output mux bit
+   745                           ;	P2BMX = PORTB5, P2B is on RB5
+   746                           ;	MCLR Pin Enable bit
+   747                           ;	MCLRE = EXTMCLR, MCLR pin enabled, RE3 input pin disabled
+   748   300005                     	org	3145733
+   749   300005  BF                 	db	191
+   750                           
+   751                           ;Config register CONFIG4L @ 0x300006
+   752                           ;	Stack Full/Underflow Reset Enable bit
+   753                           ;	STVREN = ON, Stack full/underflow will cause Reset
+   754                           ;	Single-Supply ICSP Enable bit
+   755                           ;	LVP = ON, Single-Supply ICSP enabled if MCLRE is also 1
+   756                           ;	Extended Instruction Set Enable bit
+   757                           ;	XINST = OFF, Instruction set extension and Indexed Addressing mode disabled (Legacy mo
+      +                          de)
+   758                           ;	Background Debug
+   759                           ;	DEBUG = 0x1, unprogrammed default
+   760   300006                     	org	3145734
+   761   300006  85                 	db	133
+   762                           
+   763                           ; Padding undefined space
+   764   300007                     	org	3145735
+   765   300007  FF                 	db	255
+   766                           
+   767                           ;Config register CONFIG5L @ 0x300008
+   768                           ;	Code Protection Block 0
+   769                           ;	CP0 = OFF, Block 0 (000800-001FFFh) not code-protected
+   770                           ;	Code Protection Block 1
+   771                           ;	CP1 = OFF, Block 1 (002000-003FFFh) not code-protected
+   772                           ;	Code Protection Block 2
+   773                           ;	CP2 = OFF, Block 2 (004000-005FFFh) not code-protected
+   774                           ;	Code Protection Block 3
+   775                           ;	CP3 = OFF, Block 3 (006000-007FFFh) not code-protected
+   776   300008                     	org	3145736
+   777   300008  0F                 	db	15
+   778                           
+   779                           ;Config register CONFIG5H @ 0x300009
+   780                           ;	Boot Block Code Protection bit
+   781                           ;	CPB = OFF, Boot block (000000-0007FFh) not code-protected
+   782                           ;	Data EEPROM Code Protection bit
+   783                           ;	CPD = OFF, Data EEPROM not code-protected
+   784   300009                     	org	3145737
+   785   300009  C0                 	db	192
+   786                           
+   787                           ;Config register CONFIG6L @ 0x30000A
+   788                           ;	Write Protection Block 0
+   789                           ;	WRT0 = OFF, Block 0 (000800-001FFFh) not write-protected
+   790                           ;	Write Protection Block 1
+   791                           ;	WRT1 = OFF, Block 1 (002000-003FFFh) not write-protected
+   792                           ;	Write Protection Block 2
+   793                           ;	WRT2 = OFF, Block 2 (004000-005FFFh) not write-protected
+   794                           ;	Write Protection Block 3
+   795                           ;	WRT3 = OFF, Block 3 (006000-007FFFh) not write-protected
+   796   30000A                     	org	3145738
+   797   30000A  0F                 	db	15
+   798                           
+   799                           ;Config register CONFIG6H @ 0x30000B
+   800                           ;	Configuration Register Write Protection bit
+   801                           ;	WRTC = OFF, Configuration registers (300000-3000FFh) not write-protected
+   802                           ;	Boot Block Write Protection bit
+   803                           ;	WRTB = OFF, Boot Block (000000-0007FFh) not write-protected
+   804                           ;	Data EEPROM Write Protection bit
+   805                           ;	WRTD = OFF, Data EEPROM not write-protected
+   806   30000B                     	org	3145739
+   807   30000B  E0                 	db	224
+   808                           
+   809                           ;Config register CONFIG7L @ 0x30000C
+   810                           ;	Table Read Protection Block 0
+   811                           ;	EBTR0 = OFF, Block 0 (000800-001FFFh) not protected from table reads executed in other
+      +                           blocks
+   812                           ;	Table Read Protection Block 1
+   813                           ;	EBTR1 = OFF, Block 1 (002000-003FFFh) not protected from table reads executed in other
+      +                           blocks
+   814                           ;	Table Read Protection Block 2
+   815                           ;	EBTR2 = OFF, Block 2 (004000-005FFFh) not protected from table reads executed in other
+      +                           blocks
+   816                           ;	Table Read Protection Block 3
+   817                           ;	EBTR3 = OFF, Block 3 (006000-007FFFh) not protected from table reads executed in other
+      +                           blocks
+   818   30000C                     	org	3145740
+   819   30000C  0F                 	db	15
+   820                           
+   821                           ;Config register CONFIG7H @ 0x30000D
+   822                           ;	Boot Block Table Read Protection bit
+   823                           ;	EBTRB = OFF, Boot Block (000000-0007FFh) not protected from table reads executed in ot
+      +                          her blocks
+   824   30000D                     	org	3145741
+   825   30000D  40                 	db	64
+   826                           tosu	equ	0xFFF
+   827                           tosh	equ	0xFFE
+   828                           tosl	equ	0xFFD
+   829                           stkptr	equ	0xFFC
+   830                           pclatu	equ	0xFFB
+   831                           pclath	equ	0xFFA
+   832                           pcl	equ	0xFF9
+   833                           tblptru	equ	0xFF8
+   834                           tblptrh	equ	0xFF7
+   835                           tblptrl	equ	0xFF6
+   836                           tablat	equ	0xFF5
+   837                           prodh	equ	0xFF4
+   838                           prodl	equ	0xFF3
+   839                           indf0	equ	0xFEF
+   840                           postinc0	equ	0xFEE
+   841                           postdec0	equ	0xFED
+   842                           preinc0	equ	0xFEC
+   843                           plusw0	equ	0xFEB
+   844                           fsr0h	equ	0xFEA
+   845                           fsr0l	equ	0xFE9
+   846                           wreg	equ	0xFE8
+   847                           indf1	equ	0xFE7
+   848                           postinc1	equ	0xFE6
+   849                           postdec1	equ	0xFE5
+   850                           preinc1	equ	0xFE4
+   851                           plusw1	equ	0xFE3
+   852                           fsr1h	equ	0xFE2
+   853                           fsr1l	equ	0xFE1
+   854                           bsr	equ	0xFE0
+   855                           indf2	equ	0xFDF
+   856                           postinc2	equ	0xFDE
+   857                           postdec2	equ	0xFDD
+   858                           preinc2	equ	0xFDC
+   859                           plusw2	equ	0xFDB
+   860                           fsr2h	equ	0xFDA
+   861                           fsr2l	equ	0xFD9
+   862                           status	equ	0xFD8
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         0
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMRAM           95      0       0
+    BANK0           160      0       0
+    BANK1           256      0       0
+    BANK2           256      0       0
+    BANK3           256      0       0
+    BANK4           256      0       0
+    BANK5           256      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMRAM
+
+    None.
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Critical Paths under _main in BANK5
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 0     0      0       0
+                       _MFRC522_Init
+ ---------------------------------------------------------------------------------
+ (1) _MFRC522_Init                                         0     0      0       0
+                           _SPI_Init
+ ---------------------------------------------------------------------------------
+ (2) _SPI_Init                                             0     0      0       0
+                      _SPI_GPIO_Init
+                     _SPI_Timer_Init
+ ---------------------------------------------------------------------------------
+ (3) _SPI_Timer_Init                                       0     0      0       0
+ ---------------------------------------------------------------------------------
+ (3) _SPI_GPIO_Init                                        0     0      0       0
+                      _SPI_CS_Output
+                 _SPI_CS_Output_High
+                     _SPI_MISO_Input
+                    _SPI_MOSI_Output
+                _SPI_MOSI_Output_Low
+                     _SPI_SCK_Output
+                 _SPI_SCK_Output_Low
+ ---------------------------------------------------------------------------------
+ (4) _SPI_SCK_Output_Low                                   0     0      0       0
+ ---------------------------------------------------------------------------------
+ (4) _SPI_SCK_Output                                       0     0      0       0
+ ---------------------------------------------------------------------------------
+ (4) _SPI_MOSI_Output_Low                                  0     0      0       0
+ ---------------------------------------------------------------------------------
+ (4) _SPI_MOSI_Output                                      0     0      0       0
+ ---------------------------------------------------------------------------------
+ (4) _SPI_MISO_Input                                       0     0      0       0
+ ---------------------------------------------------------------------------------
+ (4) _SPI_CS_Output_High                                   0     0      0       0
+ ---------------------------------------------------------------------------------
+ (4) _SPI_CS_Output                                        0     0      0       0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 4
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _MFRC522_Init
+     _SPI_Init
+       _SPI_GPIO_Init
+         _SPI_CS_Output
+         _SPI_CS_Output_High
+         _SPI_MISO_Input
+         _SPI_MOSI_Output
+         _SPI_MOSI_Output_Low
+         _SPI_SCK_Output
+         _SPI_SCK_Output_Low
+       _SPI_Timer_Init
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMRAM           5F      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+COMRAM              5F      0       0       1        0.0%
+STACK                0      0       0       2        0.0%
+BITBANK0            A0      0       0       3        0.0%
+BANK0               A0      0       0       4        0.0%
+BITBANK1           100      0       0       5        0.0%
+BANK1              100      0       0       6        0.0%
+BITBANK2           100      0       0       7        0.0%
+BANK2              100      0       0       8        0.0%
+BITBANK3           100      0       0       9        0.0%
+BANK3              100      0       0      10        0.0%
+BITBANK4           100      0       0      11        0.0%
+BANK4              100      0       0      12        0.0%
+BITBANK5           100      0       0      13        0.0%
+BANK5              100      0       0      14        0.0%
+BITBIGSFRhh         28      0       0      15        0.0%
+BITBIGSFRhl         40      0       0      16        0.0%
+BITBIGSFRlhh         7      0       0      17        0.0%
+BITBIGSFRlhlh        7      0       0      18        0.0%
+BITBIGSFRlhll       47      0       0      19        0.0%
+BITBIGSFRll          1      0       0      20        0.0%
+ABS                  0      0       0      21        0.0%
+BIGRAM             5FF      0       0      22        0.0%
+DATA                 0      0       0      23        0.0%
+BIGSFR               0      0       0     200        0.0%
+BITSFR_1             0      0       0     200        0.0%
+SFR_1                0      0       0     200        0.0%
+BITSFR               0      0       0     200        0.0%
+SFR                  0      0       0     200        0.0%
+
+
+Microchip Technology PIC18 Macro Assembler V2.40 build 20220703182018 
+Symbol Table                                                                                   Mon May 01 16:56:56 2023
+
+                          l7 7FDA                            l8 7FDA                           l31 7FCA  
+                         l40 7FBA                           l34 7F98                           l51 7F94  
+                         l63 7F90                           l48 7FC2                           l57 7FB2  
+                         l66 7FFE                           l69 7F9E                          l104 7FD4  
+                        l117 7FA4                          l801 7F92                          l803 7FAC  
+                        l805 7F8E                          l823 7FE2                          l825 7F9A  
+                        l793 7FC4                          l881 7FD0                          l795 7F96  
+                        l883 7FA0                          l797 7FB4                          l799 7FBC  
+                        l879 7FCC                          l897 7FD6           _SPI_SCK_Output_Low 7F96  
+             ??_MFRC522_Init 0000          ?_SPI_SCK_Output_Low 0000                         _LATB 000F8A  
+                       _LATC 000F8B                         _TMR0 000FD6                         _main 7FD6  
+                       start 0000              ??_SPI_GPIO_Init 0000                 ___param_bank 000000  
+             _SPI_Timer_Init 7F9A         ??_SPI_SCK_Output_Low 0000              ??_SPI_CS_Output 0000  
+                      ?_main 0000                        _T0CON 000FD5                        _PORTC 000F82  
+                      _TRISB 000F93                        _TRISC 000F94             __end_of_SPI_Init 7FD6  
+     __end_of_SPI_Timer_Init 7FA0              __initialization 7FA6                 __end_of_main 7FE2  
+                     ??_main 0000                __activetblptr 000000             ??_SPI_MISO_Input 0000  
+                     _ANSELB 000F39                       _ANSELC 000F3A             ??_SPI_SCK_Output 0000  
+            ?_SPI_Timer_Init 0000         __end_of_MFRC522_Init 7FA6                       isa$std 000001  
+__end_of_SPI_MOSI_Output_Low 7F96                   __accesstop 0060      __end_of__initialization 7FA6  
+              ___rparam_used 000001               __pcstackCOMRAM 0000                    ?_SPI_Init 0000  
+                 ??_SPI_Init 0000   __end_of_SPI_CS_Output_High 7F92            ??_SPI_MOSI_Output 0000  
+                    __Hparam 0000                      __Lparam 0000        __end_of_SPI_GPIO_Init 8000  
+                    __pcinit 7FA6                      __ramtop 0600                      __ptext0 7FD6  
+                    __ptext1 7FA0                      __ptext2 7FCC                      __ptext3 7F9A  
+                    __ptext4 7FE2                      __ptext5 7F96                      __ptext6 7FC4  
+                    __ptext7 7F92                      __ptext8 7FBC                      __ptext9 7FB4  
+      __end_of_SPI_CS_Output 7FB4                 _MFRC522_Init 7FA0         end_of_initialization 7FA6  
+           ??_SPI_Timer_Init 0000          start_initialization 7FA6              _SPI_MOSI_Output 7FBC  
+         _SPI_CS_Output_High 7F8E          ?_SPI_CS_Output_High 0000         ??_SPI_CS_Output_High 0000  
+    __end_of_SPI_MOSI_Output 7FC4   __end_of_SPI_SCK_Output_Low 7F9A                     _SPI_Init 7FCC  
+             _SPI_MISO_Input 7FB4                     __Hrparam 0000                     __Lrparam 0000  
+             _SPI_SCK_Output 7FC4          _SPI_MOSI_Output_Low 7F92                     __ptext10 7F8E  
+                   __ptext11 7FAC       __end_of_SPI_MISO_Input 7FBC         ?_SPI_MOSI_Output_Low 0000  
+           ?_SPI_MOSI_Output 0000                     isa$xinst 000000                _SPI_GPIO_Init 7FE2  
+     __end_of_SPI_SCK_Output 7FCC                _SPI_CS_Output 7FAC              ?_SPI_MISO_Input 0000  
+      ??_SPI_MOSI_Output_Low 0000               ?_SPI_GPIO_Init 0000              ?_SPI_SCK_Output 0000  
+             ?_SPI_CS_Output 0000                ?_MFRC522_Init 0000  

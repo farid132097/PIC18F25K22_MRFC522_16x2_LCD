@@ -1,0 +1,147 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F25K22 ]
+[d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"14 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"125 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+[v _MFRC522_Init MFRC522_Init `(v  1 e 1 0 ]
+"31 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+[v _SPI_SCK_Output SPI_SCK_Output `(v  1 e 1 0 ]
+"36
+[v _SPI_SCK_Output_Low SPI_SCK_Output_Low `(v  1 e 1 0 ]
+"40
+[v _SPI_SCK_Output_High SPI_SCK_Output_High `(v  1 e 1 0 ]
+"44
+[v _SPI_MISO_Input SPI_MISO_Input `(v  1 e 1 0 ]
+"49
+[v _SPI_MISO_State SPI_MISO_State `(uc  1 e 1 0 ]
+"57
+[v _SPI_MOSI_Output SPI_MOSI_Output `(v  1 e 1 0 ]
+"62
+[v _SPI_MOSI_Output_Low SPI_MOSI_Output_Low `(v  1 e 1 0 ]
+"66
+[v _SPI_MOSI_Output_High SPI_MOSI_Output_High `(v  1 e 1 0 ]
+"70
+[v _SPI_CS_Output SPI_CS_Output `(v  1 e 1 0 ]
+"75
+[v _SPI_CS_Output_Low SPI_CS_Output_Low `(v  1 e 1 0 ]
+"79
+[v _SPI_CS_Output_High SPI_CS_Output_High `(v  1 e 1 0 ]
+"83
+[v _SPI_GPIO_Init SPI_GPIO_Init `(v  1 e 1 0 ]
+"93
+[v _SPI_Timer_Init SPI_Timer_Init `(v  1 e 1 0 ]
+"97
+[v _SPI_Timer_Wait_One_Bit_Time SPI_Timer_Wait_One_Bit_Time `(v  1 e 1 0 ]
+"102
+[v _SPI_Timer_Wait_Half_Bit_Time SPI_Timer_Wait_Half_Bit_Time `(v  1 e 1 0 ]
+"107
+[v _SPI_Transfer_Byte_MSB_First SPI_Transfer_Byte_MSB_First `(uc  1 e 1 0 ]
+"152
+[v _SPI_Transfer SPI_Transfer `(v  1 e 1 0 ]
+"164
+[v _SPI_Init SPI_Init `(v  1 e 1 0 ]
+"97 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f25k22.h
+[v _ANSELB ANSELB `VEuc  1 e 1 @3897 ]
+"147
+[v _ANSELC ANSELC `VEuc  1 e 1 @3898 ]
+"6838
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"7356
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"7468
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"7802
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"8024
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"15298
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"15368
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"14 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"23
+} 0
+"125 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+[v _MFRC522_Init MFRC522_Init `(v  1 e 1 0 ]
+{
+"127
+} 0
+"164 D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+[v _SPI_Init SPI_Init `(v  1 e 1 0 ]
+{
+"167
+} 0
+"93
+[v _SPI_Timer_Init SPI_Timer_Init `(v  1 e 1 0 ]
+{
+"95
+} 0
+"83
+[v _SPI_GPIO_Init SPI_GPIO_Init `(v  1 e 1 0 ]
+{
+"91
+} 0
+"36
+[v _SPI_SCK_Output_Low SPI_SCK_Output_Low `(v  1 e 1 0 ]
+{
+"38
+} 0
+"31
+[v _SPI_SCK_Output SPI_SCK_Output `(v  1 e 1 0 ]
+{
+"34
+} 0
+"62
+[v _SPI_MOSI_Output_Low SPI_MOSI_Output_Low `(v  1 e 1 0 ]
+{
+"64
+} 0
+"57
+[v _SPI_MOSI_Output SPI_MOSI_Output `(v  1 e 1 0 ]
+{
+"60
+} 0
+"44
+[v _SPI_MISO_Input SPI_MISO_Input `(v  1 e 1 0 ]
+{
+"47
+} 0
+"79
+[v _SPI_CS_Output_High SPI_CS_Output_High `(v  1 e 1 0 ]
+{
+"81
+} 0
+"70
+[v _SPI_CS_Output SPI_CS_Output `(v  1 e 1 0 ]
+{
+"73
+} 0
