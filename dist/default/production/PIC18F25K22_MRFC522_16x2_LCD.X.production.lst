@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.40 build 20220703182018 
-                                                                                               Mon May 01 23:13:59 2023
+                                                                                               Tue May 02 21:14:47 2023
 
 Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1 
      1                           	processor	18F25K22
@@ -532,7 +532,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    518                           
    519 ;; *************** function _MFRC522_Init *****************
    520 ;; Defined at:
-   521 ;;		line 299 in file "mfrc522.c"
+   521 ;;		line 300 in file "mfrc522.c"
    522 ;; Parameters:    Size  Location     Type
    523 ;;		None
    524 ;; Auto vars:     Size  Location     Type
@@ -572,16 +572,16 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    558   000C12                     _MFRC522_Init:
    559                           	callstack 24
    560   000C12                     
-   561                           ;mfrc522.c: 300:     MFRC522_Reset_Output();
+   561                           ;mfrc522.c: 301:     MFRC522_Reset_Output();
    562   000C12  ECC5  F007         	call	_MFRC522_Reset_Output	;wreg free
    563   000C16                     
-   564                           ;mfrc522.c: 301:     SPI_Init();
+   564                           ;mfrc522.c: 302:     SPI_Init();
    565   000C16  ECB0  F007         	call	_SPI_Init	;wreg free
    566   000C1A                     
-   567                           ;mfrc522.c: 302:     MFRC522_Reset_Output_Low();
+   567                           ;mfrc522.c: 303:     MFRC522_Reset_Output_Low();
    568   000C1A  ECE8  F007         	call	_MFRC522_Reset_Output_Low	;wreg free
    569   000C1E                     
-   570                           ;mfrc522.c: 303:     _delay((unsigned long)((50)*(8000000UL/4000.0)));
+   570                           ;mfrc522.c: 304:     _delay((unsigned long)((50)*(8000000UL/4000.0)));
    571   000C1E  0E82               	movlw	130
    572   000C20  6E17               	movwf	??_MFRC522_Init^0,c
    573   000C22  0EDE               	movlw	222
@@ -591,49 +591,49 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    577   000C28  2E17               	decfsz	??_MFRC522_Init^0,f,c
    578   000C2A  D7FC               	bra	u727
    579                           
-   580                           ;mfrc522.c: 304:     MFRC522_Reset_Output_High();
+   580                           ;mfrc522.c: 305:     MFRC522_Reset_Output_High();
    581   000C2C  ECEA  F007         	call	_MFRC522_Reset_Output_High	;wreg free
    582   000C30                     
-   583                           ;mfrc522.c: 305:     MFRC522_Reset();
+   583                           ;mfrc522.c: 306:     MFRC522_Reset();
    584   000C30  ECA5  F007         	call	_MFRC522_Reset	;wreg free
    585   000C34                     
-   586                           ;mfrc522.c: 306:     MFRC522_Write_Register(0x2A, 0x8D);
+   586                           ;mfrc522.c: 307:     MFRC522_Write_Register(0x2A, 0x8D);
    587   000C34  0E8D               	movlw	141
    588   000C36  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    589   000C38  0E2A               	movlw	42
    590   000C3A  EC4C  F007         	call	_MFRC522_Write_Register
    591   000C3E                     
-   592                           ;mfrc522.c: 307:     MFRC522_Write_Register(0x2B, 0x3E);
+   592                           ;mfrc522.c: 308:     MFRC522_Write_Register(0x2B, 0x3E);
    593   000C3E  0E3E               	movlw	62
    594   000C40  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    595   000C42  0E2B               	movlw	43
    596   000C44  EC4C  F007         	call	_MFRC522_Write_Register
    597   000C48                     
-   598                           ;mfrc522.c: 308:     MFRC522_Write_Register(0x2D, 30);
+   598                           ;mfrc522.c: 309:     MFRC522_Write_Register(0x2D, 30);
    599   000C48  0E1E               	movlw	30
    600   000C4A  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    601   000C4C  0E2D               	movlw	45
    602   000C4E  EC4C  F007         	call	_MFRC522_Write_Register
    603   000C52                     
-   604                           ;mfrc522.c: 309:     MFRC522_Write_Register(0x2C, 0);
+   604                           ;mfrc522.c: 310:     MFRC522_Write_Register(0x2C, 0);
    605   000C52  0E00               	movlw	0
    606   000C54  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    607   000C56  0E2C               	movlw	44
    608   000C58  EC4C  F007         	call	_MFRC522_Write_Register
    609   000C5C                     
-   610                           ;mfrc522.c: 310:     MFRC522_Write_Register(0x15, 0x40);
+   610                           ;mfrc522.c: 311:     MFRC522_Write_Register(0x15, 0x40);
    611   000C5C  0E40               	movlw	64
    612   000C5E  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    613   000C60  0E15               	movlw	21
    614   000C62  EC4C  F007         	call	_MFRC522_Write_Register
    615   000C66                     
-   616                           ;mfrc522.c: 311:     MFRC522_Write_Register(0x11, 0x3D);
+   616                           ;mfrc522.c: 312:     MFRC522_Write_Register(0x11, 0x3D);
    617   000C66  0E3D               	movlw	61
    618   000C68  6E0B               	movwf	MFRC522_Write_Register@val^0,c
    619   000C6A  0E11               	movlw	17
    620   000C6C  EC4C  F007         	call	_MFRC522_Write_Register
    621   000C70                     
-   622                           ;mfrc522.c: 312:     MFRC522_Antenna_On();
+   622                           ;mfrc522.c: 313:     MFRC522_Antenna_On();
    623   000C70  ECE3  F006         	call	_MFRC522_Antenna_On	;wreg free
    624   000C74  0012               	return		;funcret
    625   000C76                     __end_of_MFRC522_Init:
@@ -641,7 +641,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    627                           
    628 ;; *************** function _SPI_Init *****************
    629 ;; Defined at:
-   630 ;;		line 164 in file "spi.c"
+   630 ;;		line 171 in file "spi.c"
    631 ;; Parameters:    Size  Location     Type
    632 ;;		None
    633 ;; Auto vars:     Size  Location     Type
@@ -676,10 +676,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    662   000F60                     _SPI_Init:
    663                           	callstack 27
    664   000F60                     
-   665                           ;spi.c: 165:     SPI_GPIO_Init();
+   665                           ;spi.c: 172:     SPI_GPIO_Init();
    666   000F60  EC7C  F007         	call	_SPI_GPIO_Init	;wreg free
    667   000F64                     
-   668                           ;spi.c: 166:     SPI_Timer_Init();
+   668                           ;spi.c: 173:     SPI_Timer_Init();
    669   000F64  ECE5  F007         	call	_SPI_Timer_Init	;wreg free
    670   000F68  0012               	return		;funcret
    671   000F6A                     __end_of_SPI_Init:
@@ -687,7 +687,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    673                           
    674 ;; *************** function _SPI_Timer_Init *****************
    675 ;; Defined at:
-   676 ;;		line 93 in file "spi.c"
+   676 ;;		line 100 in file "spi.c"
    677 ;; Parameters:    Size  Location     Type
    678 ;;		None
    679 ;; Auto vars:     Size  Location     Type
@@ -720,7 +720,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    706   000FCA                     _SPI_Timer_Init:
    707                           	callstack 28
    708   000FCA                     
-   709                           ;spi.c: 94:     T0CON = (1<<7);
+   709                           ;spi.c: 101:     T0CON = (1<<7);
    710   000FCA  0E80               	movlw	128
    711   000FCC  6ED5               	movwf	213,c	;volatile
    712   000FCE  0012               	return		;funcret
@@ -729,7 +729,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    715                           
    716 ;; *************** function _SPI_GPIO_Init *****************
    717 ;; Defined at:
-   718 ;;		line 83 in file "spi.c"
+   718 ;;		line 90 in file "spi.c"
    719 ;; Parameters:    Size  Location     Type
    720 ;;		None
    721 ;; Auto vars:     Size  Location     Type
@@ -769,25 +769,25 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    755   000EF8                     _SPI_GPIO_Init:
    756                           	callstack 27
    757   000EF8                     
-   758                           ;spi.c: 84:     SPI_SCK_Output();
+   758                           ;spi.c: 91:     SPI_SCK_Output();
    759   000EF8  ECB5  F007         	call	_SPI_SCK_Output	;wreg free
    760                           
-   761                           ;spi.c: 85:     SPI_SCK_Output_Low();
+   761                           ;spi.c: 92:     SPI_SCK_Output_Low();
    762   000EFC  ECEC  F007         	call	_SPI_SCK_Output_Low	;wreg free
    763                           
-   764                           ;spi.c: 86:     SPI_MISO_Input();
+   764                           ;spi.c: 93:     SPI_MISO_Input();
    765   000F00  ECBD  F007         	call	_SPI_MISO_Input	;wreg free
    766                           
-   767                           ;spi.c: 87:     SPI_MOSI_Output();
+   767                           ;spi.c: 94:     SPI_MOSI_Output();
    768   000F04  ECB9  F007         	call	_SPI_MOSI_Output	;wreg free
    769                           
-   770                           ;spi.c: 88:     SPI_MOSI_Output_Low();
+   770                           ;spi.c: 95:     SPI_MOSI_Output_Low();
    771   000F08  ECF0  F007         	call	_SPI_MOSI_Output_Low	;wreg free
    772                           
-   773                           ;spi.c: 89:     SPI_CS_Output();
+   773                           ;spi.c: 96:     SPI_CS_Output();
    774   000F0C  ECC1  F007         	call	_SPI_CS_Output	;wreg free
    775                           
-   776                           ;spi.c: 90:     SPI_CS_Output_High();
+   776                           ;spi.c: 97:     SPI_CS_Output_High();
    777   000F10  ECF6  F007         	call	_SPI_CS_Output_High	;wreg free
    778   000F14  0012               	return		;funcret
    779   000F16                     __end_of_SPI_GPIO_Init:
@@ -795,7 +795,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    781                           
    782 ;; *************** function _SPI_SCK_Output *****************
    783 ;; Defined at:
-   784 ;;		line 31 in file "spi.c"
+   784 ;;		line 38 in file "spi.c"
    785 ;; Parameters:    Size  Location     Type
    786 ;;		None
    787 ;; Auto vars:     Size  Location     Type
@@ -828,10 +828,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    814   000F6A                     _SPI_SCK_Output:
    815                           	callstack 27
    816   000F6A                     
-   817                           ;spi.c: 32:     TRISC&=~(1<<0x03U);
+   817                           ;spi.c: 39:     TRISC&=~(1<<0x03U);
    818   000F6A  9694               	bcf	148,3,c	;volatile
    819                           
-   820                           ;spi.c: 33:     ANSELC&=~(1<<0x03U);
+   820                           ;spi.c: 40:     ANSELC&=~(1<<0x03U);
    821   000F6C  010F               	movlb	15	; () banked
    822   000F6E  973A               	bcf	58,3,b	;volatile
    823   000F70                     
@@ -842,7 +842,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    828                           
    829 ;; *************** function _SPI_MOSI_Output *****************
    830 ;; Defined at:
-   831 ;;		line 57 in file "spi.c"
+   831 ;;		line 64 in file "spi.c"
    832 ;; Parameters:    Size  Location     Type
    833 ;;		None
    834 ;; Auto vars:     Size  Location     Type
@@ -875,10 +875,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    861   000F72                     _SPI_MOSI_Output:
    862                           	callstack 27
    863   000F72                     
-   864                           ;spi.c: 58:     TRISC&=~(1<<0x05U);
+   864                           ;spi.c: 65:     TRISC&=~(1<<0x05U);
    865   000F72  9A94               	bcf	148,5,c	;volatile
    866                           
-   867                           ;spi.c: 59:     ANSELC&=~(1<<0x05U);
+   867                           ;spi.c: 66:     ANSELC&=~(1<<0x05U);
    868   000F74  010F               	movlb	15	; () banked
    869   000F76  9B3A               	bcf	58,5,b	;volatile
    870   000F78                     
@@ -889,7 +889,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    875                           
    876 ;; *************** function _SPI_MISO_Input *****************
    877 ;; Defined at:
-   878 ;;		line 44 in file "spi.c"
+   878 ;;		line 51 in file "spi.c"
    879 ;; Parameters:    Size  Location     Type
    880 ;;		None
    881 ;; Auto vars:     Size  Location     Type
@@ -922,10 +922,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    908   000F7A                     _SPI_MISO_Input:
    909                           	callstack 27
    910   000F7A                     
-   911                           ;spi.c: 45:     TRISC|=(1<<0x04U);
+   911                           ;spi.c: 52:     TRISC|=(1<<0x04U);
    912   000F7A  8894               	bsf	148,4,c	;volatile
    913                           
-   914                           ;spi.c: 46:     ANSELC&=~(1<<0x04U);
+   914                           ;spi.c: 53:     ANSELC&=~(1<<0x04U);
    915   000F7C  010F               	movlb	15	; () banked
    916   000F7E  993A               	bcf	58,4,b	;volatile
    917   000F80                     
@@ -936,7 +936,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    922                           
    923 ;; *************** function _SPI_CS_Output *****************
    924 ;; Defined at:
-   925 ;;		line 70 in file "spi.c"
+   925 ;;		line 77 in file "spi.c"
    926 ;; Parameters:    Size  Location     Type
    927 ;;		None
    928 ;; Auto vars:     Size  Location     Type
@@ -969,10 +969,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    955   000F82                     _SPI_CS_Output:
    956                           	callstack 27
    957   000F82                     
-   958                           ;spi.c: 71:     TRISB&=~(1<<0x02U);
+   958                           ;spi.c: 78:     TRISB&=~(1<<0x02U);
    959   000F82  9493               	bcf	147,2,c	;volatile
    960                           
-   961                           ;spi.c: 72:     ANSELB&=~(1<<0x02U);
+   961                           ;spi.c: 79:     ANSELB&=~(1<<0x02U);
    962   000F84  010F               	movlb	15	; () banked
    963   000F86  9539               	bcf	57,2,b	;volatile
    964   000F88                     
@@ -983,7 +983,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    969                           
    970 ;; *************** function _MFRC522_Reset_Output_Low *****************
    971 ;; Defined at:
-   972 ;;		line 291 in file "mfrc522.c"
+   972 ;;		line 292 in file "mfrc522.c"
    973 ;; Parameters:    Size  Location     Type
    974 ;;		None
    975 ;; Auto vars:     Size  Location     Type
@@ -1016,7 +1016,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1002   000FD0                     _MFRC522_Reset_Output_Low:
   1003                           	callstack 29
   1004   000FD0                     
-  1005                           ;mfrc522.c: 292:     LATB&=~(1<<0x01U);
+  1005                           ;mfrc522.c: 293:     LATB&=~(1<<0x01U);
   1006   000FD0  928A               	bcf	138,1,c	;volatile
   1007   000FD2  0012               	return		;funcret
   1008   000FD4                     __end_of_MFRC522_Reset_Output_Low:
@@ -1024,7 +1024,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1010                           
   1011 ;; *************** function _MFRC522_Reset_Output_High *****************
   1012 ;; Defined at:
-  1013 ;;		line 295 in file "mfrc522.c"
+  1013 ;;		line 296 in file "mfrc522.c"
   1014 ;; Parameters:    Size  Location     Type
   1015 ;;		None
   1016 ;; Auto vars:     Size  Location     Type
@@ -1057,7 +1057,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1043   000FD4                     _MFRC522_Reset_Output_High:
   1044                           	callstack 29
   1045   000FD4                     
-  1046                           ;mfrc522.c: 296:     LATB|=(1<<0x01U);
+  1046                           ;mfrc522.c: 297:     LATB|=(1<<0x01U);
   1047   000FD4  828A               	bsf	138,1,c	;volatile
   1048   000FD6  0012               	return		;funcret
   1049   000FD8                     __end_of_MFRC522_Reset_Output_High:
@@ -1065,7 +1065,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1051                           
   1052 ;; *************** function _MFRC522_Reset_Output *****************
   1053 ;; Defined at:
-  1054 ;;		line 286 in file "mfrc522.c"
+  1054 ;;		line 287 in file "mfrc522.c"
   1055 ;; Parameters:    Size  Location     Type
   1056 ;;		None
   1057 ;; Auto vars:     Size  Location     Type
@@ -1098,10 +1098,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1084   000F8A                     _MFRC522_Reset_Output:
   1085                           	callstack 29
   1086   000F8A                     
-  1087                           ;mfrc522.c: 287:     TRISB&=~(1<<0x01U);
+  1087                           ;mfrc522.c: 288:     TRISB&=~(1<<0x01U);
   1088   000F8A  9293               	bcf	147,1,c	;volatile
   1089                           
-  1090                           ;mfrc522.c: 288:     ANSELB&=~(1<<0x01U);
+  1090                           ;mfrc522.c: 289:     ANSELB&=~(1<<0x01U);
   1091   000F8C  010F               	movlb	15	; () banked
   1092   000F8E  9339               	bcf	57,1,b	;volatile
   1093   000F90                     
@@ -1230,7 +1230,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1216                           
   1217 ;; *************** function _MFRC522_Detect_Tag *****************
   1218 ;; Defined at:
-  1219 ;;		line 275 in file "mfrc522.c"
+  1219 ;;		line 276 in file "mfrc522.c"
   1220 ;; Parameters:    Size  Location     Type
   1221 ;;		None
   1222 ;; Auto vars:     Size  Location     Type
@@ -1266,7 +1266,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1252   000E3C                     _MFRC522_Detect_Tag:
   1253                           	callstack 23
   1254   000E3C                     
-  1255                           ;mfrc522.c: 276:     uint8_t info[16];;mfrc522.c: 277:     uint8_t status = MFRC522_Requ
+  1255                           ;mfrc522.c: 277:     uint8_t info[16];;mfrc522.c: 278:     uint8_t status = MFRC522_Requ
       +                          est(0x26, info);
   1256   000E3C  0E2D               	movlw	low MFRC522_Detect_Tag@info
   1257   000E3E  6E26               	movwf	MFRC522_Request@TagType^0,c
@@ -1276,7 +1276,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1261   000E46  ECD6  F005         	call	_MFRC522_Request
   1262   000E4A  6E3D               	movwf	MFRC522_Detect_Tag@status^0,c
   1263                           
-  1264                           ;mfrc522.c: 278:     status = MFRC522_Anticoll(info);
+  1264                           ;mfrc522.c: 279:     status = MFRC522_Anticoll(info);
   1265   000E4C  0E2D               	movlw	low MFRC522_Detect_Tag@info
   1266   000E4E  6E26               	movwf	MFRC522_Anticoll@serNum^0,c
   1267   000E50  0E00               	movlw	high MFRC522_Detect_Tag@info
@@ -1284,7 +1284,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1269   000E54  EC3F  F004         	call	_MFRC522_Anticoll	;wreg free
   1270   000E58  6E3D               	movwf	MFRC522_Detect_Tag@status^0,c
   1271   000E5A                     
-  1272                           ;mfrc522.c: 279:     if(status == 0x00){
+  1272                           ;mfrc522.c: 280:     if(status == 0x00){
   1273   000E5A  503D               	movf	MFRC522_Detect_Tag@status^0,w,c
   1274   000E5C  A4D8               	btfss	status,2,c
   1275   000E5E  EF33  F007         	goto	u671
@@ -1293,12 +1293,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1278   000E66  EF38  F007         	goto	l1742
   1279   000E6A                     u670:
   1280   000E6A                     
-  1281                           ;mfrc522.c: 280:         return 1;
+  1281                           ;mfrc522.c: 281:         return 1;
   1282   000E6A  0E01               	movlw	1
   1283   000E6C  EF39  F007         	goto	l195
   1284   000E70                     l1742:
   1285                           
-  1286                           ;mfrc522.c: 282:         return 0;
+  1286                           ;mfrc522.c: 283:         return 0;
   1287   000E70  0E00               	movlw	0
   1288   000E72                     l195:
   1289   000E72  0012               	return		;funcret
@@ -1307,7 +1307,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1292                           
   1293 ;; *************** function _MFRC522_Request *****************
   1294 ;; Defined at:
-  1295 ;;		line 260 in file "mfrc522.c"
+  1295 ;;		line 261 in file "mfrc522.c"
   1296 ;; Parameters:    Size  Location     Type
   1297 ;;  reqMode         1    wreg     unsigned char 
   1298 ;;  TagType         2   37[COMRAM] PTR unsigned char 
@@ -1350,19 +1350,19 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1335                           ;MFRC522_Request@reqMode stored from wreg
   1336   000BAC  6E28               	movwf	MFRC522_Request@reqMode^0,c
   1337   000BAE                     
-  1338                           ;mfrc522.c: 261:     uint8_t status;;mfrc522.c: 262:     uint8_t backBits;;mfrc522.c: 26
-      +                          4:     MFRC522_Write_Register(0x0D, 0x07);
+  1338                           ;mfrc522.c: 262:     uint8_t status;;mfrc522.c: 263:     uint8_t backBits;;mfrc522.c: 26
+      +                          5:     MFRC522_Write_Register(0x0D, 0x07);
   1339   000BAE  0E07               	movlw	7
   1340   000BB0  6E0B               	movwf	MFRC522_Write_Register@val^0,c
   1341   000BB2  0E0D               	movlw	13
   1342   000BB4  EC4C  F007         	call	_MFRC522_Write_Register
   1343   000BB8                     
-  1344                           ;mfrc522.c: 266:     TagType[0] = reqMode;
+  1344                           ;mfrc522.c: 267:     TagType[0] = reqMode;
   1345   000BB8  C026  FFD9         	movff	MFRC522_Request@TagType,fsr2l
   1346   000BBC  C027  FFDA         	movff	MFRC522_Request@TagType+1,fsr2h
   1347   000BC0  C028  FFDF         	movff	MFRC522_Request@reqMode,indf2
   1348   000BC4                     
-  1349                           ;mfrc522.c: 267:     status = MFRC522_ToCard(0x0C, TagType, 1, TagType, &backBits);
+  1349                           ;mfrc522.c: 268:     status = MFRC522_ToCard(0x0C, TagType, 1, TagType, &backBits);
   1350   000BC4  C026  F015         	movff	MFRC522_Request@TagType,MFRC522_ToCard@sendData
   1351   000BC8  C027  F016         	movff	MFRC522_Request@TagType+1,MFRC522_ToCard@sendData+1
   1352   000BCC  0E01               	movlw	1
@@ -1377,7 +1377,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1361   000BE2  EC0C  F003         	call	_MFRC522_ToCard
   1362   000BE6  6E29               	movwf	MFRC522_Request@status^0,c
   1363   000BE8                     
-  1364                           ;mfrc522.c: 269:     if ((status != 0x00) || (backBits != 0x10)){
+  1364                           ;mfrc522.c: 270:     if ((status != 0x00) || (backBits != 0x10)){
   1365   000BE8  5029               	movf	MFRC522_Request@status^0,w,c
   1366   000BEA  A4D8               	btfss	status,2,c
   1367   000BEC  EFFA  F005         	goto	u641
@@ -1395,12 +1395,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1379   000C0A                     u650:
   1380   000C0A                     l1694:
   1381                           
-  1382                           ;mfrc522.c: 270:         status = 0x02;
+  1382                           ;mfrc522.c: 271:         status = 0x02;
   1383   000C0A  0E02               	movlw	2
   1384   000C0C  6E29               	movwf	MFRC522_Request@status^0,c
   1385   000C0E                     l188:
   1386                           
-  1387                           ;mfrc522.c: 272:     return status;
+  1387                           ;mfrc522.c: 273:     return status;
   1388   000C0E  5029               	movf	MFRC522_Request@status^0,w,c
   1389   000C10  0012               	return		;funcret
   1390   000C12                     __end_of_MFRC522_Request:
@@ -1408,7 +1408,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1392                           
   1393 ;; *************** function _MFRC522_Anticoll *****************
   1394 ;; Defined at:
-  1395 ;;		line 239 in file "mfrc522.c"
+  1395 ;;		line 240 in file "mfrc522.c"
   1396 ;; Parameters:    Size  Location     Type
   1397 ;;  serNum          2   37[COMRAM] PTR unsigned char 
   1398 ;;		 -> MFRC522_Detect_Tag@info(16), 
@@ -1447,25 +1447,25 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1431   00087E                     _MFRC522_Anticoll:
   1432                           	callstack 23
   1433   00087E                     
-  1434                           ;mfrc522.c: 240:     uint8_t status;;mfrc522.c: 241:     uint8_t i;;mfrc522.c: 242:     
+  1434                           ;mfrc522.c: 241:     uint8_t status;;mfrc522.c: 242:     uint8_t i;;mfrc522.c: 243:     
       +                          uint8_t serNumCheck=0;
   1435   00087E  0E00               	movlw	0
   1436   000880  6E29               	movwf	MFRC522_Anticoll@serNumCheck^0,c
   1437   000882                     
-  1438                           ;mfrc522.c: 243:     uint8_t unLen;;mfrc522.c: 244:     MFRC522_Write_Register(0x0D, 0x0
+  1438                           ;mfrc522.c: 244:     uint8_t unLen;;mfrc522.c: 245:     MFRC522_Write_Register(0x0D, 0x0
       +                          0);
   1439   000882  0E00               	movlw	0
   1440   000884  6E0B               	movwf	MFRC522_Write_Register@val^0,c
   1441   000886  0E0D               	movlw	13
   1442   000888  EC4C  F007         	call	_MFRC522_Write_Register
   1443   00088C                     
-  1444                           ;mfrc522.c: 245:     serNum[0] = 0x93;
+  1444                           ;mfrc522.c: 246:     serNum[0] = 0x93;
   1445   00088C  C026  FFD9         	movff	MFRC522_Anticoll@serNum,fsr2l
   1446   000890  C027  FFDA         	movff	MFRC522_Anticoll@serNum+1,fsr2h
   1447   000894  0E93               	movlw	147
   1448   000896  6EDF               	movwf	indf2,c
   1449   000898                     
-  1450                           ;mfrc522.c: 246:     serNum[1] = 0x20;
+  1450                           ;mfrc522.c: 247:     serNum[1] = 0x20;
   1451   000898  EE20 F001          	lfsr	2,1
   1452   00089C  5026               	movf	MFRC522_Anticoll@serNum^0,w,c
   1453   00089E  26D9               	addwf	fsr2l,f,c
@@ -1474,7 +1474,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1456   0008A4  0E20               	movlw	32
   1457   0008A6  6EDF               	movwf	indf2,c
   1458   0008A8                     
-  1459                           ;mfrc522.c: 247:     status = MFRC522_ToCard(0x0C, serNum, 2, serNum, &unLen);
+  1459                           ;mfrc522.c: 248:     status = MFRC522_ToCard(0x0C, serNum, 2, serNum, &unLen);
   1460   0008A8  C026  F015         	movff	MFRC522_Anticoll@serNum,MFRC522_ToCard@sendData
   1461   0008AC  C027  F016         	movff	MFRC522_Anticoll@serNum+1,MFRC522_ToCard@sendData+1
   1462   0008B0  0E02               	movlw	2
@@ -1489,7 +1489,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1471   0008C6  EC0C  F003         	call	_MFRC522_ToCard
   1472   0008CA  6E2B               	movwf	MFRC522_Anticoll@status^0,c
   1473   0008CC                     
-  1474                           ;mfrc522.c: 249:     if (status == 0x00){
+  1474                           ;mfrc522.c: 250:     if (status == 0x00){
   1475   0008CC  502B               	movf	MFRC522_Anticoll@status^0,w,c
   1476   0008CE  A4D8               	btfss	status,2,c
   1477   0008D0  EF6C  F004         	goto	u611
@@ -1498,12 +1498,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1480   0008D8  EF92  F004         	goto	l181
   1481   0008DC                     u610:
   1482   0008DC                     
-  1483                           ;mfrc522.c: 250:         for (i=0; i<4; i++){
+  1483                           ;mfrc522.c: 251:         for (i=0; i<4; i++){
   1484   0008DC  0E00               	movlw	0
   1485   0008DE  6E2C               	movwf	MFRC522_Anticoll@i^0,c
   1486   0008E0                     l1672:
   1487                           
-  1488                           ;mfrc522.c: 251:             serNumCheck ^= serNum[i];
+  1488                           ;mfrc522.c: 252:             serNumCheck ^= serNum[i];
   1489   0008E0  502C               	movf	MFRC522_Anticoll@i^0,w,c
   1490   0008E2  2426               	addwf	MFRC522_Anticoll@serNum^0,w,c
   1491   0008E4  6ED9               	movwf	fsr2l,c
@@ -1513,7 +1513,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1495   0008EC  50DF               	movf	indf2,w,c
   1496   0008EE  1A29               	xorwf	MFRC522_Anticoll@serNumCheck^0,f,c
   1497   0008F0                     
-  1498                           ;mfrc522.c: 252:         }
+  1498                           ;mfrc522.c: 253:         }
   1499   0008F0  2A2C               	incf	MFRC522_Anticoll@i^0,f,c
   1500   0008F2  0E03               	movlw	3
   1501   0008F4  642C               	cpfsgt	MFRC522_Anticoll@i^0,c
@@ -1523,7 +1523,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1505   0008FE  EF70  F004         	goto	l1672
   1506   000902                     u620:
   1507   000902                     
-  1508                           ;mfrc522.c: 253:         if (serNumCheck != serNum[i]){
+  1508                           ;mfrc522.c: 254:         if (serNumCheck != serNum[i]){
   1509   000902  502C               	movf	MFRC522_Anticoll@i^0,w,c
   1510   000904  2426               	addwf	MFRC522_Anticoll@serNum^0,w,c
   1511   000906  6ED9               	movwf	fsr2l,c
@@ -1539,12 +1539,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1521   00091C  EF92  F004         	goto	l181
   1522   000920                     u630:
   1523   000920                     
-  1524                           ;mfrc522.c: 254:             status = 0x02;
+  1524                           ;mfrc522.c: 255:             status = 0x02;
   1525   000920  0E02               	movlw	2
   1526   000922  6E2B               	movwf	MFRC522_Anticoll@status^0,c
   1527   000924                     l181:
   1528                           
-  1529                           ;mfrc522.c: 257:     return status;
+  1529                           ;mfrc522.c: 258:     return status;
   1530   000924  502B               	movf	MFRC522_Anticoll@status^0,w,c
   1531   000926  0012               	return		;funcret
   1532   000928                     __end_of_MFRC522_Anticoll:
@@ -1779,17 +1779,17 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1759   000710  6E23               	movwf	MFRC522_ToCard@i^0,c
   1760   000712                     l1590:
   1761                           
-  1762                           ;mfrc522.c: 201:         n = MFRC522_Read_Register(0x04);
+  1762                           ;mfrc522.c: 202:         n = MFRC522_Read_Register(0x04);
   1763   000712  0E04               	movlw	4
   1764   000714  EC3A  F007         	call	_MFRC522_Read_Register
   1765   000718  6E25               	movwf	MFRC522_ToCard@n^0,c
   1766   00071A                     
-  1767                           ;mfrc522.c: 202:         i--;
+  1767                           ;mfrc522.c: 203:         i--;
   1768   00071A  0623               	decf	MFRC522_ToCard@i^0,f,c
   1769   00071C  A0D8               	btfss	status,0,c
   1770   00071E  0624               	decf	(MFRC522_ToCard@i+1)^0,f,c
   1771   000720                     
-  1772                           ;mfrc522.c: 203:     }
+  1772                           ;mfrc522.c: 204:     }
   1773   000720  5023               	movf	MFRC522_ToCard@i^0,w,c
   1774   000722  1024               	iorwf	(MFRC522_ToCard@i+1)^0,w,c
   1775   000724  B4D8               	btfsc	status,2,c
@@ -1815,7 +1815,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1795   000754                     u510:
   1796   000754                     l1600:
   1797                           
-  1798                           ;mfrc522.c: 205:     MFRC522_Modify_Register_Bit(0x0D, 7, 0);
+  1798                           ;mfrc522.c: 206:     MFRC522_Modify_Register_Bit(0x0D, 7, 0);
   1799   000754  0E07               	movlw	7
   1800   000756  6E0F               	movwf	MFRC522_Modify_Register_Bit@bit_pos^0,c
   1801   000758  0E00               	movlw	0
@@ -1823,7 +1823,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1803   00075C  0E0D               	movlw	13
   1804   00075E  EC66  F005         	call	_MFRC522_Modify_Register_Bit
   1805   000762                     
-  1806                           ;mfrc522.c: 206:     if (i != 0){
+  1806                           ;mfrc522.c: 207:     if (i != 0){
   1807   000762  5023               	movf	MFRC522_ToCard@i^0,w,c
   1808   000764  1024               	iorwf	(MFRC522_ToCard@i+1)^0,w,c
   1809   000766  B4D8               	btfsc	status,2,c
@@ -1833,7 +1833,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1813   000770  EF3D  F004         	goto	l166
   1814   000774                     u520:
   1815   000774                     
-  1816                           ;mfrc522.c: 207:         if(!(MFRC522_Read_Register(0x06) & 0x1B)){
+  1816                           ;mfrc522.c: 208:         if(!(MFRC522_Read_Register(0x06) & 0x1B)){
   1817   000774  0E06               	movlw	6
   1818   000776  EC3A  F007         	call	_MFRC522_Read_Register
   1819   00077A  6E1C               	movwf	??_MFRC522_ToCard^0,c
@@ -1846,11 +1846,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1826   00078A  EF3B  F004         	goto	l1636
   1827   00078E                     u530:
   1828   00078E                     
-  1829                           ;mfrc522.c: 208:             status = 0x00;
+  1829                           ;mfrc522.c: 209:             status = 0x00;
   1830   00078E  0E00               	movlw	0
   1831   000790  6E1F               	movwf	MFRC522_ToCard@status^0,c
   1832   000792                     
-  1833                           ;mfrc522.c: 209:             if (n & irqEn & 0x01){
+  1833                           ;mfrc522.c: 210:             if (n & irqEn & 0x01){
   1834   000792  5025               	movf	MFRC522_ToCard@n^0,w,c
   1835   000794  1421               	andwf	MFRC522_ToCard@irqEn^0,w,c
   1836   000796  6E1C               	movwf	??_MFRC522_ToCard^0,c
@@ -1861,12 +1861,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1841   0007A2  EFD5  F003         	goto	l1612
   1842   0007A6                     u540:
   1843   0007A6                     
-  1844                           ;mfrc522.c: 210:               status = 0x01;
+  1844                           ;mfrc522.c: 211:               status = 0x01;
   1845   0007A6  0E01               	movlw	1
   1846   0007A8  6E1F               	movwf	MFRC522_ToCard@status^0,c
   1847   0007AA                     l1612:
   1848                           
-  1849                           ;mfrc522.c: 212:             if (command == 0x0C){
+  1849                           ;mfrc522.c: 213:             if (command == 0x0C){
   1850   0007AA  0E0C               	movlw	12
   1851   0007AC  1822               	xorwf	MFRC522_ToCard@command^0,w,c
   1852   0007AE  A4D8               	btfss	status,2,c
@@ -1876,18 +1876,18 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1856   0007B8  EF3D  F004         	goto	l166
   1857   0007BC                     u550:
   1858   0007BC                     
-  1859                           ;mfrc522.c: 213:                 n = MFRC522_Read_Register(0x0A);
+  1859                           ;mfrc522.c: 214:                 n = MFRC522_Read_Register(0x0A);
   1860   0007BC  0E0A               	movlw	10
   1861   0007BE  EC3A  F007         	call	_MFRC522_Read_Register
   1862   0007C2  6E25               	movwf	MFRC522_ToCard@n^0,c
   1863                           
-  1864                           ;mfrc522.c: 214:                 lastBits = MFRC522_Read_Register(0x0C) & 0x07;
+  1864                           ;mfrc522.c: 215:                 lastBits = MFRC522_Read_Register(0x0C) & 0x07;
   1865   0007C4  0E0C               	movlw	12
   1866   0007C6  EC3A  F007         	call	_MFRC522_Read_Register
   1867   0007CA  0B07               	andlw	7
   1868   0007CC  6E20               	movwf	MFRC522_ToCard@lastBits^0,c
   1869   0007CE                     
-  1870                           ;mfrc522.c: 215:                 if (lastBits){
+  1870                           ;mfrc522.c: 216:                 if (lastBits){
   1871   0007CE  5020               	movf	MFRC522_ToCard@lastBits^0,w,c
   1872   0007D0  B4D8               	btfsc	status,2,c
   1873   0007D2  EFED  F003         	goto	u561
@@ -1896,7 +1896,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1876   0007DA  EFFB  F003         	goto	l1620
   1877   0007DE                     u560:
   1878   0007DE                     
-  1879                           ;mfrc522.c: 216:                     *backLen = (n-1)*8 + lastBits;
+  1879                           ;mfrc522.c: 217:                     *backLen = (n-1)*8 + lastBits;
   1880   0007DE  5025               	movf	MFRC522_ToCard@n^0,w,c
   1881   0007E0  0D08               	mullw	8
   1882   0007E2  50F3               	movf	243,w,c
@@ -1906,11 +1906,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1886   0007EC  C01B  FFDA         	movff	MFRC522_ToCard@backLen+1,fsr2h
   1887   0007F0  6EDF               	movwf	indf2,c
   1888                           
-  1889                           ;mfrc522.c: 217:                 }
+  1889                           ;mfrc522.c: 218:                 }
   1890   0007F2  EF03  F004         	goto	l1622
   1891   0007F6                     l1620:
   1892                           
-  1893                           ;mfrc522.c: 219:                     *backLen = n*8;
+  1893                           ;mfrc522.c: 220:                     *backLen = n*8;
   1894   0007F6  5025               	movf	MFRC522_ToCard@n^0,w,c
   1895   0007F8  0D08               	mullw	8
   1896   0007FA  C01A  FFD9         	movff	MFRC522_ToCard@backLen,fsr2l
@@ -1918,7 +1918,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1898   000802  CFF3 FFDF          	movff	prodl,indf2
   1899   000806                     l1622:
   1900                           
-  1901                           ;mfrc522.c: 221:                 if (n == 0){
+  1901                           ;mfrc522.c: 222:                 if (n == 0){
   1902   000806  5025               	movf	MFRC522_ToCard@n^0,w,c
   1903   000808  A4D8               	btfss	status,2,c
   1904   00080A  EF09  F004         	goto	u571
@@ -1927,12 +1927,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1907   000812  EF0D  F004         	goto	l1626
   1908   000816                     u570:
   1909   000816                     
-  1910                           ;mfrc522.c: 222:                     n = 1;
+  1910                           ;mfrc522.c: 223:                     n = 1;
   1911   000816  0E01               	movlw	1
   1912   000818  6E25               	movwf	MFRC522_ToCard@n^0,c
   1913   00081A                     l1626:
   1914                           
-  1915                           ;mfrc522.c: 224:                 if (n > 16){
+  1915                           ;mfrc522.c: 225:                 if (n > 16){
   1916   00081A  0E10               	movlw	16
   1917   00081C  6425               	cpfsgt	MFRC522_ToCard@n^0,c
   1918   00081E  EF13  F004         	goto	u581
@@ -1941,12 +1941,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1921   000826  EF17  F004         	goto	l173
   1922   00082A                     u580:
   1923   00082A                     
-  1924                           ;mfrc522.c: 225:                     n = 16;
+  1924                           ;mfrc522.c: 226:                     n = 16;
   1925   00082A  0E10               	movlw	16
   1926   00082C  6E25               	movwf	MFRC522_ToCard@n^0,c
   1927   00082E                     l173:
   1928                           
-  1929                           ;mfrc522.c: 227:                 for (i=0; i<n; i++){
+  1929                           ;mfrc522.c: 228:                 for (i=0; i<n; i++){
   1930   00082E  0E00               	movlw	0
   1931   000830  6E24               	movwf	(MFRC522_ToCard@i+1)^0,c
   1932   000832  0E00               	movlw	0
@@ -1954,7 +1954,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1934   000836  EF2B  F004         	goto	l1634
   1935   00083A                     l1630:
   1936                           
-  1937                           ;mfrc522.c: 228:                     backData[i] = MFRC522_Read_Register(0x09);
+  1937                           ;mfrc522.c: 229:                     backData[i] = MFRC522_Read_Register(0x09);
   1938   00083A  0E09               	movlw	9
   1939   00083C  EC3A  F007         	call	_MFRC522_Read_Register
   1940   000840  6E1C               	movwf	??_MFRC522_ToCard^0,c
@@ -1966,7 +1966,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1946   00084C  6EDA               	movwf	fsr2h,c
   1947   00084E  C01C  FFDF         	movff	??_MFRC522_ToCard,indf2
   1948   000852                     
-  1949                           ;mfrc522.c: 229:                 }
+  1949                           ;mfrc522.c: 230:                 }
   1950   000852  4A23               	infsnz	MFRC522_ToCard@i^0,f,c
   1951   000854  2A24               	incf	(MFRC522_ToCard@i+1)^0,f,c
   1952   000856                     l1634:
@@ -1986,12 +1986,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1966   000872  EF3D  F004         	goto	l166
   1967   000876                     l1636:
   1968                           
-  1969                           ;mfrc522.c: 233:            status = 0x02;
+  1969                           ;mfrc522.c: 234:            status = 0x02;
   1970   000876  0E02               	movlw	2
   1971   000878  6E1F               	movwf	MFRC522_ToCard@status^0,c
   1972   00087A                     l166:
   1973                           
-  1974                           ;mfrc522.c: 236:     return status;
+  1974                           ;mfrc522.c: 237:     return status;
   1975   00087A  501F               	movf	MFRC522_ToCard@status^0,w,c
   1976   00087C  0012               	return		;funcret
   1977   00087E                     __end_of_MFRC522_ToCard:
@@ -2248,7 +2248,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2227                           
   2228 ;; *************** function _SPI_Transfer *****************
   2229 ;; Defined at:
-  2230 ;;		line 152 in file "spi.c"
+  2230 ;;		line 159 in file "spi.c"
   2231 ;; Parameters:    Size  Location     Type
   2232 ;;  data            2    6[COMRAM] PTR unsigned char 
   2233 ;;		 -> MFRC522_Read_Register@data(2), MFRC522_Write_Register@data(2), 
@@ -2287,16 +2287,16 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2266   000C76                     _SPI_Transfer:
   2267                           	callstack 26
   2268   000C76                     
-  2269                           ;spi.c: 153:     SPI_CS_Output_Low();
+  2269                           ;spi.c: 160:     SPI_CS_Output_Low();
   2270   000C76  ECF4  F007         	call	_SPI_CS_Output_Low	;wreg free
   2271   000C7A                     
-  2272                           ;spi.c: 154:     for(uint8_t i=0; i<len; i++){
+  2272                           ;spi.c: 161:     for(uint8_t i=0; i<len; i++){
   2273   000C7A  0E00               	movlw	0
   2274   000C7C  6E0A               	movwf	SPI_Transfer@i^0,c
   2275   000C7E  EF52  F006         	goto	l1528
   2276   000C82                     l1524:
   2277                           
-  2278                           ;spi.c: 156:         data[i]=SPI_Transfer_Byte_MSB_First(data[i]);
+  2278                           ;spi.c: 163:         data[i]=SPI_Transfer_Byte_MSB_First(data[i]);
   2279   000C82  500A               	movf	SPI_Transfer@i^0,w,c
   2280   000C84  2407               	addwf	SPI_Transfer@data^0,w,c
   2281   000C86  6ED9               	movwf	fsr2l,c
@@ -2313,7 +2313,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2292   000C9C  EC23  F005         	call	_SPI_Transfer_Byte_MSB_First
   2293   000CA0  6EDF               	movwf	indf2,c
   2294   000CA2                     
-  2295                           ;spi.c: 160:     }
+  2295                           ;spi.c: 167:     }
   2296   000CA2  2A0A               	incf	SPI_Transfer@i^0,f,c
   2297   000CA4                     l1528:
   2298   000CA4  5009               	movf	SPI_Transfer@len^0,w,c
@@ -2325,7 +2325,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2304   000CB2  EF41  F006         	goto	l1524
   2305   000CB6                     u420:
   2306   000CB6                     
-  2307                           ;spi.c: 161:     SPI_CS_Output_High();
+  2307                           ;spi.c: 168:     SPI_CS_Output_High();
   2308   000CB6  ECF6  F007         	call	_SPI_CS_Output_High	;wreg free
   2309   000CBA  0012               	return		;funcret
   2310   000CBC                     __end_of_SPI_Transfer:
@@ -2333,7 +2333,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2312                           
   2313 ;; *************** function _SPI_Transfer_Byte_MSB_First *****************
   2314 ;; Defined at:
-  2315 ;;		line 107 in file "spi.c"
+  2315 ;;		line 114 in file "spi.c"
   2316 ;; Parameters:    Size  Location     Type
   2317 ;;  val             1    wreg     unsigned char 
   2318 ;; Auto vars:     Size  Location     Type
@@ -2379,24 +2379,24 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2358                           ;SPI_Transfer_Byte_MSB_First@val stored from wreg
   2359   000A46  6E03               	movwf	SPI_Transfer_Byte_MSB_First@val^0,c
   2360   000A48                     
-  2361                           ;spi.c: 108:     uint8_t data=0;
+  2361                           ;spi.c: 115:     uint8_t data=0;
   2362   000A48  0E00               	movlw	0
   2363   000A4A  6E04               	movwf	SPI_Transfer_Byte_MSB_First@data^0,c
   2364   000A4C                     
-  2365                           ;spi.c: 109:     SPI_Timer_Wait_One_Bit_Time();
+  2365                           ;spi.c: 116:     SPI_Timer_Wait_One_Bit_Time();
   2366   000A4C  EC5C  F007         	call	_SPI_Timer_Wait_One_Bit_Time	;wreg free
   2367   000A50                     
-  2368                           ;spi.c: 110:     SPI_Timer_Wait_Half_Bit_Time();
+  2368                           ;spi.c: 117:     SPI_Timer_Wait_Half_Bit_Time();
   2369   000A50  EC6C  F007         	call	_SPI_Timer_Wait_Half_Bit_Time	;wreg free
   2370   000A54                     
-  2371                           ;spi.c: 111:     for(int i=7; i>=0; i--){
+  2371                           ;spi.c: 118:     for(int i=7; i>=0; i--){
   2372   000A54  0E00               	movlw	0
   2373   000A56  6E06               	movwf	(SPI_Transfer_Byte_MSB_First@i+1)^0,c
   2374   000A58  0E07               	movlw	7
   2375   000A5A  6E05               	movwf	SPI_Transfer_Byte_MSB_First@i^0,c
   2376   000A5C                     l1040:
   2377                           
-  2378                           ;spi.c: 112:         if( (val>>i) & 1){
+  2378                           ;spi.c: 119:         if( (val>>i) & 1){
   2379   000A5C  C005  F001         	movff	SPI_Transfer_Byte_MSB_First@i,??_SPI_Transfer_Byte_MSB_First
   2380   000A60  C003  F002         	movff	SPI_Transfer_Byte_MSB_First@val,??_SPI_Transfer_Byte_MSB_First+1
   2381   000A64  2A01               	incf	??_SPI_Transfer_Byte_MSB_First^0,f,c
@@ -2414,38 +2414,38 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2393   000A7E  EF45  F005         	goto	l1044
   2394   000A82                     u50:
   2395   000A82                     
-  2396                           ;spi.c: 113:             SPI_MOSI_Output_High();
+  2396                           ;spi.c: 120:             SPI_MOSI_Output_High();
   2397   000A82  ECF2  F007         	call	_SPI_MOSI_Output_High	;wreg free
   2398                           
-  2399                           ;spi.c: 114:         }else{
+  2399                           ;spi.c: 121:         }else{
   2400   000A86  EF47  F005         	goto	l1046
   2401   000A8A                     l1044:
   2402                           
-  2403                           ;spi.c: 115:             SPI_MOSI_Output_Low();
+  2403                           ;spi.c: 122:             SPI_MOSI_Output_Low();
   2404   000A8A  ECF0  F007         	call	_SPI_MOSI_Output_Low	;wreg free
   2405   000A8E                     l1046:
   2406                           
-  2407                           ;spi.c: 117:         SPI_Timer_Wait_Half_Bit_Time();
+  2407                           ;spi.c: 124:         SPI_Timer_Wait_Half_Bit_Time();
   2408   000A8E  EC6C  F007         	call	_SPI_Timer_Wait_Half_Bit_Time	;wreg free
   2409   000A92                     
-  2410                           ;spi.c: 118:         SPI_SCK_Output_High();
+  2410                           ;spi.c: 125:         SPI_SCK_Output_High();
   2411   000A92  ECEE  F007         	call	_SPI_SCK_Output_High	;wreg free
   2412   000A96                     
-  2413                           ;spi.c: 119:         data<<=1;
+  2413                           ;spi.c: 126:         data<<=1;
   2414   000A96  90D8               	bcf	status,0,c
   2415   000A98  3604               	rlcf	SPI_Transfer_Byte_MSB_First@data^0,f,c
   2416   000A9A                     
-  2417                           ;spi.c: 120:         data|=SPI_MISO_State();
+  2417                           ;spi.c: 127:         data|=SPI_MISO_State();
   2418   000A9A  EC99  F007         	call	_SPI_MISO_State	;wreg free
   2419   000A9E  1204               	iorwf	SPI_Transfer_Byte_MSB_First@data^0,f,c
   2420   000AA0                     
-  2421                           ;spi.c: 121:         SPI_Timer_Wait_Half_Bit_Time();
+  2421                           ;spi.c: 128:         SPI_Timer_Wait_Half_Bit_Time();
   2422   000AA0  EC6C  F007         	call	_SPI_Timer_Wait_Half_Bit_Time	;wreg free
   2423   000AA4                     
-  2424                           ;spi.c: 122:         SPI_SCK_Output_Low();
+  2424                           ;spi.c: 129:         SPI_SCK_Output_Low();
   2425   000AA4  ECEC  F007         	call	_SPI_SCK_Output_Low	;wreg free
   2426                           
-  2427                           ;spi.c: 123:     }
+  2427                           ;spi.c: 130:     }
   2428   000AA8  0605               	decf	SPI_Transfer_Byte_MSB_First@i^0,f,c
   2429   000AAA  A0D8               	btfss	status,0,c
   2430   000AAC  0606               	decf	(SPI_Transfer_Byte_MSB_First@i+1)^0,f,c
@@ -2456,16 +2456,16 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2435   000AB8  EF2E  F005         	goto	l1040
   2436   000ABC                     u60:
   2437   000ABC                     
-  2438                           ;spi.c: 124:     SPI_Timer_Wait_One_Bit_Time();
+  2438                           ;spi.c: 131:     SPI_Timer_Wait_One_Bit_Time();
   2439   000ABC  EC5C  F007         	call	_SPI_Timer_Wait_One_Bit_Time	;wreg free
   2440   000AC0                     
-  2441                           ;spi.c: 125:     SPI_MOSI_Output_Low();
+  2441                           ;spi.c: 132:     SPI_MOSI_Output_Low();
   2442   000AC0  ECF0  F007         	call	_SPI_MOSI_Output_Low	;wreg free
   2443   000AC4                     
-  2444                           ;spi.c: 126:     SPI_Timer_Wait_Half_Bit_Time();
+  2444                           ;spi.c: 133:     SPI_Timer_Wait_Half_Bit_Time();
   2445   000AC4  EC6C  F007         	call	_SPI_Timer_Wait_Half_Bit_Time	;wreg free
   2446   000AC8                     
-  2447                           ;spi.c: 127:     return data;
+  2447                           ;spi.c: 134:     return data;
   2448   000AC8  5004               	movf	SPI_Transfer_Byte_MSB_First@data^0,w,c
   2449   000ACA  0012               	return		;funcret
   2450   000ACC                     __end_of_SPI_Transfer_Byte_MSB_First:
@@ -2473,7 +2473,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2452                           
   2453 ;; *************** function _SPI_Timer_Wait_One_Bit_Time *****************
   2454 ;; Defined at:
-  2455 ;;		line 97 in file "spi.c"
+  2455 ;;		line 104 in file "spi.c"
   2456 ;; Parameters:    Size  Location     Type
   2457 ;;		None
   2458 ;; Auto vars:     Size  Location     Type
@@ -2507,7 +2507,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2486   000EB8                     _SPI_Timer_Wait_One_Bit_Time:
   2487                           	callstack 26
   2488   000EB8                     
-  2489                           ;spi.c: 98:     TMR0 = 0;
+  2489                           ;spi.c: 105:     TMR0 = 0;
   2490   000EB8  0E00               	movlw	0
   2491   000EBA  6ED7               	movwf	215,c	;volatile
   2492   000EBC  0E00               	movlw	0
@@ -2529,7 +2529,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2508                           
   2509 ;; *************** function _SPI_Timer_Wait_Half_Bit_Time *****************
   2510 ;; Defined at:
-  2511 ;;		line 102 in file "spi.c"
+  2511 ;;		line 109 in file "spi.c"
   2512 ;; Parameters:    Size  Location     Type
   2513 ;;		None
   2514 ;; Auto vars:     Size  Location     Type
@@ -2563,7 +2563,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2542   000ED8                     _SPI_Timer_Wait_Half_Bit_Time:
   2543                           	callstack 26
   2544   000ED8                     
-  2545                           ;spi.c: 103:     TMR0 = 0;
+  2545                           ;spi.c: 110:     TMR0 = 0;
   2546   000ED8  0E00               	movlw	0
   2547   000EDA  6ED7               	movwf	215,c	;volatile
   2548   000EDC  0E00               	movlw	0
@@ -2585,7 +2585,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2564                           
   2565 ;; *************** function _SPI_SCK_Output_Low *****************
   2566 ;; Defined at:
-  2567 ;;		line 36 in file "spi.c"
+  2567 ;;		line 43 in file "spi.c"
   2568 ;; Parameters:    Size  Location     Type
   2569 ;;		None
   2570 ;; Auto vars:     Size  Location     Type
@@ -2620,7 +2620,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2599   000FD8                     _SPI_SCK_Output_Low:
   2600                           	callstack 27
   2601   000FD8                     
-  2602                           ;spi.c: 37:     LATC&=~(1<<0x03U);
+  2602                           ;spi.c: 44:     LATC&=~(1<<0x03U);
   2603   000FD8  968B               	bcf	139,3,c	;volatile
   2604   000FDA  0012               	return		;funcret
   2605   000FDC                     __end_of_SPI_SCK_Output_Low:
@@ -2628,7 +2628,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2607                           
   2608 ;; *************** function _SPI_SCK_Output_High *****************
   2609 ;; Defined at:
-  2610 ;;		line 40 in file "spi.c"
+  2610 ;;		line 47 in file "spi.c"
   2611 ;; Parameters:    Size  Location     Type
   2612 ;;		None
   2613 ;; Auto vars:     Size  Location     Type
@@ -2662,7 +2662,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2641   000FDC                     _SPI_SCK_Output_High:
   2642                           	callstack 26
   2643   000FDC                     
-  2644                           ;spi.c: 41:     LATC|=(1<<0x03U);
+  2644                           ;spi.c: 48:     LATC|=(1<<0x03U);
   2645   000FDC  868B               	bsf	139,3,c	;volatile
   2646   000FDE  0012               	return		;funcret
   2647   000FE0                     __end_of_SPI_SCK_Output_High:
@@ -2670,7 +2670,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2649                           
   2650 ;; *************** function _SPI_MOSI_Output_Low *****************
   2651 ;; Defined at:
-  2652 ;;		line 62 in file "spi.c"
+  2652 ;;		line 69 in file "spi.c"
   2653 ;; Parameters:    Size  Location     Type
   2654 ;;		None
   2655 ;; Auto vars:     Size  Location     Type
@@ -2705,7 +2705,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2684   000FE0                     _SPI_MOSI_Output_Low:
   2685                           	callstack 27
   2686   000FE0                     
-  2687                           ;spi.c: 63:     LATC&=~(1<<0x05U);
+  2687                           ;spi.c: 70:     LATC&=~(1<<0x05U);
   2688   000FE0  9A8B               	bcf	139,5,c	;volatile
   2689   000FE2  0012               	return		;funcret
   2690   000FE4                     __end_of_SPI_MOSI_Output_Low:
@@ -2713,7 +2713,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2692                           
   2693 ;; *************** function _SPI_MOSI_Output_High *****************
   2694 ;; Defined at:
-  2695 ;;		line 66 in file "spi.c"
+  2695 ;;		line 73 in file "spi.c"
   2696 ;; Parameters:    Size  Location     Type
   2697 ;;		None
   2698 ;; Auto vars:     Size  Location     Type
@@ -2747,7 +2747,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2726   000FE4                     _SPI_MOSI_Output_High:
   2727                           	callstack 26
   2728   000FE4                     
-  2729                           ;spi.c: 67:     LATC|=(1<<0x05U);
+  2729                           ;spi.c: 74:     LATC|=(1<<0x05U);
   2730   000FE4  8A8B               	bsf	139,5,c	;volatile
   2731   000FE6  0012               	return		;funcret
   2732   000FE8                     __end_of_SPI_MOSI_Output_High:
@@ -2755,7 +2755,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2734                           
   2735 ;; *************** function _SPI_MISO_State *****************
   2736 ;; Defined at:
-  2737 ;;		line 49 in file "spi.c"
+  2737 ;;		line 56 in file "spi.c"
   2738 ;; Parameters:    Size  Location     Type
   2739 ;;		None
   2740 ;; Auto vars:     Size  Location     Type
@@ -2789,7 +2789,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2768   000F32                     _SPI_MISO_State:
   2769                           	callstack 26
   2770   000F32                     
-  2771                           ;spi.c: 50:     if( PORTC & (1<<0x04U) ){
+  2771                           ;spi.c: 57:     if( PORTC & (1<<0x04U) ){
   2772   000F32  A882               	btfss	130,4,c	;volatile
   2773   000F34  EF9E  F007         	goto	u11
   2774   000F38  EFA0  F007         	goto	u10
@@ -2797,12 +2797,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2776   000F3C  EFA3  F007         	goto	l1008
   2777   000F40                     u10:
   2778   000F40                     
-  2779                           ;spi.c: 51:         return 1;
+  2779                           ;spi.c: 58:         return 1;
   2780   000F40  0E01               	movlw	1
   2781   000F42  EFA4  F007         	goto	l56
   2782   000F46                     l1008:
   2783                           
-  2784                           ;spi.c: 53:         return 0;
+  2784                           ;spi.c: 60:         return 0;
   2785   000F46  0E00               	movlw	0
   2786   000F48                     l56:
   2787   000F48  0012               	return		;funcret
@@ -2811,7 +2811,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2790                           
   2791 ;; *************** function _SPI_CS_Output_Low *****************
   2792 ;; Defined at:
-  2793 ;;		line 75 in file "spi.c"
+  2793 ;;		line 82 in file "spi.c"
   2794 ;; Parameters:    Size  Location     Type
   2795 ;;		None
   2796 ;; Auto vars:     Size  Location     Type
@@ -2844,7 +2844,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2823   000FE8                     _SPI_CS_Output_Low:
   2824                           	callstack 27
   2825   000FE8                     
-  2826                           ;spi.c: 76:     LATB&=~(1<<0x02U);
+  2826                           ;spi.c: 83:     LATB&=~(1<<0x02U);
   2827   000FE8  948A               	bcf	138,2,c	;volatile
   2828   000FEA  0012               	return		;funcret
   2829   000FEC                     __end_of_SPI_CS_Output_Low:
@@ -2852,7 +2852,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2831                           
   2832 ;; *************** function _SPI_CS_Output_High *****************
   2833 ;; Defined at:
-  2834 ;;		line 79 in file "spi.c"
+  2834 ;;		line 86 in file "spi.c"
   2835 ;; Parameters:    Size  Location     Type
   2836 ;;		None
   2837 ;; Auto vars:     Size  Location     Type
@@ -2886,7 +2886,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2865   000FEC                     _SPI_CS_Output_High:
   2866                           	callstack 27
   2867   000FEC                     
-  2868                           ;spi.c: 80:     LATB|=(1<<0x02U);
+  2868                           ;spi.c: 87:     LATB|=(1<<0x02U);
   2869   000FEC  848A               	bsf	138,2,c	;volatile
   2870   000FEE  0012               	return		;funcret
   2871   000FF0                     __end_of_SPI_CS_Output_High:
@@ -2894,7 +2894,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2873                           
   2874 ;; *************** function _LCD_Write_String *****************
   2875 ;; Defined at:
-  2876 ;;		line 186 in file "lcd.c"
+  2876 ;;		line 193 in file "lcd.c"
   2877 ;; Parameters:    Size  Location     Type
   2878 ;;  str             2    3[COMRAM] PTR unsigned char 
   2879 ;;		 -> STR_3(11), STR_2(11), STR_1(11), 
@@ -2929,11 +2929,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2908   000CBC                     _LCD_Write_String:
   2909                           	callstack 27
   2910   000CBC                     
-  2911                           ;lcd.c: 187:     while (*str != '\0'){
+  2911                           ;lcd.c: 194:     while (*str != '\0'){
   2912   000CBC  EF71  F006         	goto	l1730
   2913   000CC0                     l1724:
   2914                           
-  2915                           ;lcd.c: 188:         LCD_Write_Data(*str);
+  2915                           ;lcd.c: 195:         LCD_Write_Data(*str);
   2916   000CC0  C004  FFF6         	movff	LCD_Write_String@str,tblptrl
   2917   000CC4  C005  FFF7         	movff	LCD_Write_String@str+1,tblptrh
   2918   000CC8                     	if	0	;tblptru may be non-zero
@@ -2944,11 +2944,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2923   000CCA  50F5               	movf	tablat,w,c
   2924   000CCC  EC80  F006         	call	_LCD_Write_Data
   2925   000CD0                     
-  2926                           ;lcd.c: 189:         str++;
+  2926                           ;lcd.c: 196:         str++;
   2927   000CD0  4A04               	infsnz	LCD_Write_String@str^0,f,c
   2928   000CD2  2A05               	incf	(LCD_Write_String@str+1)^0,f,c
   2929   000CD4                     
-  2930                           ;lcd.c: 190:         _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  2930                           ;lcd.c: 197:         _delay((unsigned long)((20)*(8000000UL/4000.0)));
   2931   000CD4  0E34               	movlw	52
   2932   000CD6  6E06               	movwf	??_LCD_Write_String^0,c
   2933   000CD8  0EF2               	movlw	242
@@ -2959,7 +2959,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2938   000CE0  D7FC               	bra	u737
   2939   000CE2                     l1730:
   2940                           
-  2941                           ;lcd.c: 187:     while (*str != '\0'){
+  2941                           ;lcd.c: 194:     while (*str != '\0'){
   2942   000CE2  C004  FFF6         	movff	LCD_Write_String@str,tblptrl
   2943   000CE6  C005  FFF7         	movff	LCD_Write_String@str+1,tblptrh
   2944   000CEA                     	if	0	;tblptru may be non-zero
@@ -2981,7 +2981,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2960                           
   2961 ;; *************** function _LCD_Write_Data *****************
   2962 ;; Defined at:
-  2963 ;;		line 174 in file "lcd.c"
+  2963 ;;		line 181 in file "lcd.c"
   2964 ;; Parameters:    Size  Location     Type
   2965 ;;  val             1    wreg     unsigned char 
   2966 ;; Auto vars:     Size  Location     Type
@@ -3022,18 +3022,18 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3001                           ;LCD_Write_Data@val stored from wreg
   3002   000D00  6E03               	movwf	LCD_Write_Data@val^0,c
   3003   000D02                     
-  3004                           ;lcd.c: 175:     LCD_RS_Output_High();
+  3004                           ;lcd.c: 182:     LCD_RS_Output_High();
   3005   000D02  ECF8  F007         	call	_LCD_RS_Output_High	;wreg free
   3006   000D06                     
-  3007                           ;lcd.c: 176:     LCD_Write_Nibble_To_Data_Pins(val>>4);
+  3007                           ;lcd.c: 183:     LCD_Write_Nibble_To_Data_Pins(val>>4);
   3008   000D06  3803               	swapf	LCD_Write_Data@val^0,w,c
   3009   000D08  0B0F               	andlw	15
   3010   000D0A  ECA0  F005         	call	_LCD_Write_Nibble_To_Data_Pins
   3011   000D0E                     
-  3012                           ;lcd.c: 177:     LCD_E_Output_High();
+  3012                           ;lcd.c: 184:     LCD_E_Output_High();
   3013   000D0E  EC10  F008         	call	_LCD_E_Output_High	;wreg free
   3014   000D12                     
-  3015                           ;lcd.c: 178:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3015                           ;lcd.c: 185:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3016   000D12  0E34               	movlw	52
   3017   000D14  6E02               	movwf	??_LCD_Write_Data^0,c
   3018   000D16  0EF2               	movlw	242
@@ -3043,18 +3043,18 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3022   000D1C  2E02               	decfsz	??_LCD_Write_Data^0,f,c
   3023   000D1E  D7FC               	bra	u747
   3024                           
-  3025                           ;lcd.c: 179:     LCD_E_Output_Low();
+  3025                           ;lcd.c: 186:     LCD_E_Output_Low();
   3026   000D20  EC0E  F008         	call	_LCD_E_Output_Low	;wreg free
   3027   000D24                     
-  3028                           ;lcd.c: 180:     LCD_Write_Nibble_To_Data_Pins(val & 0x0F);
+  3028                           ;lcd.c: 187:     LCD_Write_Nibble_To_Data_Pins(val & 0x0F);
   3029   000D24  5003               	movf	LCD_Write_Data@val^0,w,c
   3030   000D26  0B0F               	andlw	15
   3031   000D28  ECA0  F005         	call	_LCD_Write_Nibble_To_Data_Pins
   3032   000D2C                     
-  3033                           ;lcd.c: 181:     LCD_E_Output_High();
+  3033                           ;lcd.c: 188:     LCD_E_Output_High();
   3034   000D2C  EC10  F008         	call	_LCD_E_Output_High	;wreg free
   3035   000D30                     
-  3036                           ;lcd.c: 182:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3036                           ;lcd.c: 189:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3037   000D30  0E34               	movlw	52
   3038   000D32  6E02               	movwf	??_LCD_Write_Data^0,c
   3039   000D34  0EF2               	movlw	242
@@ -3064,7 +3064,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3043   000D3A  2E02               	decfsz	??_LCD_Write_Data^0,f,c
   3044   000D3C  D7FC               	bra	u757
   3045                           
-  3046                           ;lcd.c: 183:     LCD_E_Output_Low();
+  3046                           ;lcd.c: 190:     LCD_E_Output_Low();
   3047   000D3E  EC0E  F008         	call	_LCD_E_Output_Low	;wreg free
   3048   000D42  0012               	return		;funcret
   3049   000D44                     __end_of_LCD_Write_Data:
@@ -3072,7 +3072,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3051                           
   3052 ;; *************** function _LCD_RS_Output_High *****************
   3053 ;; Defined at:
-  3054 ;;		line 57 in file "lcd.c"
+  3054 ;;		line 64 in file "lcd.c"
   3055 ;; Parameters:    Size  Location     Type
   3056 ;;		None
   3057 ;; Auto vars:     Size  Location     Type
@@ -3105,7 +3105,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3084   000FF0                     _LCD_RS_Output_High:
   3085                           	callstack 28
   3086   000FF0                     
-  3087                           ;lcd.c: 58:     LATC|=(1<<0x02U);
+  3087                           ;lcd.c: 65:     LATC|=(1<<0x02U);
   3088   000FF0  848B               	bsf	139,2,c	;volatile
   3089   000FF2  0012               	return		;funcret
   3090   000FF4                     __end_of_LCD_RS_Output_High:
@@ -3113,7 +3113,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3092                           
   3093 ;; *************** function _LCD_Init *****************
   3094 ;; Defined at:
-  3095 ;;		line 233 in file "lcd.c"
+  3095 ;;		line 240 in file "lcd.c"
   3096 ;; Parameters:    Size  Location     Type
   3097 ;;		None
   3098 ;; Auto vars:     Size  Location     Type
@@ -3149,7 +3149,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3128   000D88                     _LCD_Init:
   3129                           	callstack 26
   3130   000D88                     
-  3131                           ;lcd.c: 234:     _delay((unsigned long)((200)*(8000000UL/4000.0)));
+  3131                           ;lcd.c: 241:     _delay((unsigned long)((200)*(8000000UL/4000.0)));
   3132   000D88  0E03               	movlw	3
   3133   000D8A  6E07               	movwf	(??_LCD_Init+1)^0,c
   3134   000D8C  0E08               	movlw	8
@@ -3164,16 +3164,16 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3143   000D9C  D7FA               	bra	u767
   3144   000D9E  F000               	nop	
   3145   000DA0                     
-  3146                           ;lcd.c: 235:     LCD_GPIO_Init();
+  3146                           ;lcd.c: 242:     LCD_GPIO_Init();
   3147   000DA0  EC01  F007         	call	_LCD_GPIO_Init	;wreg free
   3148                           
-  3149                           ;lcd.c: 236:     LCD_Registers_Init();
+  3149                           ;lcd.c: 243:     LCD_Registers_Init();
   3150   000DA4  EC94  F004         	call	_LCD_Registers_Init	;wreg free
   3151                           
-  3152                           ;lcd.c: 237:     LCD_Clear();
+  3152                           ;lcd.c: 244:     LCD_Clear();
   3153   000DA8  EC8B  F007         	call	_LCD_Clear	;wreg free
   3154   000DAC                     
-  3155                           ;lcd.c: 238:     _delay((unsigned long)((200)*(8000000UL/4000.0)));
+  3155                           ;lcd.c: 245:     _delay((unsigned long)((200)*(8000000UL/4000.0)));
   3156   000DAC  0E03               	movlw	3
   3157   000DAE  6E07               	movwf	(??_LCD_Init+1)^0,c
   3158   000DB0  0E08               	movlw	8
@@ -3193,7 +3193,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3172                           
   3173 ;; *************** function _LCD_Registers_Init *****************
   3174 ;; Defined at:
-  3175 ;;		line 217 in file "lcd.c"
+  3175 ;;		line 224 in file "lcd.c"
   3176 ;; Parameters:    Size  Location     Type
   3177 ;;		None
   3178 ;; Auto vars:     Size  Location     Type
@@ -3227,7 +3227,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3206   000928                     _LCD_Registers_Init:
   3207                           	callstack 26
   3208   000928                     
-  3209                           ;lcd.c: 218:     _delay((unsigned long)((200)*(8000000UL/4000.0)));
+  3209                           ;lcd.c: 225:     _delay((unsigned long)((200)*(8000000UL/4000.0)));
   3210   000928  0E03               	movlw	3
   3211   00092A  6E05               	movwf	(??_LCD_Registers_Init+1)^0,c
   3212   00092C  0E08               	movlw	8
@@ -3242,11 +3242,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3221   00093C  D7FA               	bra	u787
   3222   00093E  F000               	nop	
   3223   000940                     
-  3224                           ;lcd.c: 219:     LCD_Write_Cmd(0x03);
+  3224                           ;lcd.c: 226:     LCD_Write_Cmd(0x03);
   3225   000940  0E03               	movlw	3
   3226   000942  ECA2  F006         	call	_LCD_Write_Cmd
   3227   000946                     
-  3228                           ;lcd.c: 220:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3228                           ;lcd.c: 227:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3229   000946  0E34               	movlw	52
   3230   000948  6E04               	movwf	??_LCD_Registers_Init^0,c
   3231   00094A  0EF2               	movlw	242
@@ -3256,11 +3256,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3235   000950  2E04               	decfsz	??_LCD_Registers_Init^0,f,c
   3236   000952  D7FC               	bra	u797
   3237                           
-  3238                           ;lcd.c: 221:     LCD_Write_Cmd(0x02);
+  3238                           ;lcd.c: 228:     LCD_Write_Cmd(0x02);
   3239   000954  0E02               	movlw	2
   3240   000956  ECA2  F006         	call	_LCD_Write_Cmd
   3241   00095A                     
-  3242                           ;lcd.c: 222:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3242                           ;lcd.c: 229:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3243   00095A  0E34               	movlw	52
   3244   00095C  6E04               	movwf	??_LCD_Registers_Init^0,c
   3245   00095E  0EF2               	movlw	242
@@ -3270,11 +3270,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3249   000964  2E04               	decfsz	??_LCD_Registers_Init^0,f,c
   3250   000966  D7FC               	bra	u807
   3251   000968                     
-  3252                           ;lcd.c: 223:     LCD_Write_Cmd(0x28);
+  3252                           ;lcd.c: 230:     LCD_Write_Cmd(0x28);
   3253   000968  0E28               	movlw	40
   3254   00096A  ECA2  F006         	call	_LCD_Write_Cmd
   3255                           
-  3256                           ;lcd.c: 224:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3256                           ;lcd.c: 231:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3257   00096E  0E34               	movlw	52
   3258   000970  6E04               	movwf	??_LCD_Registers_Init^0,c
   3259   000972  0EF2               	movlw	242
@@ -3284,11 +3284,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3263   000978  2E04               	decfsz	??_LCD_Registers_Init^0,f,c
   3264   00097A  D7FC               	bra	u817
   3265   00097C                     
-  3266                           ;lcd.c: 225:     LCD_Write_Cmd(0x01);
+  3266                           ;lcd.c: 232:     LCD_Write_Cmd(0x01);
   3267   00097C  0E01               	movlw	1
   3268   00097E  ECA2  F006         	call	_LCD_Write_Cmd
   3269   000982                     
-  3270                           ;lcd.c: 226:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3270                           ;lcd.c: 233:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3271   000982  0E34               	movlw	52
   3272   000984  6E04               	movwf	??_LCD_Registers_Init^0,c
   3273   000986  0EF2               	movlw	242
@@ -3298,11 +3298,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3277   00098C  2E04               	decfsz	??_LCD_Registers_Init^0,f,c
   3278   00098E  D7FC               	bra	u827
   3279                           
-  3280                           ;lcd.c: 227:     LCD_Write_Cmd(0x0C);
+  3280                           ;lcd.c: 234:     LCD_Write_Cmd(0x0C);
   3281   000990  0E0C               	movlw	12
   3282   000992  ECA2  F006         	call	_LCD_Write_Cmd
   3283   000996                     
-  3284                           ;lcd.c: 228:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3284                           ;lcd.c: 235:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3285   000996  0E34               	movlw	52
   3286   000998  6E04               	movwf	??_LCD_Registers_Init^0,c
   3287   00099A  0EF2               	movlw	242
@@ -3312,11 +3312,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3291   0009A0  2E04               	decfsz	??_LCD_Registers_Init^0,f,c
   3292   0009A2  D7FC               	bra	u837
   3293   0009A4                     
-  3294                           ;lcd.c: 229:     LCD_Write_Cmd(0x06);
+  3294                           ;lcd.c: 236:     LCD_Write_Cmd(0x06);
   3295   0009A4  0E06               	movlw	6
   3296   0009A6  ECA2  F006         	call	_LCD_Write_Cmd
   3297                           
-  3298                           ;lcd.c: 230:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3298                           ;lcd.c: 237:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3299   0009AA  0E34               	movlw	52
   3300   0009AC  6E04               	movwf	??_LCD_Registers_Init^0,c
   3301   0009AE  0EF2               	movlw	242
@@ -3331,7 +3331,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3310                           
   3311 ;; *************** function _LCD_GPIO_Init *****************
   3312 ;; Defined at:
-  3313 ;;		line 200 in file "lcd.c"
+  3313 ;;		line 207 in file "lcd.c"
   3314 ;; Parameters:    Size  Location     Type
   3315 ;;		None
   3316 ;; Auto vars:     Size  Location     Type
@@ -3378,46 +3378,46 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3357   000E02                     _LCD_GPIO_Init:
   3358                           	callstack 28
   3359   000E02                     
-  3360                           ;lcd.c: 201:     LCD_RS_Output();
+  3360                           ;lcd.c: 208:     LCD_RS_Output();
   3361   000E02  ECCD  F007         	call	_LCD_RS_Output	;wreg free
   3362                           
-  3363                           ;lcd.c: 202:     LCD_RW_Output();
+  3363                           ;lcd.c: 209:     LCD_RW_Output();
   3364   000E06  ECC9  F007         	call	_LCD_RW_Output	;wreg free
   3365                           
-  3366                           ;lcd.c: 203:     LCD_E_Output();
+  3366                           ;lcd.c: 210:     LCD_E_Output();
   3367   000E0A  ECD1  F007         	call	_LCD_E_Output	;wreg free
   3368                           
-  3369                           ;lcd.c: 204:     LCD_D4_Output();
+  3369                           ;lcd.c: 211:     LCD_D4_Output();
   3370   000E0E  ECE1  F007         	call	_LCD_D4_Output	;wreg free
   3371                           
-  3372                           ;lcd.c: 205:     LCD_D5_Output();
+  3372                           ;lcd.c: 212:     LCD_D5_Output();
   3373   000E12  ECDD  F007         	call	_LCD_D5_Output	;wreg free
   3374                           
-  3375                           ;lcd.c: 206:     LCD_D6_Output();
+  3375                           ;lcd.c: 213:     LCD_D6_Output();
   3376   000E16  ECD9  F007         	call	_LCD_D6_Output	;wreg free
   3377                           
-  3378                           ;lcd.c: 207:     LCD_D7_Output();
+  3378                           ;lcd.c: 214:     LCD_D7_Output();
   3379   000E1A  ECD5  F007         	call	_LCD_D7_Output	;wreg free
   3380                           
-  3381                           ;lcd.c: 208:     LCD_RS_Output_Low();
+  3381                           ;lcd.c: 215:     LCD_RS_Output_Low();
   3382   000E1E  EC0C  F008         	call	_LCD_RS_Output_Low	;wreg free
   3383                           
-  3384                           ;lcd.c: 209:     LCD_RW_Output_Low();
+  3384                           ;lcd.c: 216:     LCD_RW_Output_Low();
   3385   000E22  ECFA  F007         	call	_LCD_RW_Output_Low	;wreg free
   3386                           
-  3387                           ;lcd.c: 210:     LCD_E_Output_Low();
+  3387                           ;lcd.c: 217:     LCD_E_Output_Low();
   3388   000E26  EC0E  F008         	call	_LCD_E_Output_Low	;wreg free
   3389                           
-  3390                           ;lcd.c: 211:     LCD_D4_Output_Low();
+  3390                           ;lcd.c: 218:     LCD_D4_Output_Low();
   3391   000E2A  EC08  F008         	call	_LCD_D4_Output_Low	;wreg free
   3392                           
-  3393                           ;lcd.c: 212:     LCD_D5_Output_Low();
+  3393                           ;lcd.c: 219:     LCD_D5_Output_Low();
   3394   000E2E  EC04  F008         	call	_LCD_D5_Output_Low	;wreg free
   3395                           
-  3396                           ;lcd.c: 213:     LCD_D6_Output_Low();
+  3396                           ;lcd.c: 220:     LCD_D6_Output_Low();
   3397   000E32  EC00  F008         	call	_LCD_D6_Output_Low	;wreg free
   3398                           
-  3399                           ;lcd.c: 214:     LCD_D7_Output_Low();
+  3399                           ;lcd.c: 221:     LCD_D7_Output_Low();
   3400   000E36  ECFC  F007         	call	_LCD_D7_Output_Low	;wreg free
   3401   000E3A  0012               	return		;funcret
   3402   000E3C                     __end_of_LCD_GPIO_Init:
@@ -3425,7 +3425,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3404                           
   3405 ;; *************** function _LCD_RW_Output_Low *****************
   3406 ;; Defined at:
-  3407 ;;		line 66 in file "lcd.c"
+  3407 ;;		line 73 in file "lcd.c"
   3408 ;; Parameters:    Size  Location     Type
   3409 ;;		None
   3410 ;; Auto vars:     Size  Location     Type
@@ -3458,7 +3458,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3437   000FF4                     _LCD_RW_Output_Low:
   3438                           	callstack 28
   3439   000FF4                     
-  3440                           ;lcd.c: 67:     LATC&=~(1<<0x06U);
+  3440                           ;lcd.c: 74:     LATC&=~(1<<0x06U);
   3441   000FF4  9C8B               	bcf	139,6,c	;volatile
   3442   000FF6  0012               	return		;funcret
   3443   000FF8                     __end_of_LCD_RW_Output_Low:
@@ -3466,7 +3466,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3445                           
   3446 ;; *************** function _LCD_RW_Output *****************
   3447 ;; Defined at:
-  3448 ;;		line 61 in file "lcd.c"
+  3448 ;;		line 68 in file "lcd.c"
   3449 ;; Parameters:    Size  Location     Type
   3450 ;;		None
   3451 ;; Auto vars:     Size  Location     Type
@@ -3499,10 +3499,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3478   000F92                     _LCD_RW_Output:
   3479                           	callstack 28
   3480   000F92                     
-  3481                           ;lcd.c: 62:     TRISC&=~(1<<0x06U);
+  3481                           ;lcd.c: 69:     TRISC&=~(1<<0x06U);
   3482   000F92  9C94               	bcf	148,6,c	;volatile
   3483                           
-  3484                           ;lcd.c: 63:     ANSELC&=~(1<<0x06U);
+  3484                           ;lcd.c: 70:     ANSELC&=~(1<<0x06U);
   3485   000F94  010F               	movlb	15	; () banked
   3486   000F96  9D3A               	bcf	58,6,b	;volatile
   3487   000F98                     
@@ -3513,7 +3513,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3492                           
   3493 ;; *************** function _LCD_RS_Output *****************
   3494 ;; Defined at:
-  3495 ;;		line 48 in file "lcd.c"
+  3495 ;;		line 55 in file "lcd.c"
   3496 ;; Parameters:    Size  Location     Type
   3497 ;;		None
   3498 ;; Auto vars:     Size  Location     Type
@@ -3546,10 +3546,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3525   000F9A                     _LCD_RS_Output:
   3526                           	callstack 28
   3527   000F9A                     
-  3528                           ;lcd.c: 49:     TRISC&=~(1<<0x02U);
+  3528                           ;lcd.c: 56:     TRISC&=~(1<<0x02U);
   3529   000F9A  9494               	bcf	148,2,c	;volatile
   3530                           
-  3531                           ;lcd.c: 50:     ANSELC&=~(1<<0x02U);
+  3531                           ;lcd.c: 57:     ANSELC&=~(1<<0x02U);
   3532   000F9C  010F               	movlb	15	; () banked
   3533   000F9E  953A               	bcf	58,2,b	;volatile
   3534   000FA0                     
@@ -3560,7 +3560,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3539                           
   3540 ;; *************** function _LCD_E_Output *****************
   3541 ;; Defined at:
-  3542 ;;		line 74 in file "lcd.c"
+  3542 ;;		line 81 in file "lcd.c"
   3543 ;; Parameters:    Size  Location     Type
   3544 ;;		None
   3545 ;; Auto vars:     Size  Location     Type
@@ -3593,10 +3593,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3572   000FA2                     _LCD_E_Output:
   3573                           	callstack 28
   3574   000FA2                     
-  3575                           ;lcd.c: 75:     TRISC&=~(1<<0x07U);
+  3575                           ;lcd.c: 82:     TRISC&=~(1<<0x07U);
   3576   000FA2  9E94               	bcf	148,7,c	;volatile
   3577                           
-  3578                           ;lcd.c: 76:     ANSELC&=~(1<<0x07U);
+  3578                           ;lcd.c: 83:     ANSELC&=~(1<<0x07U);
   3579   000FA4  010F               	movlb	15	; () banked
   3580   000FA6  9F3A               	bcf	58,7,b	;volatile
   3581   000FA8                     
@@ -3607,7 +3607,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3586                           
   3587 ;; *************** function _LCD_D7_Output *****************
   3588 ;; Defined at:
-  3589 ;;		line 126 in file "lcd.c"
+  3589 ;;		line 133 in file "lcd.c"
   3590 ;; Parameters:    Size  Location     Type
   3591 ;;		None
   3592 ;; Auto vars:     Size  Location     Type
@@ -3640,10 +3640,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3619   000FAA                     _LCD_D7_Output:
   3620                           	callstack 28
   3621   000FAA                     
-  3622                           ;lcd.c: 127:     TRISB&=~(1<<0x07U);
+  3622                           ;lcd.c: 134:     TRISB&=~(1<<0x07U);
   3623   000FAA  9E93               	bcf	147,7,c	;volatile
   3624                           
-  3625                           ;lcd.c: 128:     ANSELB&=~(1<<0x07U);
+  3625                           ;lcd.c: 135:     ANSELB&=~(1<<0x07U);
   3626   000FAC  010F               	movlb	15	; () banked
   3627   000FAE  9F39               	bcf	57,7,b	;volatile
   3628   000FB0                     
@@ -3654,7 +3654,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3633                           
   3634 ;; *************** function _LCD_D6_Output *****************
   3635 ;; Defined at:
-  3636 ;;		line 113 in file "lcd.c"
+  3636 ;;		line 120 in file "lcd.c"
   3637 ;; Parameters:    Size  Location     Type
   3638 ;;		None
   3639 ;; Auto vars:     Size  Location     Type
@@ -3687,10 +3687,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3666   000FB2                     _LCD_D6_Output:
   3667                           	callstack 28
   3668   000FB2                     
-  3669                           ;lcd.c: 114:     TRISB&=~(1<<0x06U);
+  3669                           ;lcd.c: 121:     TRISB&=~(1<<0x06U);
   3670   000FB2  9C93               	bcf	147,6,c	;volatile
   3671                           
-  3672                           ;lcd.c: 115:     ANSELB&=~(1<<0x06U);
+  3672                           ;lcd.c: 122:     ANSELB&=~(1<<0x06U);
   3673   000FB4  010F               	movlb	15	; () banked
   3674   000FB6  9D39               	bcf	57,6,b	;volatile
   3675   000FB8                     
@@ -3701,7 +3701,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3680                           
   3681 ;; *************** function _LCD_D5_Output *****************
   3682 ;; Defined at:
-  3683 ;;		line 100 in file "lcd.c"
+  3683 ;;		line 107 in file "lcd.c"
   3684 ;; Parameters:    Size  Location     Type
   3685 ;;		None
   3686 ;; Auto vars:     Size  Location     Type
@@ -3734,10 +3734,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3713   000FBA                     _LCD_D5_Output:
   3714                           	callstack 28
   3715   000FBA                     
-  3716                           ;lcd.c: 101:     TRISB&=~(1<<0x05U);
+  3716                           ;lcd.c: 108:     TRISB&=~(1<<0x05U);
   3717   000FBA  9A93               	bcf	147,5,c	;volatile
   3718                           
-  3719                           ;lcd.c: 102:     ANSELB&=~(1<<0x05U);
+  3719                           ;lcd.c: 109:     ANSELB&=~(1<<0x05U);
   3720   000FBC  010F               	movlb	15	; () banked
   3721   000FBE  9B39               	bcf	57,5,b	;volatile
   3722   000FC0                     
@@ -3748,7 +3748,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3727                           
   3728 ;; *************** function _LCD_D4_Output *****************
   3729 ;; Defined at:
-  3730 ;;		line 87 in file "lcd.c"
+  3730 ;;		line 94 in file "lcd.c"
   3731 ;; Parameters:    Size  Location     Type
   3732 ;;		None
   3733 ;; Auto vars:     Size  Location     Type
@@ -3781,10 +3781,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3760   000FC2                     _LCD_D4_Output:
   3761                           	callstack 28
   3762   000FC2                     
-  3763                           ;lcd.c: 88:     TRISB&=~(1<<0x04U);
+  3763                           ;lcd.c: 95:     TRISB&=~(1<<0x04U);
   3764   000FC2  9893               	bcf	147,4,c	;volatile
   3765                           
-  3766                           ;lcd.c: 89:     ANSELB&=~(1<<0x04U);
+  3766                           ;lcd.c: 96:     ANSELB&=~(1<<0x04U);
   3767   000FC4  010F               	movlb	15	; () banked
   3768   000FC6  9939               	bcf	57,4,b	;volatile
   3769   000FC8                     
@@ -3795,7 +3795,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3774                           
   3775 ;; *************** function _LCD_Clear *****************
   3776 ;; Defined at:
-  3777 ;;		line 194 in file "lcd.c"
+  3777 ;;		line 201 in file "lcd.c"
   3778 ;; Parameters:    Size  Location     Type
   3779 ;;		None
   3780 ;; Auto vars:     Size  Location     Type
@@ -3830,15 +3830,15 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3809   000F16                     _LCD_Clear:
   3810                           	callstack 26
   3811   000F16                     
-  3812                           ;lcd.c: 195:     LCD_Write_Cmd(0x00);
+  3812                           ;lcd.c: 202:     LCD_Write_Cmd(0x00);
   3813   000F16  0E00               	movlw	0
   3814   000F18  ECA2  F006         	call	_LCD_Write_Cmd
   3815                           
-  3816                           ;lcd.c: 196:     LCD_Write_Cmd(0x01);
+  3816                           ;lcd.c: 203:     LCD_Write_Cmd(0x01);
   3817   000F1C  0E01               	movlw	1
   3818   000F1E  ECA2  F006         	call	_LCD_Write_Cmd
   3819   000F22                     
-  3820                           ;lcd.c: 197:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3820                           ;lcd.c: 204:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3821   000F22  0E34               	movlw	52
   3822   000F24  6E04               	movwf	??_LCD_Clear^0,c
   3823   000F26  0EF2               	movlw	242
@@ -3853,7 +3853,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3832                           
   3833 ;; *************** function _LCD_Write_Cmd *****************
   3834 ;; Defined at:
-  3835 ;;		line 162 in file "lcd.c"
+  3835 ;;		line 169 in file "lcd.c"
   3836 ;; Parameters:    Size  Location     Type
   3837 ;;  val             1    wreg     unsigned char 
   3838 ;; Auto vars:     Size  Location     Type
@@ -3895,18 +3895,18 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3874                           ;LCD_Write_Cmd@val stored from wreg
   3875   000D44  6E03               	movwf	LCD_Write_Cmd@val^0,c
   3876   000D46                     
-  3877                           ;lcd.c: 163:     LCD_RS_Output_Low();
+  3877                           ;lcd.c: 170:     LCD_RS_Output_Low();
   3878   000D46  EC0C  F008         	call	_LCD_RS_Output_Low	;wreg free
   3879   000D4A                     
-  3880                           ;lcd.c: 164:     LCD_Write_Nibble_To_Data_Pins(val>>4);
+  3880                           ;lcd.c: 171:     LCD_Write_Nibble_To_Data_Pins(val>>4);
   3881   000D4A  3803               	swapf	LCD_Write_Cmd@val^0,w,c
   3882   000D4C  0B0F               	andlw	15
   3883   000D4E  ECA0  F005         	call	_LCD_Write_Nibble_To_Data_Pins
   3884   000D52                     
-  3885                           ;lcd.c: 165:     LCD_E_Output_High();
+  3885                           ;lcd.c: 172:     LCD_E_Output_High();
   3886   000D52  EC10  F008         	call	_LCD_E_Output_High	;wreg free
   3887   000D56                     
-  3888                           ;lcd.c: 166:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3888                           ;lcd.c: 173:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3889   000D56  0E34               	movlw	52
   3890   000D58  6E02               	movwf	??_LCD_Write_Cmd^0,c
   3891   000D5A  0EF2               	movlw	242
@@ -3916,18 +3916,18 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3895   000D60  2E02               	decfsz	??_LCD_Write_Cmd^0,f,c
   3896   000D62  D7FC               	bra	u867
   3897                           
-  3898                           ;lcd.c: 167:     LCD_E_Output_Low();
+  3898                           ;lcd.c: 174:     LCD_E_Output_Low();
   3899   000D64  EC0E  F008         	call	_LCD_E_Output_Low	;wreg free
   3900   000D68                     
-  3901                           ;lcd.c: 168:     LCD_Write_Nibble_To_Data_Pins(val & 0x0F);
+  3901                           ;lcd.c: 175:     LCD_Write_Nibble_To_Data_Pins(val & 0x0F);
   3902   000D68  5003               	movf	LCD_Write_Cmd@val^0,w,c
   3903   000D6A  0B0F               	andlw	15
   3904   000D6C  ECA0  F005         	call	_LCD_Write_Nibble_To_Data_Pins
   3905   000D70                     
-  3906                           ;lcd.c: 169:     LCD_E_Output_High();
+  3906                           ;lcd.c: 176:     LCD_E_Output_High();
   3907   000D70  EC10  F008         	call	_LCD_E_Output_High	;wreg free
   3908   000D74                     
-  3909                           ;lcd.c: 170:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
+  3909                           ;lcd.c: 177:     _delay((unsigned long)((20)*(8000000UL/4000.0)));
   3910   000D74  0E34               	movlw	52
   3911   000D76  6E02               	movwf	??_LCD_Write_Cmd^0,c
   3912   000D78  0EF2               	movlw	242
@@ -3937,7 +3937,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3916   000D7E  2E02               	decfsz	??_LCD_Write_Cmd^0,f,c
   3917   000D80  D7FC               	bra	u877
   3918                           
-  3919                           ;lcd.c: 171:     LCD_E_Output_Low();
+  3919                           ;lcd.c: 178:     LCD_E_Output_Low();
   3920   000D82  EC0E  F008         	call	_LCD_E_Output_Low	;wreg free
   3921   000D86  0012               	return		;funcret
   3922   000D88                     __end_of_LCD_Write_Cmd:
@@ -3945,7 +3945,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3924                           
   3925 ;; *************** function _LCD_Write_Nibble_To_Data_Pins *****************
   3926 ;; Defined at:
-  3927 ;;		line 139 in file "lcd.c"
+  3927 ;;		line 146 in file "lcd.c"
   3928 ;; Parameters:    Size  Location     Type
   3929 ;;  val             1    wreg     unsigned char 
   3930 ;; Auto vars:     Size  Location     Type
@@ -3991,7 +3991,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3970                           ;LCD_Write_Nibble_To_Data_Pins@val stored from wreg
   3971   000B40  6E01               	movwf	LCD_Write_Nibble_To_Data_Pins@val^0,c
   3972   000B42                     
-  3973                           ;lcd.c: 140:     if(val & 0x01){
+  3973                           ;lcd.c: 147:     if(val & 0x01){
   3974   000B42  A001               	btfss	LCD_Write_Nibble_To_Data_Pins@val^0,0,c
   3975   000B44  EFA6  F005         	goto	u121
   3976   000B48  EFA8  F005         	goto	u120
@@ -3999,18 +3999,18 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3978   000B4C  EFAC  F005         	goto	l1146
   3979   000B50                     u120:
   3980   000B50                     
-  3981                           ;lcd.c: 141:         LCD_D4_Output_High();
+  3981                           ;lcd.c: 148:         LCD_D4_Output_High();
   3982   000B50  EC0A  F008         	call	_LCD_D4_Output_High	;wreg free
   3983                           
-  3984                           ;lcd.c: 142:     }else{
+  3984                           ;lcd.c: 149:     }else{
   3985   000B54  EFAE  F005         	goto	l1148
   3986   000B58                     l1146:
   3987                           
-  3988                           ;lcd.c: 143:         LCD_D4_Output_Low();
+  3988                           ;lcd.c: 150:         LCD_D4_Output_Low();
   3989   000B58  EC08  F008         	call	_LCD_D4_Output_Low	;wreg free
   3990   000B5C                     l1148:
   3991                           
-  3992                           ;lcd.c: 145:     if(val & 0x02){
+  3992                           ;lcd.c: 152:     if(val & 0x02){
   3993   000B5C  A201               	btfss	LCD_Write_Nibble_To_Data_Pins@val^0,1,c
   3994   000B5E  EFB3  F005         	goto	u131
   3995   000B62  EFB5  F005         	goto	u130
@@ -4018,18 +4018,18 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3997   000B66  EFB9  F005         	goto	l1152
   3998   000B6A                     u130:
   3999   000B6A                     
-  4000                           ;lcd.c: 146:         LCD_D5_Output_High();
+  4000                           ;lcd.c: 153:         LCD_D5_Output_High();
   4001   000B6A  EC06  F008         	call	_LCD_D5_Output_High	;wreg free
   4002                           
-  4003                           ;lcd.c: 147:     }else{
+  4003                           ;lcd.c: 154:     }else{
   4004   000B6E  EFBB  F005         	goto	l1154
   4005   000B72                     l1152:
   4006                           
-  4007                           ;lcd.c: 148:         LCD_D5_Output_Low();
+  4007                           ;lcd.c: 155:         LCD_D5_Output_Low();
   4008   000B72  EC04  F008         	call	_LCD_D5_Output_Low	;wreg free
   4009   000B76                     l1154:
   4010                           
-  4011                           ;lcd.c: 150:     if(val & 0x04){
+  4011                           ;lcd.c: 157:     if(val & 0x04){
   4012   000B76  A401               	btfss	LCD_Write_Nibble_To_Data_Pins@val^0,2,c
   4013   000B78  EFC0  F005         	goto	u141
   4014   000B7C  EFC2  F005         	goto	u140
@@ -4037,18 +4037,18 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4016   000B80  EFC6  F005         	goto	l1158
   4017   000B84                     u140:
   4018   000B84                     
-  4019                           ;lcd.c: 151:         LCD_D6_Output_High();
+  4019                           ;lcd.c: 158:         LCD_D6_Output_High();
   4020   000B84  EC02  F008         	call	_LCD_D6_Output_High	;wreg free
   4021                           
-  4022                           ;lcd.c: 152:     }else{
+  4022                           ;lcd.c: 159:     }else{
   4023   000B88  EFC8  F005         	goto	l1160
   4024   000B8C                     l1158:
   4025                           
-  4026                           ;lcd.c: 153:         LCD_D6_Output_Low();
+  4026                           ;lcd.c: 160:         LCD_D6_Output_Low();
   4027   000B8C  EC00  F008         	call	_LCD_D6_Output_Low	;wreg free
   4028   000B90                     l1160:
   4029                           
-  4030                           ;lcd.c: 155:     if(val & 0x08){
+  4030                           ;lcd.c: 162:     if(val & 0x08){
   4031   000B90  A601               	btfss	LCD_Write_Nibble_To_Data_Pins@val^0,3,c
   4032   000B92  EFCD  F005         	goto	u151
   4033   000B96  EFCF  F005         	goto	u150
@@ -4056,14 +4056,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4035   000B9A  EFD3  F005         	goto	l1164
   4036   000B9E                     u150:
   4037   000B9E                     
-  4038                           ;lcd.c: 156:         LCD_D7_Output_High();
+  4038                           ;lcd.c: 163:         LCD_D7_Output_High();
   4039   000B9E  ECFE  F007         	call	_LCD_D7_Output_High	;wreg free
   4040                           
-  4041                           ;lcd.c: 157:     }else{
+  4041                           ;lcd.c: 164:     }else{
   4042   000BA2  EFD5  F005         	goto	l296
   4043   000BA6                     l1164:
   4044                           
-  4045                           ;lcd.c: 158:         LCD_D7_Output_Low();
+  4045                           ;lcd.c: 165:         LCD_D7_Output_Low();
   4046   000BA6  ECFC  F007         	call	_LCD_D7_Output_Low	;wreg free
   4047   000BAA                     l296:
   4048   000BAA  0012               	return		;funcret
@@ -4072,7 +4072,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4051                           
   4052 ;; *************** function _LCD_D7_Output_Low *****************
   4053 ;; Defined at:
-  4054 ;;		line 131 in file "lcd.c"
+  4054 ;;		line 138 in file "lcd.c"
   4055 ;; Parameters:    Size  Location     Type
   4056 ;;		None
   4057 ;; Auto vars:     Size  Location     Type
@@ -4106,7 +4106,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4085   000FF8                     _LCD_D7_Output_Low:
   4086                           	callstack 27
   4087   000FF8                     
-  4088                           ;lcd.c: 132:     LATB&=~(1<<0x07U);
+  4088                           ;lcd.c: 139:     LATB&=~(1<<0x07U);
   4089   000FF8  9E8A               	bcf	138,7,c	;volatile
   4090   000FFA  0012               	return		;funcret
   4091   000FFC                     __end_of_LCD_D7_Output_Low:
@@ -4114,7 +4114,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4093                           
   4094 ;; *************** function _LCD_D7_Output_High *****************
   4095 ;; Defined at:
-  4096 ;;		line 135 in file "lcd.c"
+  4096 ;;		line 142 in file "lcd.c"
   4097 ;; Parameters:    Size  Location     Type
   4098 ;;		None
   4099 ;; Auto vars:     Size  Location     Type
@@ -4147,7 +4147,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4126   000FFC                     _LCD_D7_Output_High:
   4127                           	callstack 27
   4128   000FFC                     
-  4129                           ;lcd.c: 136:     LATB|=(1<<0x07U);
+  4129                           ;lcd.c: 143:     LATB|=(1<<0x07U);
   4130   000FFC  8E8A               	bsf	138,7,c	;volatile
   4131   000FFE  0012               	return		;funcret
   4132   001000                     __end_of_LCD_D7_Output_High:
@@ -4155,7 +4155,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4134                           
   4135 ;; *************** function _LCD_D6_Output_Low *****************
   4136 ;; Defined at:
-  4137 ;;		line 118 in file "lcd.c"
+  4137 ;;		line 125 in file "lcd.c"
   4138 ;; Parameters:    Size  Location     Type
   4139 ;;		None
   4140 ;; Auto vars:     Size  Location     Type
@@ -4189,7 +4189,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4168   001000                     _LCD_D6_Output_Low:
   4169                           	callstack 27
   4170   001000                     
-  4171                           ;lcd.c: 119:     LATB&=~(1<<0x06U);
+  4171                           ;lcd.c: 126:     LATB&=~(1<<0x06U);
   4172   001000  9C8A               	bcf	138,6,c	;volatile
   4173   001002  0012               	return		;funcret
   4174   001004                     __end_of_LCD_D6_Output_Low:
@@ -4197,7 +4197,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4176                           
   4177 ;; *************** function _LCD_D6_Output_High *****************
   4178 ;; Defined at:
-  4179 ;;		line 122 in file "lcd.c"
+  4179 ;;		line 129 in file "lcd.c"
   4180 ;; Parameters:    Size  Location     Type
   4181 ;;		None
   4182 ;; Auto vars:     Size  Location     Type
@@ -4230,7 +4230,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4209   001004                     _LCD_D6_Output_High:
   4210                           	callstack 27
   4211   001004                     
-  4212                           ;lcd.c: 123:     LATB|=(1<<0x06U);
+  4212                           ;lcd.c: 130:     LATB|=(1<<0x06U);
   4213   001004  8C8A               	bsf	138,6,c	;volatile
   4214   001006  0012               	return		;funcret
   4215   001008                     __end_of_LCD_D6_Output_High:
@@ -4238,7 +4238,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4217                           
   4218 ;; *************** function _LCD_D5_Output_Low *****************
   4219 ;; Defined at:
-  4220 ;;		line 105 in file "lcd.c"
+  4220 ;;		line 112 in file "lcd.c"
   4221 ;; Parameters:    Size  Location     Type
   4222 ;;		None
   4223 ;; Auto vars:     Size  Location     Type
@@ -4272,7 +4272,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4251   001008                     _LCD_D5_Output_Low:
   4252                           	callstack 27
   4253   001008                     
-  4254                           ;lcd.c: 106:     LATB&=~(1<<0x05U);
+  4254                           ;lcd.c: 113:     LATB&=~(1<<0x05U);
   4255   001008  9A8A               	bcf	138,5,c	;volatile
   4256   00100A  0012               	return		;funcret
   4257   00100C                     __end_of_LCD_D5_Output_Low:
@@ -4280,7 +4280,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4259                           
   4260 ;; *************** function _LCD_D5_Output_High *****************
   4261 ;; Defined at:
-  4262 ;;		line 109 in file "lcd.c"
+  4262 ;;		line 116 in file "lcd.c"
   4263 ;; Parameters:    Size  Location     Type
   4264 ;;		None
   4265 ;; Auto vars:     Size  Location     Type
@@ -4313,7 +4313,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4292   00100C                     _LCD_D5_Output_High:
   4293                           	callstack 27
   4294   00100C                     
-  4295                           ;lcd.c: 110:     LATB|=(1<<0x05U);
+  4295                           ;lcd.c: 117:     LATB|=(1<<0x05U);
   4296   00100C  8A8A               	bsf	138,5,c	;volatile
   4297   00100E  0012               	return		;funcret
   4298   001010                     __end_of_LCD_D5_Output_High:
@@ -4321,7 +4321,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4300                           
   4301 ;; *************** function _LCD_D4_Output_Low *****************
   4302 ;; Defined at:
-  4303 ;;		line 92 in file "lcd.c"
+  4303 ;;		line 99 in file "lcd.c"
   4304 ;; Parameters:    Size  Location     Type
   4305 ;;		None
   4306 ;; Auto vars:     Size  Location     Type
@@ -4355,7 +4355,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4334   001010                     _LCD_D4_Output_Low:
   4335                           	callstack 27
   4336   001010                     
-  4337                           ;lcd.c: 93:     LATB&=~(1<<0x04U);
+  4337                           ;lcd.c: 100:     LATB&=~(1<<0x04U);
   4338   001010  988A               	bcf	138,4,c	;volatile
   4339   001012  0012               	return		;funcret
   4340   001014                     __end_of_LCD_D4_Output_Low:
@@ -4363,7 +4363,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4342                           
   4343 ;; *************** function _LCD_D4_Output_High *****************
   4344 ;; Defined at:
-  4345 ;;		line 96 in file "lcd.c"
+  4345 ;;		line 103 in file "lcd.c"
   4346 ;; Parameters:    Size  Location     Type
   4347 ;;		None
   4348 ;; Auto vars:     Size  Location     Type
@@ -4396,7 +4396,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4375   001014                     _LCD_D4_Output_High:
   4376                           	callstack 27
   4377   001014                     
-  4378                           ;lcd.c: 97:     LATB|=(1<<0x04U);
+  4378                           ;lcd.c: 104:     LATB|=(1<<0x04U);
   4379   001014  888A               	bsf	138,4,c	;volatile
   4380   001016  0012               	return		;funcret
   4381   001018                     __end_of_LCD_D4_Output_High:
@@ -4404,7 +4404,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4383                           
   4384 ;; *************** function _LCD_RS_Output_Low *****************
   4385 ;; Defined at:
-  4386 ;;		line 53 in file "lcd.c"
+  4386 ;;		line 60 in file "lcd.c"
   4387 ;; Parameters:    Size  Location     Type
   4388 ;;		None
   4389 ;; Auto vars:     Size  Location     Type
@@ -4438,7 +4438,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4417   001018                     _LCD_RS_Output_Low:
   4418                           	callstack 27
   4419   001018                     
-  4420                           ;lcd.c: 54:     LATC&=~(1<<0x02U);
+  4420                           ;lcd.c: 61:     LATC&=~(1<<0x02U);
   4421   001018  948B               	bcf	139,2,c	;volatile
   4422   00101A  0012               	return		;funcret
   4423   00101C                     __end_of_LCD_RS_Output_Low:
@@ -4446,7 +4446,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4425                           
   4426 ;; *************** function _LCD_E_Output_Low *****************
   4427 ;; Defined at:
-  4428 ;;		line 79 in file "lcd.c"
+  4428 ;;		line 86 in file "lcd.c"
   4429 ;; Parameters:    Size  Location     Type
   4430 ;;		None
   4431 ;; Auto vars:     Size  Location     Type
@@ -4481,7 +4481,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4460   00101C                     _LCD_E_Output_Low:
   4461                           	callstack 28
   4462   00101C                     
-  4463                           ;lcd.c: 80:     LATC&=~(1<<0x07U);
+  4463                           ;lcd.c: 87:     LATC&=~(1<<0x07U);
   4464   00101C  9E8B               	bcf	139,7,c	;volatile
   4465   00101E  0012               	return		;funcret
   4466   001020                     __end_of_LCD_E_Output_Low:
@@ -4489,7 +4489,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4468                           
   4469 ;; *************** function _LCD_E_Output_High *****************
   4470 ;; Defined at:
-  4471 ;;		line 83 in file "lcd.c"
+  4471 ;;		line 90 in file "lcd.c"
   4472 ;; Parameters:    Size  Location     Type
   4473 ;;		None
   4474 ;; Auto vars:     Size  Location     Type
@@ -4523,7 +4523,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4502   001020                     _LCD_E_Output_High:
   4503                           	callstack 28
   4504   001020                     
-  4505                           ;lcd.c: 84:     LATC|=(1<<0x07U);
+  4505                           ;lcd.c: 91:     LATC|=(1<<0x07U);
   4506   001020  8E8B               	bsf	139,7,c	;volatile
   4507   001022  0012               	return		;funcret
   4508   001024                     __end_of_LCD_E_Output_High:
@@ -5194,7 +5194,7 @@ SFR                  0      0       0     200        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.40 build 20220703182018 
-Symbol Table                                                                                   Mon May 01 23:13:59 2023
+Symbol Table                                                                                   Tue May 02 21:14:47 2023
 
                                    l43 0F70                                     l52 0F80  
                                    l60 0F78                                     l46 0FDA  

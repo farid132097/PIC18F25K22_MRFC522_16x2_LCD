@@ -9200,7 +9200,7 @@ typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdint.h" 2 3
 # 4 "lcd.c" 2
-# 48 "lcd.c"
+# 55 "lcd.c"
 void LCD_RS_Output(void){
     TRISC&=~(1<<0x02U);
     ANSELC&=~(1<<0x02U);

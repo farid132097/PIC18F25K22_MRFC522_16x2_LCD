@@ -9308,6 +9308,7 @@ uint8_t MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uint
     }
 
     i = 2000;
+
     do{
         n = MFRC522_Read_Register(0x04);
         i--;

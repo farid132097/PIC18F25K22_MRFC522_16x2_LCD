@@ -7,10 +7,10 @@ Linker command line:
   -cn \
   -h+dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.sym \
   --cmf=dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.cmf \
-  -z -Q18F25K22 -oC:\Users\farid\AppData\Local\Temp\xcAs784.4 \
+  -z -Q18F25K22 -oC:\Users\farid\AppData\Local\Temp\xcAsec0.4 \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/PIC18F25K22_MRFC522_16x2_LCD.X.production.map \
-  --md=C:\Users\farid\AppData\Local\Temp\xcAs784.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\farid\AppData\Local\Temp\xcAsec0.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-05Fh \
   -AABS1=00h-05FFh -ABIGRAM=01h-05FFh -ARAM=060h-0FFh,0100h-01FFhx5 \
@@ -26,7 +26,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\farid\AppData\Local\Temp\xcAs784.o \
+  C:\Users\farid\AppData\Local\Temp\xcAsec0.o \
   dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o 
 
 Object code version is 3.11
@@ -36,7 +36,7 @@ Machine type is 18F25K22
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\farid\AppData\Local\Temp\xcAs784.o
+C:\Users\farid\AppData\Local\Temp\xcAsec0.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0

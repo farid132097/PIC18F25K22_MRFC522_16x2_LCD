@@ -106,7 +106,7 @@
 #define     Reserved33            0x3E
 #define     Reserved34            0x3F
 
-
+/*MFRC522 RESET PIN Definitions*/
 #define     MFRC522_RST_TRIS      TRISB
 #define     MFRC522_RST_LAT       LATB
 #define     MFRC522_RST_ANSEL     ANSELB
@@ -115,46 +115,46 @@
 
 void MFRC522_Write_Register(uint8_t addr, uint8_t val){
     uint8_t data[2];
-    data[0]=(addr<<1)&0x7E;
-    data[1]=val;
-    SPI_Transfer(data, 2);
+    data[0]=(addr<<1)&0x7E;                              /*1st Byte Is Register Address, Format 0xxxxxx0*/
+    data[1]=val;                                         /*2nd Byte Is Register Value To Be Written*/
+    SPI_Transfer(data, 2);                               /*Start Transferring 2 Bytes Using SPI*/
 }
 
 uint8_t MFRC522_Read_Register(uint8_t addr){
     uint8_t data[2];
-    data[0]=((addr<<1)&0x7E) | 0x80;
-    data[1]=0;
-    SPI_Transfer(data, 2);
-    return data[1];
+    data[0]=((addr<<1)&0x7E) | 0x80;                    /*1st Byte Is Register Address, Format 1xxxxxx0*/
+    data[1]=0;                                          /*2nd Byte Is Null, Just To Receive Data Via MISO*/
+    SPI_Transfer(data, 2);                              /*Start Transferring 2 Bytes Using SPI*/
+    return data[1];                                     /*Return Recived Data Via MISO Pin*/
 }
 
 void MFRC522_Modify_Register_Bit(uint8_t addr, uint8_t bit_pos, uint8_t val){
     uint8_t data=0;
-    data=MFRC522_Read_Register(addr);
-    if(val == 1){
-        data|=(1<<bit_pos);
+    data=MFRC522_Read_Register(addr);                   /*Read Data From A Register*/
+    if(val == 1){                                       
+        data|=(1<<bit_pos);                             /*If Bit Is To Be Set, Set It In Data Variable*/
     }else if(val == 0){
-        data&=~(1<<bit_pos);
+        data&=~(1<<bit_pos);                            /*If Bit Is To Be Cleared, Clear It In Data Variable*/
     }
-    MFRC522_Write_Register(addr, data);
+    MFRC522_Write_Register(addr, data);                 /*Now Write Modified Data To The Same Register*/
 }
 
 void MFRC522_Antenna_On(void){
     uint8_t data=0;
-    data = MFRC522_Read_Register(TxControlReg);
-    if (!(data & 0x03)){
+    data = MFRC522_Read_Register(TxControlReg);        /*Read The Value From TxControlReg Register*/
+    if (!(data & 0x03)){                               /*If Antenna Is Off, Turn It On By Setting Bit 0 & 1*/
         MFRC522_Modify_Register_Bit(TxControlReg, 0, 1);
         MFRC522_Modify_Register_Bit(TxControlReg, 1, 1);
     }
 }
 
-void MFRC522_Antenna_Off(void){
-    MFRC522_Modify_Register_Bit(TxControlReg, 0, 0);
+void MFRC522_Antenna_Off(void){                       /*No Need To Check Antenna Status, Turn It Off By Clearing Bit 0 & 1*/
+    MFRC522_Modify_Register_Bit(TxControlReg, 0, 0);  
     MFRC522_Modify_Register_Bit(TxControlReg, 1, 0);
 }
 
 void MFRC522_Reset(void){
-    MFRC522_Write_Register(CommandReg, PCD_RESETPHASE);
+    MFRC522_Write_Register(CommandReg, PCD_RESETPHASE); /*Software Reset*/
 }
 
 #define MAX_LEN 16
@@ -167,13 +167,13 @@ uint8_t MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uint
     uint16_t i;
 
     switch (command){
-        case PCD_AUTHENT:           
+        case PCD_AUTHENT:         //Certification Cards
         {
-            irqEn = 0x12;
+            irqEn = 0x12;         
             waitIRq = 0x10;
             break;
         }
-        case PCD_TRANSCEIVE:      
+        case PCD_TRANSCEIVE:       //Transmit FIFO data
         {
            irqEn = 0x77;
            waitIRq = 0x30;
@@ -187,7 +187,7 @@ uint8_t MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uint
     MFRC522_Modify_Register_Bit(CommIrqReg, 7, 0);       //Clear all interrupt request bit
     MFRC522_Modify_Register_Bit(FIFOLevelReg, 7, 1);     //FlushBuffer=1, FIFO Initialization
     MFRC522_Write_Register(CommandReg, PCD_IDLE);        //NO action;
-    for (i=0; i<sendLen; i++){
+    for (i=0; i<sendLen; i++){                           //Writing data to the FIFO
         MFRC522_Write_Register(FIFODataReg, sendData[i]);
     }
 
@@ -196,7 +196,8 @@ uint8_t MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uint
         MFRC522_Modify_Register_Bit(BitFramingReg, 7, 1); //StartSend=1,transmission of data starts
     }
 
-    i = 2000;        
+    i = 2000;                                             //According to the clock frequency adjustment, 
+                                                          //the operator M1 card maximum waiting time 25ms
     do{
         n = MFRC522_Read_Register(CommIrqReg);
         i--;
@@ -204,14 +205,14 @@ uint8_t MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uint
     while ((i!=0) && !(n&0x01) && !(n & waitIRq));
     MFRC522_Modify_Register_Bit(BitFramingReg, 7, 0);     //StartSend=0
     if (i != 0){
-        if(!(MFRC522_Read_Register(ErrorReg) & 0x1B)){
+        if(!(MFRC522_Read_Register(ErrorReg) & 0x1B)){    //Check For Errors
             status = MFRC522_OK;
             if (n & irqEn & 0x01){
               status = MFRC522_NOTAGERR;                      
             }
             if (command == PCD_TRANSCEIVE){
-                n = MFRC522_Read_Register(FIFOLevelReg);
-                lastBits = MFRC522_Read_Register(ControlReg) & 0x07;
+                n = MFRC522_Read_Register(FIFOLevelReg); //Check FIFO Level
+                lastBits = MFRC522_Read_Register(ControlReg) & 0x07; //Valid Bytes Received
                 if (lastBits){
                     *backLen = (n-1)*8 + lastBits;
                 }
@@ -221,10 +222,10 @@ uint8_t MFRC522_ToCard(uint8_t command, uint8_t *sendData, uint8_t sendLen, uint
                 if (n == 0){
                     n = 1;
                 }
-                if (n > MAX_LEN){
+                if (n > MAX_LEN){                        //Limit To Max Length
                     n = MAX_LEN;
                 }
-                for (i=0; i<n; i++){
+                for (i=0; i<n; i++){                     //Reading the received data in FIFO
                     backData[i] = MFRC522_Read_Register(FIFODataReg);
                 }
             }
@@ -241,16 +242,16 @@ uint8_t MFRC522_Anticoll(uint8_t *serNum){
     uint8_t i;
     uint8_t serNumCheck=0;
     uint8_t unLen;
-    MFRC522_Write_Register(BitFramingReg, 0x00); 
+    MFRC522_Write_Register(BitFramingReg, 0x00);  //Reset Register
     serNum[0] = PICC_ANTICOLL;
     serNum[1] = 0x20;
-    status = MFRC522_ToCard(PCD_TRANSCEIVE, serNum, 2, serNum, &unLen);
+    status = MFRC522_ToCard(PCD_TRANSCEIVE, serNum, 2, serNum, &unLen); //Check Status
 
     if (status == MFRC522_OK){
         for (i=0; i<4; i++){
             serNumCheck ^= serNum[i];
         }
-        if (serNumCheck != serNum[i]){
+        if (serNumCheck != serNum[i]){   //Check For Error If Not Matched with serNum
             status = MFRC522_ERR;
         }
     }
@@ -261,12 +262,12 @@ uint8_t MFRC522_Request(uint8_t reqMode, uint8_t *TagType){
     uint8_t status;
     uint8_t backBits;                        
 
-    MFRC522_Write_Register(BitFramingReg, 0x07);  
+    MFRC522_Write_Register(BitFramingReg, 0x07);  // 7 Bits Will be Transmitted
 
     TagType[0] = reqMode;
-    status = MFRC522_ToCard(PCD_TRANSCEIVE, TagType, 1, TagType, &backBits);
+    status = MFRC522_ToCard(PCD_TRANSCEIVE, TagType, 1, TagType, &backBits); //Check Status
 
-    if ((status != MFRC522_OK) || (backBits != 0x10)){
+    if ((status != MFRC522_OK) || (backBits != 0x10)){    //Check For Error If Not OK, Or Limit Reached
         status = MFRC522_ERR;
     }
     return status;
@@ -274,9 +275,9 @@ uint8_t MFRC522_Request(uint8_t reqMode, uint8_t *TagType){
 
 uint8_t MFRC522_Detect_Tag(void){
     uint8_t info[MAX_LEN];
-    uint8_t status = MFRC522_Request(PICC_REQIDL, info);
-    status = MFRC522_Anticoll(info);
-    if(status == MFRC522_OK){
+    uint8_t status = MFRC522_Request(PICC_REQIDL, info); /*Request For Valid Card*/
+    status = MFRC522_Anticoll(info);                     /*Read Data In Anti-Collision Mode*/
+    if(status == MFRC522_OK){                            /*If Read Ok, Returns 1*/
         return 1;
     }else{
         return 0;
@@ -284,31 +285,31 @@ uint8_t MFRC522_Detect_Tag(void){
 }
 
 void MFRC522_Reset_Output(void){
-    MFRC522_RST_TRIS&=~(1<<MFRC522_RST_bp);
-    MFRC522_RST_ANSEL&=~(1<<MFRC522_RST_bp);
+    MFRC522_RST_TRIS&=~(1<<MFRC522_RST_bp);          /*Declare As Output*/
+    MFRC522_RST_ANSEL&=~(1<<MFRC522_RST_bp);         /*Declare As Digital Output*/
 }
 
 void MFRC522_Reset_Output_Low(void){
-    MFRC522_RST_LAT&=~(1<<MFRC522_RST_bp);
+    MFRC522_RST_LAT&=~(1<<MFRC522_RST_bp);           /*Reset Pin Logic Low*/
 }
 
 void MFRC522_Reset_Output_High(void){
-    MFRC522_RST_LAT|=(1<<MFRC522_RST_bp);
+    MFRC522_RST_LAT|=(1<<MFRC522_RST_bp);            /*Reset Pin Logic High*/
 }
 
 void MFRC522_Init(void){
-    MFRC522_Reset_Output();
-    SPI_Init();
-    MFRC522_Reset_Output_Low();
-    __delay_ms(50);
-    MFRC522_Reset_Output_High();
-    MFRC522_Reset();
-    MFRC522_Write_Register(TModeReg, 0x8D);
-    MFRC522_Write_Register(TPrescalerReg, 0x3E);
-    MFRC522_Write_Register(TReloadRegL, 30);
+    MFRC522_Reset_Output();                          /*Declare Reset Pin As Output*/
+    SPI_Init();                                      /*SPI Initialization*/
+    MFRC522_Reset_Output_Low();                      /*Start Resetting MRFC522*/
+    __delay_ms(50);                                  /*Wait 50ms For Resetting*/
+    MFRC522_Reset_Output_High();                     /*Disable Reset By Logic High*/
+    MFRC522_Reset();                                 /*Software Reset MFRC522*/
+    MFRC522_Write_Register(TModeReg, 0x8D);          /*Tauto=1; f(Timer) = 6.78MHz/TPreScaler*/
+    MFRC522_Write_Register(TPrescalerReg, 0x3E);     /*TModeReg[3..0] + TPrescalerReg*/
+    MFRC522_Write_Register(TReloadRegL, 30);         
     MFRC522_Write_Register(TReloadRegH, 0);
-    MFRC522_Write_Register(TxAutoReg, 0x40);  
-    MFRC522_Write_Register(ModeReg, 0x3D);
-    MFRC522_Antenna_On();
+    MFRC522_Write_Register(TxAutoReg, 0x40);         /*100% ASK Modulation */
+    MFRC522_Write_Register(ModeReg, 0x3D);           /*CRC Initial value 0x6363*/
+    MFRC522_Antenna_On();                            /*Antenna On*/
 }
 

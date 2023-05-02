@@ -77,7 +77,7 @@ text59 CODE 0 1020 1020 4 1 2
 cstackCOMRAM COMRAM 1 1 1 40 1 1
 smallconst SMALLCONST 0 600 600 18 1 2
 config CONFIG 4 300000 300000 E 1 1
-$C:\Users\farid\AppData\Local\Temp\xcAs784.o
+$C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 idloc IDLOC 5 200000 200000 8 1 1
 init CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 E 1 1
@@ -119,222 +119,222 @@ MEDIUMCONST 1024-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-1020 text59 CODE >83:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1020 text59 CODE >84:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1022 text59 CODE >85:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-101C text58 CODE >79:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-101C text58 CODE >80:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-101E text58 CODE >81:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1018 text57 CODE >53:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1018 text57 CODE >54:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-101A text57 CODE >55:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1014 text56 CODE >96:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1014 text56 CODE >97:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1016 text56 CODE >98:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1010 text55 CODE >92:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1010 text55 CODE >93:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1012 text55 CODE >94:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-100C text54 CODE >109:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-100C text54 CODE >110:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-100E text54 CODE >111:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1008 text53 CODE >105:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1008 text53 CODE >106:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-100A text53 CODE >107:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1004 text52 CODE >122:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1004 text52 CODE >123:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1006 text52 CODE >124:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1000 text51 CODE >118:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1000 text51 CODE >119:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-1002 text51 CODE >120:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FFC text50 CODE >135:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FFC text50 CODE >136:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FFE text50 CODE >137:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FF8 text49 CODE >131:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FF8 text49 CODE >132:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FFA text49 CODE >133:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B40 text48 CODE >139:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B42 text48 CODE >140:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B50 text48 CODE >141:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B54 text48 CODE >142:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B58 text48 CODE >143:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B5C text48 CODE >145:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B6A text48 CODE >146:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B6E text48 CODE >147:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B72 text48 CODE >148:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B76 text48 CODE >150:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B84 text48 CODE >151:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B88 text48 CODE >152:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B8C text48 CODE >153:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B90 text48 CODE >155:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-B9E text48 CODE >156:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-BA2 text48 CODE >157:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-BA6 text48 CODE >158:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-BAA text48 CODE >160:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D44 text47 CODE >162:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D46 text47 CODE >163:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D4A text47 CODE >164:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D52 text47 CODE >165:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D56 text47 CODE >166:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D64 text47 CODE >167:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D68 text47 CODE >168:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D70 text47 CODE >169:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D74 text47 CODE >170:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D82 text47 CODE >171:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D86 text47 CODE >172:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F16 text46 CODE >194:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F16 text46 CODE >195:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F1C text46 CODE >196:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F22 text46 CODE >197:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F30 text46 CODE >198:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FC2 text45 CODE >87:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FC2 text45 CODE >88:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FC4 text45 CODE >89:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FC8 text45 CODE >90:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FBA text44 CODE >100:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FBA text44 CODE >101:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FBC text44 CODE >102:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FC0 text44 CODE >103:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FB2 text43 CODE >113:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FB2 text43 CODE >114:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FB4 text43 CODE >115:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FB8 text43 CODE >116:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FAA text42 CODE >126:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FAA text42 CODE >127:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FAC text42 CODE >128:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FB0 text42 CODE >129:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FA2 text41 CODE >74:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FA2 text41 CODE >75:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FA4 text41 CODE >76:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FA8 text41 CODE >77:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F9A text40 CODE >48:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F9A text40 CODE >49:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F9C text40 CODE >50:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FA0 text40 CODE >51:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F92 text39 CODE >61:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F92 text39 CODE >62:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F94 text39 CODE >63:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-F98 text39 CODE >64:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FF4 text38 CODE >66:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FF4 text38 CODE >67:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FF6 text38 CODE >68:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E02 text37 CODE >200:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E02 text37 CODE >201:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E06 text37 CODE >202:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E0A text37 CODE >203:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E0E text37 CODE >204:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E12 text37 CODE >205:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E16 text37 CODE >206:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E1A text37 CODE >207:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E1E text37 CODE >208:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E22 text37 CODE >209:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E26 text37 CODE >210:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E2A text37 CODE >211:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E2E text37 CODE >212:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E32 text37 CODE >213:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E36 text37 CODE >214:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-E3A text37 CODE >215:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-928 text36 CODE >217:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-928 text36 CODE >218:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-940 text36 CODE >219:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-946 text36 CODE >220:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-954 text36 CODE >221:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-95A text36 CODE >222:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-968 text36 CODE >223:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-96E text36 CODE >224:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-97C text36 CODE >225:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-982 text36 CODE >226:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-990 text36 CODE >227:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-996 text36 CODE >228:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-9A4 text36 CODE >229:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-9AA text36 CODE >230:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-9B8 text36 CODE >231:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D88 text35 CODE >233:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D88 text35 CODE >234:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-DA0 text35 CODE >235:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-DA4 text35 CODE >236:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-DA8 text35 CODE >237:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-DAC text35 CODE >238:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-DC4 text35 CODE >239:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FF0 text34 CODE >57:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FF0 text34 CODE >58:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FF2 text34 CODE >59:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D00 text33 CODE >174:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D02 text33 CODE >175:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D06 text33 CODE >176:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D0E text33 CODE >177:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D12 text33 CODE >178:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D20 text33 CODE >179:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D24 text33 CODE >180:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D2C text33 CODE >181:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D30 text33 CODE >182:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D3E text33 CODE >183:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-D42 text33 CODE >184:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-CBC text32 CODE >186:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-CBC text32 CODE >187:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-CC0 text32 CODE >188:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-CD0 text32 CODE >189:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-CD4 text32 CODE >190:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-CE2 text32 CODE >187:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-CFE text32 CODE >192:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
-FEC text31 CODE >79:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FEC text31 CODE >80:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FEE text31 CODE >81:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FE8 text30 CODE >75:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FE8 text30 CODE >76:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FEA text30 CODE >77:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F32 text29 CODE >49:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F32 text29 CODE >50:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F40 text29 CODE >51:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F46 text29 CODE >53:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F48 text29 CODE >55:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FE4 text28 CODE >66:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FE4 text28 CODE >67:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FE6 text28 CODE >68:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FE0 text27 CODE >62:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FE0 text27 CODE >63:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FE2 text27 CODE >64:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FDC text26 CODE >40:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FDC text26 CODE >41:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FDE text26 CODE >42:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FD8 text25 CODE >36:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FD8 text25 CODE >37:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FDA text25 CODE >38:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-ED8 text24 CODE >102:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-ED8 text24 CODE >103:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-EE0 text24 CODE >104:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-EF6 text24 CODE >105:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-EB8 text23 CODE >97:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-EB8 text23 CODE >98:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-EC0 text23 CODE >99:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-ED6 text23 CODE >100:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A46 text22 CODE >107:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A48 text22 CODE >108:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A4C text22 CODE >109:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A50 text22 CODE >110:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A54 text22 CODE >111:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A5C text22 CODE >112:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A82 text22 CODE >113:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A86 text22 CODE >114:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A8A text22 CODE >115:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A8E text22 CODE >117:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A92 text22 CODE >118:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A96 text22 CODE >119:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-A9A text22 CODE >120:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-AA0 text22 CODE >121:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-AA4 text22 CODE >122:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-AA8 text22 CODE >123:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-ABC text22 CODE >124:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-AC0 text22 CODE >125:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-AC4 text22 CODE >126:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-AC8 text22 CODE >127:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-ACA text22 CODE >128:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-C76 text21 CODE >152:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-C76 text21 CODE >153:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-C7A text21 CODE >154:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-C82 text21 CODE >156:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-CA2 text21 CODE >160:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-CB6 text21 CODE >161:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-CBA text21 CODE >162:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+1020 text59 CODE >90:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1020 text59 CODE >91:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1022 text59 CODE >92:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+101C text58 CODE >86:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+101C text58 CODE >87:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+101E text58 CODE >88:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1018 text57 CODE >60:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1018 text57 CODE >61:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+101A text57 CODE >62:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1014 text56 CODE >103:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1014 text56 CODE >104:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1016 text56 CODE >105:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1010 text55 CODE >99:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1010 text55 CODE >100:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1012 text55 CODE >101:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+100C text54 CODE >116:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+100C text54 CODE >117:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+100E text54 CODE >118:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1008 text53 CODE >112:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1008 text53 CODE >113:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+100A text53 CODE >114:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1004 text52 CODE >129:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1004 text52 CODE >130:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1006 text52 CODE >131:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1000 text51 CODE >125:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1000 text51 CODE >126:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+1002 text51 CODE >127:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FFC text50 CODE >142:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FFC text50 CODE >143:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FFE text50 CODE >144:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FF8 text49 CODE >138:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FF8 text49 CODE >139:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FFA text49 CODE >140:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B40 text48 CODE >146:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B42 text48 CODE >147:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B50 text48 CODE >148:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B54 text48 CODE >149:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B58 text48 CODE >150:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B5C text48 CODE >152:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B6A text48 CODE >153:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B6E text48 CODE >154:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B72 text48 CODE >155:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B76 text48 CODE >157:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B84 text48 CODE >158:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B88 text48 CODE >159:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B8C text48 CODE >160:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B90 text48 CODE >162:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+B9E text48 CODE >163:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+BA2 text48 CODE >164:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+BA6 text48 CODE >165:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+BAA text48 CODE >167:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D44 text47 CODE >169:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D46 text47 CODE >170:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D4A text47 CODE >171:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D52 text47 CODE >172:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D56 text47 CODE >173:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D64 text47 CODE >174:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D68 text47 CODE >175:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D70 text47 CODE >176:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D74 text47 CODE >177:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D82 text47 CODE >178:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D86 text47 CODE >179:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F16 text46 CODE >201:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F16 text46 CODE >202:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F1C text46 CODE >203:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F22 text46 CODE >204:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F30 text46 CODE >205:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FC2 text45 CODE >94:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FC2 text45 CODE >95:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FC4 text45 CODE >96:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FC8 text45 CODE >97:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FBA text44 CODE >107:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FBA text44 CODE >108:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FBC text44 CODE >109:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FC0 text44 CODE >110:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FB2 text43 CODE >120:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FB2 text43 CODE >121:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FB4 text43 CODE >122:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FB8 text43 CODE >123:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FAA text42 CODE >133:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FAA text42 CODE >134:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FAC text42 CODE >135:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FB0 text42 CODE >136:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FA2 text41 CODE >81:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FA2 text41 CODE >82:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FA4 text41 CODE >83:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FA8 text41 CODE >84:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F9A text40 CODE >55:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F9A text40 CODE >56:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F9C text40 CODE >57:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FA0 text40 CODE >58:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F92 text39 CODE >68:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F92 text39 CODE >69:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F94 text39 CODE >70:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+F98 text39 CODE >71:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FF4 text38 CODE >73:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FF4 text38 CODE >74:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FF6 text38 CODE >75:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E02 text37 CODE >207:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E02 text37 CODE >208:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E06 text37 CODE >209:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E0A text37 CODE >210:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E0E text37 CODE >211:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E12 text37 CODE >212:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E16 text37 CODE >213:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E1A text37 CODE >214:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E1E text37 CODE >215:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E22 text37 CODE >216:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E26 text37 CODE >217:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E2A text37 CODE >218:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E2E text37 CODE >219:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E32 text37 CODE >220:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E36 text37 CODE >221:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+E3A text37 CODE >222:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+928 text36 CODE >224:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+928 text36 CODE >225:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+940 text36 CODE >226:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+946 text36 CODE >227:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+954 text36 CODE >228:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+95A text36 CODE >229:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+968 text36 CODE >230:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+96E text36 CODE >231:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+97C text36 CODE >232:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+982 text36 CODE >233:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+990 text36 CODE >234:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+996 text36 CODE >235:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+9A4 text36 CODE >236:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+9AA text36 CODE >237:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+9B8 text36 CODE >238:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D88 text35 CODE >240:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D88 text35 CODE >241:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+DA0 text35 CODE >242:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+DA4 text35 CODE >243:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+DA8 text35 CODE >244:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+DAC text35 CODE >245:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+DC4 text35 CODE >246:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FF0 text34 CODE >64:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FF0 text34 CODE >65:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FF2 text34 CODE >66:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D00 text33 CODE >181:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D02 text33 CODE >182:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D06 text33 CODE >183:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D0E text33 CODE >184:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D12 text33 CODE >185:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D20 text33 CODE >186:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D24 text33 CODE >187:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D2C text33 CODE >188:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D30 text33 CODE >189:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D3E text33 CODE >190:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+D42 text33 CODE >191:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+CBC text32 CODE >193:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+CBC text32 CODE >194:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+CC0 text32 CODE >195:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+CD0 text32 CODE >196:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+CD4 text32 CODE >197:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+CE2 text32 CODE >194:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+CFE text32 CODE >199:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\lcd.c
+FEC text31 CODE >86:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FEC text31 CODE >87:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FEE text31 CODE >88:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FE8 text30 CODE >82:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FE8 text30 CODE >83:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FEA text30 CODE >84:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F32 text29 CODE >56:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F32 text29 CODE >57:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F40 text29 CODE >58:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F46 text29 CODE >60:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F48 text29 CODE >62:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FE4 text28 CODE >73:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FE4 text28 CODE >74:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FE6 text28 CODE >75:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FE0 text27 CODE >69:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FE0 text27 CODE >70:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FE2 text27 CODE >71:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FDC text26 CODE >47:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FDC text26 CODE >48:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FDE text26 CODE >49:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FD8 text25 CODE >43:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FD8 text25 CODE >44:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FDA text25 CODE >45:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+ED8 text24 CODE >109:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+ED8 text24 CODE >110:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+EE0 text24 CODE >111:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+EF6 text24 CODE >112:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+EB8 text23 CODE >104:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+EB8 text23 CODE >105:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+EC0 text23 CODE >106:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+ED6 text23 CODE >107:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A46 text22 CODE >114:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A48 text22 CODE >115:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A4C text22 CODE >116:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A50 text22 CODE >117:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A54 text22 CODE >118:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A5C text22 CODE >119:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A82 text22 CODE >120:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A86 text22 CODE >121:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A8A text22 CODE >122:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A8E text22 CODE >124:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A92 text22 CODE >125:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A96 text22 CODE >126:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+A9A text22 CODE >127:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+AA0 text22 CODE >128:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+AA4 text22 CODE >129:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+AA8 text22 CODE >130:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+ABC text22 CODE >131:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+AC0 text22 CODE >132:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+AC4 text22 CODE >133:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+AC8 text22 CODE >134:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+ACA text22 CODE >135:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+C76 text21 CODE >159:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+C76 text21 CODE >160:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+C7A text21 CODE >161:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+C82 text21 CODE >163:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+CA2 text21 CODE >167:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+CB6 text21 CODE >168:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+CBA text21 CODE >169:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
 E74 text20 CODE >123:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 E76 text20 CODE >125:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 E80 text20 CODE >126:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
@@ -381,65 +381,65 @@ B3E text18 CODE >140:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MR
 6EA text17 CODE >195:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 6FC text17 CODE >196:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 70A text17 CODE >199:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-712 text17 CODE >201:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-71A text17 CODE >202:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-720 text17 CODE >203:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-754 text17 CODE >205:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-762 text17 CODE >206:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-774 text17 CODE >207:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-78E text17 CODE >208:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-792 text17 CODE >209:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-7A6 text17 CODE >210:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-7AA text17 CODE >212:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-7BC text17 CODE >213:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-7C4 text17 CODE >214:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-7CE text17 CODE >215:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-7DE text17 CODE >216:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-7F2 text17 CODE >217:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-7F6 text17 CODE >219:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-806 text17 CODE >221:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-816 text17 CODE >222:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-81A text17 CODE >224:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-82A text17 CODE >225:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-82E text17 CODE >226:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+712 text17 CODE >202:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+71A text17 CODE >203:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+720 text17 CODE >204:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+754 text17 CODE >206:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+762 text17 CODE >207:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+774 text17 CODE >208:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+78E text17 CODE >209:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+792 text17 CODE >210:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+7A6 text17 CODE >211:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+7AA text17 CODE >213:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+7BC text17 CODE >214:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+7C4 text17 CODE >215:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+7CE text17 CODE >216:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+7DE text17 CODE >217:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+7F2 text17 CODE >218:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+7F6 text17 CODE >220:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+806 text17 CODE >222:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+816 text17 CODE >223:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+81A text17 CODE >225:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+82A text17 CODE >226:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 82E text17 CODE >227:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-83A text17 CODE >228:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-852 text17 CODE >229:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-876 text17 CODE >233:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-87A text17 CODE >235:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+82E text17 CODE >228:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+83A text17 CODE >229:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+852 text17 CODE >230:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+876 text17 CODE >234:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 87A text17 CODE >236:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-87C text17 CODE >237:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-87E text16 CODE >239:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-87E text16 CODE >242:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-882 text16 CODE >244:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-88C text16 CODE >245:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-898 text16 CODE >246:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-8A8 text16 CODE >247:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-8CC text16 CODE >249:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-8DC text16 CODE >250:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-8E0 text16 CODE >251:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-8F0 text16 CODE >252:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-902 text16 CODE >253:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-920 text16 CODE >254:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-924 text16 CODE >256:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+87A text17 CODE >237:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+87C text17 CODE >238:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+87E text16 CODE >240:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+87E text16 CODE >243:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+882 text16 CODE >245:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+88C text16 CODE >246:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+898 text16 CODE >247:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+8A8 text16 CODE >248:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+8CC text16 CODE >250:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+8DC text16 CODE >251:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+8E0 text16 CODE >252:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+8F0 text16 CODE >253:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+902 text16 CODE >254:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+920 text16 CODE >255:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 924 text16 CODE >257:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-926 text16 CODE >258:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-BAC text15 CODE >260:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-BAE text15 CODE >264:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-BB8 text15 CODE >266:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-BC4 text15 CODE >267:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-BE8 text15 CODE >269:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C0A text15 CODE >270:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C0E text15 CODE >271:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+924 text16 CODE >258:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+926 text16 CODE >259:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+BAC text15 CODE >261:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+BAE text15 CODE >265:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+BB8 text15 CODE >267:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+BC4 text15 CODE >268:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+BE8 text15 CODE >270:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C0A text15 CODE >271:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 C0E text15 CODE >272:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C10 text15 CODE >273:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-E3C text14 CODE >275:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-E3C text14 CODE >277:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-E4C text14 CODE >278:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-E5A text14 CODE >279:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-E6A text14 CODE >280:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-E70 text14 CODE >282:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-E72 text14 CODE >284:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C0E text15 CODE >273:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C10 text15 CODE >274:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+E3C text14 CODE >276:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+E3C text14 CODE >278:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+E4C text14 CODE >279:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+E5A text14 CODE >280:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+E6A text14 CODE >281:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+E70 text14 CODE >283:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+E72 text14 CODE >285:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 DC6 text13 CODE >142:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 DC6 text13 CODE >143:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 DC6 text13 CODE >144:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
@@ -450,63 +450,63 @@ E00 text13 CODE >149:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MR
 F4A text12 CODE >156:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 F4A text12 CODE >157:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 F54 text12 CODE >158:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-F8A text11 CODE >286:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 F8A text11 CODE >287:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-F8C text11 CODE >288:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-F90 text11 CODE >289:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-FD4 text10 CODE >295:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+F8A text11 CODE >288:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+F8C text11 CODE >289:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+F90 text11 CODE >290:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 FD4 text10 CODE >296:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-FD6 text10 CODE >297:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-FD0 text9 CODE >291:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+FD4 text10 CODE >297:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+FD6 text10 CODE >298:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 FD0 text9 CODE >292:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-FD2 text9 CODE >293:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-F82 text8 CODE >70:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F82 text8 CODE >71:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F84 text8 CODE >72:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F88 text8 CODE >73:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F7A text7 CODE >44:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F7A text7 CODE >45:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F7C text7 CODE >46:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F80 text7 CODE >47:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F72 text6 CODE >57:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F72 text6 CODE >58:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F74 text6 CODE >59:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F78 text6 CODE >60:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F6A text5 CODE >31:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F6A text5 CODE >32:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F6C text5 CODE >33:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F70 text5 CODE >34:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-EF8 text4 CODE >83:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-EF8 text4 CODE >84:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-EFC text4 CODE >85:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F00 text4 CODE >86:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F04 text4 CODE >87:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F08 text4 CODE >88:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F0C text4 CODE >89:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F10 text4 CODE >90:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F14 text4 CODE >91:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FCA text3 CODE >93:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FCA text3 CODE >94:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-FCE text3 CODE >95:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F60 text2 CODE >164:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F60 text2 CODE >165:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F64 text2 CODE >166:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-F68 text2 CODE >167:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
-C12 text1 CODE >299:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+FD0 text9 CODE >293:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+FD2 text9 CODE >294:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+F82 text8 CODE >77:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F82 text8 CODE >78:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F84 text8 CODE >79:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F88 text8 CODE >80:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F7A text7 CODE >51:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F7A text7 CODE >52:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F7C text7 CODE >53:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F80 text7 CODE >54:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F72 text6 CODE >64:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F72 text6 CODE >65:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F74 text6 CODE >66:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F78 text6 CODE >67:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F6A text5 CODE >38:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F6A text5 CODE >39:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F6C text5 CODE >40:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F70 text5 CODE >41:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+EF8 text4 CODE >90:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+EF8 text4 CODE >91:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+EFC text4 CODE >92:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F00 text4 CODE >93:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F04 text4 CODE >94:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F08 text4 CODE >95:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F0C text4 CODE >96:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F10 text4 CODE >97:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F14 text4 CODE >98:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FCA text3 CODE >100:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FCA text3 CODE >101:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+FCE text3 CODE >102:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F60 text2 CODE >171:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F60 text2 CODE >172:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F64 text2 CODE >173:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
+F68 text2 CODE >174:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\spi.c
 C12 text1 CODE >300:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C16 text1 CODE >301:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C1A text1 CODE >302:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C1E text1 CODE >303:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C2C text1 CODE >304:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C30 text1 CODE >305:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C34 text1 CODE >306:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C3E text1 CODE >307:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C48 text1 CODE >308:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C52 text1 CODE >309:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C5C text1 CODE >310:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C66 text1 CODE >311:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C70 text1 CODE >312:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
-C74 text1 CODE >313:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C12 text1 CODE >301:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C16 text1 CODE >302:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C1A text1 CODE >303:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C1E text1 CODE >304:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C2C text1 CODE >305:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C30 text1 CODE >306:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C34 text1 CODE >307:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C3E text1 CODE >308:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C48 text1 CODE >309:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C52 text1 CODE >310:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C5C text1 CODE >311:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C66 text1 CODE >312:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C70 text1 CODE >313:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
+C74 text1 CODE >314:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\mfrc522.c
 9BA text0 CODE >15:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
 9BA text0 CODE >16:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
 9BE text0 CODE >17:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
@@ -520,14 +520,14 @@ A0A text0 CODE >26:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC
 A20 text0 CODE >27:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
 A24 text0 CODE >28:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
 A30 text0 CODE >33:D:\Projects\Embedded Projects\Personal\MPLAB\PIC18F25K22_MRFC522_16x2_LCD.X\main.c
-F56 cinit CODE >2242:C:\Users\farid\AppData\Local\Temp\xcAs784.s
-F56 cinit CODE >2244:C:\Users\farid\AppData\Local\Temp\xcAs784.s
-F56 cinit CODE >2247:C:\Users\farid\AppData\Local\Temp\xcAs784.s
-F56 cinit CODE >2253:C:\Users\farid\AppData\Local\Temp\xcAs784.s
-F56 cinit CODE >2256:C:\Users\farid\AppData\Local\Temp\xcAs784.s
-F58 cinit CODE >2257:C:\Users\farid\AppData\Local\Temp\xcAs784.s
-F5A cinit CODE >2258:C:\Users\farid\AppData\Local\Temp\xcAs784.s
-F5C cinit CODE >2259:C:\Users\farid\AppData\Local\Temp\xcAs784.s
+F56 cinit CODE >2242:C:\Users\farid\AppData\Local\Temp\xcAsec0.s
+F56 cinit CODE >2244:C:\Users\farid\AppData\Local\Temp\xcAsec0.s
+F56 cinit CODE >2247:C:\Users\farid\AppData\Local\Temp\xcAsec0.s
+F56 cinit CODE >2253:C:\Users\farid\AppData\Local\Temp\xcAsec0.s
+F56 cinit CODE >2256:C:\Users\farid\AppData\Local\Temp\xcAsec0.s
+F58 cinit CODE >2257:C:\Users\farid\AppData\Local\Temp\xcAsec0.s
+F5A cinit CODE >2258:C:\Users\farid\AppData\Local\Temp\xcAsec0.s
+F5C cinit CODE >2259:C:\Users\farid\AppData\Local\Temp\xcAsec0.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -551,17 +551,17 @@ MFRC522_Request@TagType 26 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC18
 _LCD_Write_Data D00 0 CODE 0 text33 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __end_of_SPI_SCK_Output_High FE0 0 CODE 0 text26 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\farid\AppData\Local\Temp\xcAs784.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 __end_of_SPI_SCK_Output_Low FDC 0 CODE 0 text25 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _LATB F8A 0 ABS 0 - dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _LATC F8B 0 ABS 0 - dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _TMR0 FD6 0 ABS 0 - dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\farid\AppData\Local\Temp\xcAs784.o
+___sp 0 0 STACK 2 stack C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 _main 9BA 0 CODE 0 text0 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __end_of_LCD_D7_Output_High 1000 0 CODE 0 text50 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-start 0 0 CODE 0 init C:\Users\farid\AppData\Local\Temp\xcAs784.o
+start 0 0 CODE 0 init C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 __end_of_LCD_Write_Cmd D88 0 CODE 0 text47 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _LCD_RS_Output_High FF0 0 CODE 0 text34 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 MFRC522_Request@reqMode 28 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
@@ -575,12 +575,12 @@ __Hpowerup 0 0 CODE 0 powerup dist/default/production\PIC18F25K22_MRFC522_16x2_L
 LCD_Write_String@str 4 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _SPI_SCK_Output_Low FD8 0 CODE 0 text25 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __end_of_LCD_Write_Nibble_To_Data_Pins BAC 0 CODE 0 text48 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAs784.o
+__accesstop 60 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 __end_of_LCD_Init DC6 0 CODE 0 text35 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-intlevel0 0 0 CODE 0 text C:\Users\farid\AppData\Local\Temp\xcAs784.o
-intlevel1 0 0 CODE 0 text C:\Users\farid\AppData\Local\Temp\xcAs784.o
-intlevel2 0 0 CODE 0 text C:\Users\farid\AppData\Local\Temp\xcAs784.o
-intlevel3 0 0 CODE 0 text C:\Users\farid\AppData\Local\Temp\xcAs784.o
+intlevel0 0 0 CODE 0 text C:\Users\farid\AppData\Local\Temp\xcAsec0.o
+intlevel1 0 0 CODE 0 text C:\Users\farid\AppData\Local\Temp\xcAsec0.o
+intlevel2 0 0 CODE 0 text C:\Users\farid\AppData\Local\Temp\xcAsec0.o
+intlevel3 0 0 CODE 0 text C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 __end_of_LCD_D4_Output_High 1018 0 CODE 0 text56 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __end_of_MFRC522_Request C12 0 CODE 0 text15 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 LCD_Write_Data@val 3 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
@@ -595,8 +595,8 @@ MFRC522_Detect_Tag@status 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC
 _ANSELB F39 0 ABS 0 - dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _ANSELC F3A 0 ABS 0 - dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _SPI_Timer_Wait_Half_Bit_Time ED8 0 CODE 0 text24 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\farid\AppData\Local\Temp\xcAs784.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\farid\AppData\Local\Temp\xcAs784.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\farid\AppData\Local\Temp\xcAsec0.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _LCD_D4_Output_High 1014 0 CODE 0 text56 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __end_of_SPI_MOSI_Output F7A 0 CODE 0 text6 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
@@ -629,7 +629,7 @@ __end_of_MFRC522_Reset_Output F92 0 CODE 0 text11 dist/default/production\PIC18F
 _MFRC522_Modify_Register_Bit ACC 0 CODE 0 text18 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _MFRC522_Anticoll 87E 0 CODE 0 text16 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 SPI_Transfer@i A 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAs784.o
+isa$xinst 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 MFRC522_ToCard@status 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _MFRC522_ToCard 618 0 CODE 0 text17 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __end_of_LCD_Clear F32 0 CODE 0 text46 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
@@ -660,7 +660,7 @@ __Htext9 0 0 ABS 0 text9 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\farid\AppData\Local\Temp\xcAs784.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 _SPI_GPIO_Init EF8 0 CODE 0 text4 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
@@ -872,9 +872,9 @@ __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\PIC18F25K22_MRFC522_16x2_L
 __end_of_LCD_E_Output_High 1024 0 CODE 0 text59 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 SPI_Transfer_Byte_MSB_First@data 4 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAs784.o
-stackhi 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAs784.o
-stacklo 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAs784.o
+isa$std 1 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAsec0.o
+stackhi 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAsec0.o
+stacklo 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 __end_of_SPI_Transfer CBC 0 CODE 0 text21 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __end_of_LCD_E_Output_Low 1020 0 CODE 0 text58 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
@@ -980,7 +980,7 @@ __Ltext59 0 0 ABS 0 text59 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.
 _SPI_Timer_Init FCA 0 CODE 0 text3 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __end_of_LCD_RS_Output_Low 101C 0 CODE 0 text57 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _LCD_Write_Cmd D44 0 CODE 0 text47 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-__ramtop 600 0 RAM 0 ramtop C:\Users\farid\AppData\Local\Temp\xcAs784.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 MFRC522_Detect_Tag@info 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _MFRC522_Reset_Output F8A 0 CODE 0 text11 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 MFRC522_Modify_Register_Bit@addr 13 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
@@ -991,8 +991,8 @@ _SPI_CS_Output_High FEC 0 CODE 0 text31 dist/default/production\PIC18F25K22_MRFC
 __psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _SPI_SCK_Output_High FDC 0 CODE 0 text26 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAs784.o
-___heap_lo 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAs784.o
+___heap_hi 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAsec0.o
+___heap_lo 0 0 ABS 0 - C:\Users\farid\AppData\Local\Temp\xcAsec0.o
 ___param_bank 0 0 ABS 0 - dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o
 _LCD_D6_Output_High 1004 0 CODE 0 text52 dist/default/production\PIC18F25K22_MRFC522_16x2_LCD.X.production.o

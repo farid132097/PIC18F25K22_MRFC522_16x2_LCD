@@ -9200,7 +9200,7 @@ typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdint.h" 2 3
 # 4 "spi.c" 2
-# 31 "spi.c"
+# 38 "spi.c"
 void SPI_SCK_Output(void){
     TRISC&=~(1<<0x03U);
     ANSELC&=~(1<<0x03U);
